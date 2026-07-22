@@ -61,7 +61,7 @@ Name map:
 | ZeroNotebookLM | This project and repository |
 | `zero-notebooklm` | Local distribution name |
 | `notebooklm` | Import package and CLI entry point, kept compatible with the upstream client surface |
-| `notebooklm_bare` / `singlefile/notebooklm_bare.py` | Generated vendorable artifact path |
+| `singlefile/zero_notebooklm.py` | Generated vendorable CLI artifact |
 
 ## What this is not
 
@@ -82,6 +82,10 @@ python -m notebooklm.self_test --json
 ```
 
 The self-test is offline. It validates packaged synthetic fixtures and parser/fake-RPC seams without touching home directories, browser stores, keychains, network state, or live Gemini Notebook accounts.
+
+See [Integrating ZeroNotebookLM](docs/integration.md) for Windows Chrome/Edge
+authentication, CLI subprocess use, the Python API, and vendoring the single-file
+artifact.
 
 ## Architecture
 
@@ -106,7 +110,7 @@ The verification lane is separate: pinned upstream artifacts feed compatibility 
 | RPC layer | Versioned registry, encoders/decoders, fake-RPC fixture checks; 5/5 RPC fixture rows pass |
 | Auth helpers | Storage state, browser-cookie, interactive login, profile, status, refresh, doctor, and logout behavior pass all 146 selected current-release rows; excluded and deferred paths are listed below |
 | Local wheel | Built by `scripts/build_wheel.py` without the third-party `wheel` package |
-| Single-file artifact | Generated at `singlefile/notebooklm_bare.py` by `scripts/build_singlefile.py` |
+| Single-file artifact | Generated at `singlefile/zero_notebooklm.py` by `scripts/build_singlefile.py` |
 | MCP adapter | Deferred |
 
 ## Auth support matrix

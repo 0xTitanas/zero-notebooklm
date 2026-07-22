@@ -1,9 +1,9 @@
-"""NotebookLM Bare stdlib-only compatibility scaffold."""
+"""ZeroNotebookLM stdlib-only compatibility scaffold."""
 
 from __future__ import annotations
 
 __version__ = "0.7.2"
-__project__ = "notebooklm-bare"
+__project__ = "zero-notebooklm"
 __upstream_requirement__ = "notebooklm-py==0.7.2"
 
 from .types import AccountLimits as AccountLimits

@@ -1,4 +1,4 @@
-"""Phase 0 acceptance tests for the NotebookLM Bare compatibility oracle.
+"""Phase 0 acceptance tests for the ZeroNotebookLM compatibility oracle.
 
 These tests prove the Phase 0 *surface lock* against ``notebooklm-py==0.7.2`` is
 real, complete, and pinned. They assert against the committed ``compat/``
@@ -987,7 +987,7 @@ def test_runtime_surfaces_are_limited_to_phase3b18(repo_root):
     # Batch 3B2 adds in-memory mutation/generation/export API surfaces; Batch
     # 3B3 adds only fixture-backed generate CLI wiring; Batch 3B14 adds only
     # static bundled agent instruction display data/loader; Batch 3B17 adds
-    # only the offline direct-comparison runtime and notebooklm_bare.rpc alias.
+    # only the offline direct-comparison runtime and package RPC decoder.
     # Phase 4 opens only the generated stdlib single-file artifact. Build
     # outputs, distributions, MCP adapters, and browser/live-runtime directories
     # remain forbidden.
@@ -1061,17 +1061,15 @@ def test_runtime_surfaces_are_limited_to_phase3b18(repo_root):
         "compat",
         "docs",
         "notebooklm",
-        "notebooklm_bare",
         "scripts",
         "tests",
     }
-    allowed_singlefile = "singlefile/notebooklm_bare.py"
+    allowed_singlefile = "singlefile/zero_notebooklm.py"
     allowed_root_files = {
         ".gitignore",
         "CHANGELOG.md",
         "README.md",
         "SECURITY.md",
-        "notebooklm_bare.py",
     }
     offenders = []
     for p in _iter_repo_py_files(repo_root):
@@ -1134,7 +1132,6 @@ def test_no_secret_material(repo_root):
         repo_root / "tests",
         repo_root / "notebooklm",
         repo_root / "singlefile",
-        repo_root / "notebooklm_bare.py",
     ):
         if path.resolve() in _SECRET_SCAN_EXEMPT:
             continue  # this module defines the detector patterns themselves

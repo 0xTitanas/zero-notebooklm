@@ -91,7 +91,7 @@ def test_cli_help_exposes_phase1a_global_options_without_claiming_parity(
 
 
 def test_single_file_help_works_under_python_isolated_mode(repo_root, tmp_path):
-    single = repo_root / "notebooklm_bare.py"
+    single = repo_root / "singlefile" / "zero_notebooklm.py"
     proc = subprocess.run(
         [sys.executable, "-B", "-I", "-S", str(single), "--help"],
         cwd=str(repo_root),
@@ -106,22 +106,6 @@ def test_single_file_help_works_under_python_isolated_mode(repo_root, tmp_path):
     assert "notebooklm" in combined.lower()
     for flag in REQUIRED_GLOBAL_FLAGS:
         assert flag in combined
-    assert "Traceback" not in combined
-
-
-def test_single_file_unimplemented_command_uses_phase_exit_code(repo_root, tmp_path):
-    single = repo_root / "notebooklm_bare.py"
-    proc = subprocess.run(
-        [sys.executable, "-B", "-I", "-S", str(single), "list"],
-        cwd=str(repo_root),
-        env=_isolated_env(tmp_path),
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
-    combined = proc.stdout + proc.stderr
-    assert proc.returncode == 78, combined
-    assert "not implemented in Phase 1" in combined
     assert "Traceback" not in combined
 
 
@@ -183,7 +167,7 @@ def test_import_origin_audit_scans_phase1a_runtime_roots(repo_root):
     roots = tuple(C.AUDIT_ROOTS)
     assert "scripts" in roots and "tests" in roots
     assert "notebooklm" in roots
-    assert "notebooklm_bare.py" in roots
+    assert "singlefile" in roots
 
     scanned = [
         Path(p).relative_to(repo_root).as_posix()
@@ -193,7 +177,7 @@ def test_import_origin_audit_scans_phase1a_runtime_roots(repo_root):
     assert "notebooklm/cli.py" in scanned
     assert "notebooklm/errors.py" in scanned
     assert "notebooklm/output.py" in scanned
-    assert "notebooklm_bare.py" in scanned
+    assert "singlefile/zero_notebooklm.py" in scanned
 
     violations = import_origin_audit.audit(roots=roots)
     assert violations == []

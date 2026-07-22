@@ -31,8 +31,6 @@ def test_sdist_uses_public_allowlist(tmp_path: Path) -> None:
     )
     (root / "notebooklm").mkdir()
     (root / "notebooklm" / "__init__.py").write_text("", encoding="utf-8")
-    (root / "notebooklm_bare").mkdir()
-    (root / "notebooklm_bare" / "__init__.py").write_text("", encoding="utf-8")
     (root / ".ai-bridge").mkdir()
     (root / ".ai-bridge" / "private.txt").write_text("private\n", encoding="utf-8")
 

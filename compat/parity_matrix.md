@@ -7,11 +7,11 @@
 
 ## Closure states (pass-only, JMC-NLB-011)
 
-- `pass` — differential upstream-vs-bare result matches for the same sanitized fixture or disposable live account.
+- `pass` — differential upstream-vs-Zero result matches for the same sanitized fixture or disposable live account.
 - `open` — not yet proven. **Not** a success state.
 - `blocked` — cannot currently be proven (tier/quota/platform). **Not** a success state.
 
-No row is recorded `pass` without a real differential result or a row-specific closed-system proof. The dedicated `self-test` category is backed by a package-contained offline fixture run; the `offline` category is backed only by isolated `python -I -S` import-origin/denylist and fixture-runtime probes. The Phase 3B17 direct-comparison runtime (`notebooklm._parity_runtime` plus `notebooklm_bare.rpc`) now runs offline CLI/API/Auth/RPC artifact probes against the frozen 0.7.2 compat files and sanitized fake-server fixtures. Phase 19 promotes CLI/API rows from committed direct evidence; auth remains open while RPC has now been promoted from committed fake-server fixture evidence.
+No row is recorded `pass` without a real differential result or a row-specific closed-system proof. The dedicated `self-test` category is backed by a package-contained offline fixture run; the `offline` category is backed only by isolated `python -I -S` import-origin/denylist and fixture-runtime probes. The Phase 3B17 direct-comparison runtime uses `notebooklm._parity_runtime` and the package RPC decoder for offline CLI/API/Auth/RPC artifact probes against the frozen 0.7.2 compat files and sanitized fake-server fixtures. Phase 19 promotes CLI/API rows from committed direct evidence; auth remains open while RPC has now been promoted from committed fake-server fixture evidence.
 
 ## Category matrix
 

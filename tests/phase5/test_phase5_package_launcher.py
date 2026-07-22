@@ -87,7 +87,7 @@ def test_pyproject_declares_zero_runtime_dependency_distribution() -> None:
 
     scripts = project.get("scripts", {})
     assert scripts["notebooklm"] == "notebooklm.cli:console"
-    assert scripts.get("notebooklm-bare") == "notebooklm.cli:console"
+    assert scripts.get("zero-notebooklm") == "notebooklm.cli:console"
 
 
 def test_local_install_exposes_import_metadata_and_console_launcher(
@@ -133,8 +133,8 @@ def test_local_install_exposes_import_metadata_and_console_launcher(
 
     console = _console_bin(python_exe, "notebooklm")
     assert console.is_file(), "notebooklm console launcher was not installed"
-    alias = _console_bin(python_exe, "notebooklm-bare")
-    assert alias.is_file(), "notebooklm-bare console launcher was not installed"
+    alias = _console_bin(python_exe, "zero-notebooklm")
+    assert alias.is_file(), "zero-notebooklm console launcher was not installed"
 
     clean_home = tmp_path / "home"
     clean_cwd = tmp_path / "cwd"

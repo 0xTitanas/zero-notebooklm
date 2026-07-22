@@ -1,9 +1,9 @@
 """Shared static agent instruction loading helpers.
 
-Mirrors notebooklm-py==0.7.2 ``cli.agent_templates`` for the bare stdlib
+Mirrors notebooklm-py==0.7.2 ``cli.agent_templates`` for the Zero stdlib
 CLI: `codex` maps to packaged ``CODEX.md`` and `claude` maps to packaged
 ``SKILL.md``. Source-checkout root fallbacks are intentionally omitted here
-because notebooklm-bare vendors deterministic package data directly.
+because zero-notebooklm vendors deterministic package data directly.
 """
 
 from __future__ import annotations

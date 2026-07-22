@@ -1,4 +1,4 @@
-"""Single source of truth for the NotebookLM Bare Phase 0 compatibility oracle.
+"""Single source of truth for the ZeroNotebookLM Phase 0 compatibility oracle.
 
 This module is intentionally **stdlib-only**. It is imported by both the oracle
 generator/validator (``run_phase0_oracle.py``) and the Phase 0 test suite so the
@@ -154,7 +154,7 @@ PARITY_CATEGORIES = (
 # These are *import names* (not PyPI names) that bare runtime/harness code must
 # never import. `notebooklm` itself is deliberately absent: in Phase 0 it is the
 # upstream oracle being introspected inside a disposable venv, not a bare runtime
-# dependency. The bare-side audit scans project files for these names via AST.
+# dependency. The Zero-side audit scans project files for these names via AST.
 DENYLISTED_RUNTIME_IMPORTS = (
     "httpx",
     "httpcore",
@@ -218,16 +218,11 @@ REQUIRED_COMPAT_JSON = (
     DEPENDENCY_GRAPH_JSON,
 )
 
-# Bare-side project roots scanned by the import-origin denylist audit. Phase 5A
-# adds a local package/launcher closed-system proof while extending the same
-# denylisted third-party import scan across the package alias and generated
-# single-file artifact.
+# Project roots scanned by the import-origin denylist audit.
 AUDIT_ROOTS = (
     "scripts",
     "tests",
     "notebooklm",
-    "notebooklm_bare",
-    "notebooklm_bare.py",
     "singlefile",
 )
 

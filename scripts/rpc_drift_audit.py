@@ -3,7 +3,7 @@
 
 This gate exercises the committed sanitized batchexecute fake-server fixtures
 against an independent reference parser, the live package RPC decoder,
-``notebooklm_bare.rpc`` alias, the offline parity runtime, and the fake RPC
+the package decoder, the offline parity runtime, and the fake RPC
 client seam. It performs no live NotebookLM calls, browser/profile access,
 credential reads, home-directory lookup, or parity-row promotion.
 """
@@ -263,13 +263,10 @@ def _parser_contract(repo_root: Path, pairs: list[dict[str, Any]]) -> dict[str, 
         decode_batchexecute_request,
         decode_batchexecute_response,
     )
-    import notebooklm_bare.rpc as bare_rpc
-
-    package_vs_alias = 0
     package_vs_runtime = 0
-    alias_roundtrips = 0
+    canonical_roundtrips = 0
     package_request_matches = 0
-    alias_request_matches = 0
+    package_response_matches = 0
 
     for pair in pairs:
         request_text = pair["request_path"].read_text(encoding="utf-8")
@@ -278,21 +275,17 @@ def _parser_contract(repo_root: Path, pairs: list[dict[str, Any]]) -> dict[str, 
         expected_response = _reference_decode_response(response_text)
 
         package_request = decode_batchexecute_request(request_text)
-        alias_request = bare_rpc.decode_request(request_text)
         package_response = decode_batchexecute_response(response_text)
-        alias_response = bare_rpc.decode_response(response_text)
         runtime_response = _parity_runtime.rpc.decode_response(response_text)
 
         if package_request == expected_request:
             package_request_matches += 1
-        if alias_request == expected_request:
-            alias_request_matches += 1
-        if package_response == expected_response == alias_response:
-            package_vs_alias += 1
+        if package_response == expected_response:
+            package_response_matches += 1
         if package_response == expected_response == runtime_response:
             package_vs_runtime += 1
-        if bare_rpc.encode_request(expected_request) == request_text:
-            alias_roundtrips += 1
+        if _canonical_fixture_request(expected_request) == request_text:
+            canonical_roundtrips += 1
 
     fail_closed = _fail_closed_checks(
         decode_batchexecute_request, decode_batchexecute_response
@@ -300,15 +293,14 @@ def _parser_contract(repo_root: Path, pairs: list[dict[str, Any]]) -> dict[str, 
 
     return {
         "package_decoder": "pass" if package_request_matches == len(pairs) else "fail",
-        "notebooklm_bare_rpc_alias": "pass"
-        if alias_request_matches == len(pairs)
+        "zero_rpc_surface": "pass"
+        if package_response_matches == len(pairs)
         else "fail",
         "parity_runtime_rpc": "pass" if package_vs_runtime == len(pairs) else "fail",
         "package_request_matches": package_request_matches,
-        "alias_request_matches": alias_request_matches,
-        "package_vs_alias_response_matches": package_vs_alias,
+        "package_response_matches": package_response_matches,
         "package_vs_runtime_response_matches": package_vs_runtime,
-        "alias_encode_roundtrips": alias_roundtrips,
+        "canonical_encode_roundtrips": canonical_roundtrips,
         "fail_closed_cases": fail_closed["cases"],
         "redacted_error_messages": fail_closed["redacted"],
     }
@@ -412,11 +404,11 @@ def build_report(repo_root: str | Path | None = None) -> dict[str, Any]:
         fixture_contract["pairs"]["roundtrips"] == len(pairs),
         fixture_contract["sanitization"]["status"] == "pass",
         parser_contract["package_decoder"] == "pass",
-        parser_contract["notebooklm_bare_rpc_alias"] == "pass",
+        parser_contract["zero_rpc_surface"] == "pass",
         parser_contract["parity_runtime_rpc"] == "pass",
-        parser_contract["package_vs_alias_response_matches"] == len(pairs),
+        parser_contract["package_response_matches"] == len(pairs),
         parser_contract["package_vs_runtime_response_matches"] == len(pairs),
-        parser_contract["alias_encode_roundtrips"] == len(pairs),
+        parser_contract["canonical_encode_roundtrips"] == len(pairs),
         parser_contract["fail_closed_cases"] == 7,
         parser_contract["redacted_error_messages"] is True,
         fake_rpc_contract["status"] == "pass",
@@ -448,14 +440,14 @@ def _print_human(report: dict[str, Any]) -> None:
     parser = report["parser_contract"]
     parser_status = (
         "pass"
-        if parser["package_vs_alias_response_matches"] == pairs["total"]
+        if parser["package_response_matches"] == pairs["total"]
         and parser["package_vs_runtime_response_matches"] == pairs["total"]
-        and parser["alias_encode_roundtrips"] == pairs["total"]
+        and parser["canonical_encode_roundtrips"] == pairs["total"]
         else "fail"
     )
     print(f"ZeroNotebookLM RPC drift audit: {report['overall_status']}")
     print(f"fixture pairs: {pairs['roundtrips']}/{pairs['total']}")
-    print(f"parser aliases: {parser_status}")
+    print(f"parser agreement: {parser_status}")
     print(f"fake RPC seam: {report['fake_rpc_contract']['status']}")
     print(
         "category promotion: "

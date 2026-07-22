@@ -146,7 +146,7 @@ def build_sdist(sdist_directory: str, config_settings=None) -> str:
             "scripts/zero_build.py",
         )
     ]
-    for base in (ROOT / "notebooklm", ROOT / "notebooklm_bare"):
+    for base in (ROOT / "notebooklm",):
         files.extend(
             path
             for path in sorted(base.rglob("*"))

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Build the vendorable ZeroNotebookLM single-file artifact.
 
-The generated file is stdlib-only. It embeds the current ``notebooklm`` package,
-``notebooklm_bare`` compatibility package, and committed ``compat`` fixtures as a
-compressed payload. At runtime it extracts the payload into a temporary directory,
-adds that directory to ``sys.path``, and dispatches to ``notebooklm.cli.console``.
+The generated file is stdlib-only. It embeds the current ``notebooklm`` package
+and committed ``compat`` fixtures as a compressed payload. At runtime it extracts
+the payload into a temporary directory, adds that directory to ``sys.path``, and
+dispatches to ``notebooklm.cli.console``.
 
 This is intentionally a release-candidate/closed-system artifact builder, not a
 live NotebookLM smoke runner. The embedded CLI retains the same auth/live gates as
@@ -23,10 +23,9 @@ from pathlib import Path
 from typing import Iterable
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUT = REPO_ROOT / "singlefile" / "notebooklm_bare.py"
+DEFAULT_OUT = REPO_ROOT / "singlefile" / "zero_notebooklm.py"
 INCLUDE_ROOTS = (
     REPO_ROOT / "notebooklm",
-    REPO_ROOT / "notebooklm_bare",
     REPO_ROOT / "compat",
 )
 INCLUDE_SUFFIXES = {".py", ".txt", ".json", ".md"}
@@ -102,7 +101,7 @@ def _extract_payload(root: Path) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     sys.dont_write_bytecode = True
-    with tempfile.TemporaryDirectory(prefix="notebooklm-bare-singlefile-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="zero-notebooklm-singlefile-") as tmp:
         root = Path(tmp)
         _extract_payload(root)
         sys.path.insert(0, str(root))

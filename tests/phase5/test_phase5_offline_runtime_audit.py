@@ -221,7 +221,7 @@ def test_singlefile_artifact_runs_under_isolated_python_without_site_packages(
             "-B",
             "-I",
             "-S",
-            str(repo / "singlefile" / "notebooklm_bare.py"),
+            str(repo / "singlefile" / "zero_notebooklm.py"),
             "list",
             "--json",
         ],

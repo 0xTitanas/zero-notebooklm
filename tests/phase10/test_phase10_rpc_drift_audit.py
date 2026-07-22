@@ -113,7 +113,7 @@ def test_phase10_rpc_audit_covers_every_committed_fixture_pair(
     assert fixtures["sanitization"]["synthetic_markers"] >= 3
 
 
-def test_phase10_rpc_audit_proves_parser_alias_and_runtime_agreement(
+def test_phase10_rpc_audit_proves_package_and_runtime_agreement(
     repo_root: Path,
 ) -> None:
     audit = _load_audit_module(repo_root)
@@ -122,11 +122,11 @@ def test_phase10_rpc_audit_proves_parser_alias_and_runtime_agreement(
     parser = report["parser_contract"]
 
     assert parser["package_decoder"] == "pass"
-    assert parser["notebooklm_bare_rpc_alias"] == "pass"
+    assert parser["zero_rpc_surface"] == "pass"
     assert parser["parity_runtime_rpc"] == "pass"
-    assert parser["package_vs_alias_response_matches"] == 5
+    assert parser["package_response_matches"] == 5
     assert parser["package_vs_runtime_response_matches"] == 5
-    assert parser["alias_encode_roundtrips"] == 5
+    assert parser["canonical_encode_roundtrips"] == 5
     assert parser["fail_closed_cases"] == 7
     assert parser["redacted_error_messages"] is True
 
@@ -191,7 +191,7 @@ def test_phase10_rpc_audit_script_json_strict_and_human_modes(
     assert human_proc.returncode == 0, human_proc.stderr + human_proc.stdout
     assert "ZeroNotebookLM RPC drift audit: pass" in human_proc.stdout
     assert "fixture pairs: 5/5" in human_proc.stdout
-    assert "parser aliases: pass" in human_proc.stdout
+    assert "parser agreement: pass" in human_proc.stdout
     assert "fake RPC seam: pass" in human_proc.stdout
     assert "category promotion: pass" in human_proc.stdout
     assert len(human_proc.stdout.splitlines()) <= 6

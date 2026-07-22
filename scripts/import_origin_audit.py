@@ -1,4 +1,4 @@
-"""Import-origin denylist audit for NotebookLM Bare project code (JMC-NLB-002).
+"""Import-origin denylist audit for ZeroNotebookLM project code (JMC-NLB-002).
 
 Statically scans project ``.py`` files for ``import``/``from ... import``
 statements whose top-level module is on the third-party runtime denylist
@@ -126,7 +126,7 @@ def main(argv=None) -> int:
         "--root",
         action="append",
         dest="roots",
-        help="Repo-relative directory or .py file to scan (repeatable). Default: scripts, tests, notebooklm, notebooklm_bare.py.",
+        help="Repo-relative directory or .py file to scan (repeatable). Default: scripts, tests, notebooklm, singlefile.",
     )
     parser.add_argument("--json", action="store_true", help="Emit JSON")
     args = parser.parse_args(argv)

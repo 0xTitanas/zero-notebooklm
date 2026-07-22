@@ -31,6 +31,14 @@
       "status": "pass",
       "title": "Public alpha release gates pass for the selected compatibility profile.",
       "updated_at": "2026-07-22 CDT"
+    },
+    {
+      "evidence": "2026-07-22 CDT: focused artifact/package/RPC band passed 87 with one platform skip; Ruff passed; deterministic single-file generation, wheel/sdist packaging, clean install launchers, and isolated runtime checks passed.",
+      "id": "branded-artifact-integration-guide",
+      "notes": "The upstream-compatible import package remains notebooklm. The obsolete notebooklm_bare package/root scaffold are removed; the standalone CLI is singlefile/zero_notebooklm.py and the branded launcher is zero-notebooklm.",
+      "status": "pass",
+      "title": "Branded single-file artifact and project integration guide are verified.",
+      "updated_at": "2026-07-22 CDT"
     }
   ],
   "last_updated": "2026-07-22 CDT",

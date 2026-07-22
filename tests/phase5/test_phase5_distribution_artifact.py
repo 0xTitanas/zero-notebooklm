@@ -88,7 +88,6 @@ def test_wheel_artifact_contains_metadata_entry_points_and_package_data(
         assert "notebooklm/__init__.py" in names
         assert "notebooklm/cli.py" in names
         assert "notebooklm/rpc/__init__.py" in names
-        assert "notebooklm_bare/__init__.py" in names
         assert "notebooklm/data/auth_matrix.json" in names
         assert "notebooklm/data/rpc_fixtures/list_notebooks.response.txt" in names
         assert f"{DIST_INFO}/METADATA" in names
@@ -115,7 +114,7 @@ def test_wheel_artifact_contains_metadata_entry_points_and_package_data(
         entry_points = zf.read(f"{DIST_INFO}/entry_points.txt").decode("utf-8")
         assert "[console_scripts]\n" in entry_points
         assert "notebooklm = notebooklm.cli:console\n" in entry_points
-        assert "notebooklm-bare = notebooklm.cli:console\n" in entry_points
+        assert "zero-notebooklm = notebooklm.cli:console\n" in entry_points
 
         record_rows = list(
             csv.reader(zf.read(f"{DIST_INFO}/RECORD").decode("utf-8").splitlines())
@@ -216,11 +215,11 @@ def test_wheel_artifact_installs_console_launcher_with_packaged_fixtures(
         "0.7.2",
         "zero-notebooklm",
         "None",
-        "notebooklm,notebooklm-bare",
+        "notebooklm,zero-notebooklm",
     ]
 
     console = _console_bin(python_exe, "notebooklm")
-    alias = _console_bin(python_exe, "notebooklm-bare")
+    alias = _console_bin(python_exe, "zero-notebooklm")
     assert console.is_file()
     assert alias.is_file()
 

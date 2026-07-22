@@ -1,4 +1,4 @@
-"""Fake-server parser fixtures and direct bare parser probes.
+"""Fake-server fixtures and direct ZeroNotebookLM parser probes.
 
 Loads the sanitized batchexecute request/response fixture pairs under
 ``compat/rpc_fixtures/`` and exercises *real* decoding behavior against them with a
@@ -7,12 +7,12 @@ reference (test-oracle) decoder that models the upstream wire contract — the
 This proves the committed fixtures are structurally faithful and fully sanitized,
 which is what ``compat/rpc_fixtures/README.md`` promises.
 
-The matching **bare-side** parser probes import ``notebooklm_bare.rpc``. Phase
+The matching ZeroNotebookLM parser probes import ``notebooklm.rpc.decoder``. Phase
 10 keeps the fake-server contract broad: every committed request/response pair is
 exercised against the same sanitized fixtures.
 
 stdlib + committed fixtures only. No upstream ``notebooklm`` import, no network, no
-account / cookie / token, and no live bare-runtime side effects.
+account / cookie / token, and no live runtime side effects.
 """
 
 from __future__ import annotations
@@ -25,11 +25,11 @@ from pathlib import Path
 
 import pytest
 
-BARE_RUNTIME_MODULE = "notebooklm_bare"
+ZERO_RPC_MODULE = "notebooklm.rpc.decoder"
 XSSI_PREFIX = ")]}'"
 
-# Imported by string so this module carries no static dependency on the bare
-# runtime at collection time; Phase 10 verifies the alias against every committed
+# Imported by string so this module carries no static dependency on the runtime
+# at collection time; Phase 10 verifies the decoder against every committed
 # fake-server fixture pair.
 
 RESPONSE_FIXTURES = (
@@ -65,13 +65,13 @@ def _fixtures_dir(compat_dir: Path) -> Path:
     return compat_dir / "rpc_fixtures"
 
 
-def _bare_rpc():
-    """Import the Phase 3B17 bare RPC parser alias."""
-    return importlib.import_module(BARE_RUNTIME_MODULE + ".rpc")
+def _zero_rpc():
+    """Import the ZeroNotebookLM RPC decoder."""
+    return importlib.import_module(ZERO_RPC_MODULE)
 
 
 def _reference_decode_response(text: str):
-    """Test-oracle decoder for a batchexecute response (NOT the bare parser)."""
+    """Test-oracle decoder for a batchexecute response."""
     assert text.startswith(XSSI_PREFIX), "response missing XSSI guard prefix"
     outer = json.loads(text[len(XSSI_PREFIX) :])
     rows = [r for r in outer if r and r[0] == "wrb.fr"]
@@ -135,21 +135,24 @@ def test_fixtures_are_sanitized(compat_dir):
 
 
 # --------------------------------------------------------------------------- #
-# Bare prong: Phase 3B17 promotes the bare parser/encoder alias to real checks.
+# ZeroNotebookLM prong: exercise the package decoder against every fixture.
 # --------------------------------------------------------------------------- #
 
 
 @pytest.mark.parametrize("name", RESPONSE_FIXTURES)
-def test_bare_parser_decodes_response(compat_dir, name):
-    rpc = _bare_rpc()
+def test_zero_parser_decodes_response(compat_dir, name):
+    rpc = _zero_rpc()
     body = (_fixtures_dir(compat_dir) / name).read_text(encoding="utf-8")
-    assert rpc.decode_response(body) == _reference_decode_response(body)
+    assert rpc.decode_batchexecute_response(body) == _reference_decode_response(body)
 
 
 @pytest.mark.parametrize("name", REQUEST_FIXTURES)
-def test_bare_encoder_roundtrips_request(compat_dir, name):
-    rpc = _bare_rpc()
+def test_zero_decoder_roundtrips_request(compat_dir, name):
+    rpc = _zero_rpc()
     body = (_fixtures_dir(compat_dir) / name).read_text(encoding="utf-8")
-    decoded = _reference_decode_request(body)
-    # Round-trip: the bare encoder must reproduce the same batchexecute f.req body.
-    assert rpc.encode_request(decoded) == body
+    decoded = rpc.decode_batchexecute_request(body)
+    assert decoded == _reference_decode_request(body)
+    encoded = "f.req=" + urllib.parse.quote(
+        json.dumps(decoded, separators=(",", ":")), safe=""
+    ) + "&at=SYNTHETIC_XSRF_TOKEN&\n"
+    assert encoded == body

@@ -1,4 +1,4 @@
-"""Argparse CLI for NotebookLM Bare.
+"""Argparse CLI for ZeroNotebookLM.
 
 Phase 2A wires the offline auth/session/profile foundation into the command
 tree: ``profile create|delete|list|rename|switch``, ``use``/``status``/``clear``,
@@ -457,7 +457,7 @@ def build_parser(*, prog: str = "notebooklm") -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog=prog,
         description=(
-            "NotebookLM Bare stdlib CLI with offline fixture-backed parity "
+            "ZeroNotebookLM stdlib CLI with offline fixture-backed parity "
             "surfaces for the pinned notebooklm-py==0.7.2 command tree."
         ),
     )

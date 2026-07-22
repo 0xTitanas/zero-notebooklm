@@ -35,7 +35,7 @@ def _isolated_env(tmp_path: Path) -> dict[str, str]:
 def _run_artifact(
     repo_root: Path, tmp_path: Path, *argv: str
 ) -> subprocess.CompletedProcess[str]:
-    artifact = repo_root / "singlefile" / "notebooklm_bare.py"
+    artifact = repo_root / "singlefile" / "zero_notebooklm.py"
     return subprocess.run(
         [sys.executable, "-B", "-I", "-S", str(artifact), *argv],
         cwd=str(tmp_path / "cwd"),
@@ -154,6 +154,6 @@ def test_singlefile_builder_is_deterministic(repo_root, tmp_path):
     assert second.returncode == 0, second.stdout + second.stderr
     assert out_a.read_bytes() == out_b.read_bytes()
     assert out_a.read_bytes() == (
-        repo_root / "singlefile" / "notebooklm_bare.py"
+        repo_root / "singlefile" / "zero_notebooklm.py"
     ).read_bytes()
     assert out_a.read_text(encoding="utf-8").startswith("#!/usr/bin/env python3\n")

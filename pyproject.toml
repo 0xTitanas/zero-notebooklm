@@ -31,10 +31,10 @@ Security = "https://github.com/0xTitanas/zero-notebooklm/security/advisories/new
 
 [project.scripts]
 notebooklm = "notebooklm.cli:console"
-notebooklm-bare = "notebooklm.cli:console"
+zero-notebooklm = "notebooklm.cli:console"
 
 [tool.setuptools]
-packages = ["notebooklm", "notebooklm.rpc", "notebooklm_bare"]
+packages = ["notebooklm", "notebooklm.rpc"]
 include-package-data = false
 
 [tool.setuptools.package-data]

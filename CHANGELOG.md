@@ -6,7 +6,18 @@ This project follows the spirit of [Keep a Changelog](https://keepachangelog.com
 
 ## [Unreleased]
 
-No changes yet.
+### Changed
+
+- Replaced the `notebooklm-bare` launcher with the branded `zero-notebooklm`
+  launcher and renamed the single-file artifact to `singlefile/zero_notebooklm.py`.
+- Removed the obsolete root help scaffold and compatibility-shim package; the
+  installed distribution now contains only the upstream-compatible `notebooklm`
+  import package.
+
+### Added
+
+- Integration guide covering installation, Windows Chrome/Edge authentication,
+  CLI subprocess use, the Python API, and the vendored single-file CLI.
 
 ## [0.7.2-alpha.1] - 2026-07-22
 

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import importlib
 import json
+import urllib.parse
 
 
 PARITY_CATEGORIES = ("cli", "api", "auth", "rpc", "offline", "self-test")
@@ -52,20 +53,23 @@ def test_parity_runtime_rpc_decode_matches_fixture_reference(repo_root, monkeypa
     assert payloads[0][0][0][0] == "fake-notebook-0001"
 
 
-def test_notebooklm_bare_rpc_alias_decodes_and_reencodes_sanitized_fixtures(
+def test_zero_notebooklm_rpc_decodes_and_reencodes_sanitized_fixtures(
     repo_root, monkeypatch
 ):
     monkeypatch.syspath_prepend(str(repo_root))
-    rpc = importlib.import_module("notebooklm_bare.rpc")
+    rpc = importlib.import_module("notebooklm.rpc.decoder")
     fixtures = repo_root / "compat" / "rpc_fixtures"
 
     response = (fixtures / "chat_ask.streaming.response.txt").read_text(
         encoding="utf-8"
     )
-    decoded_response = rpc.decode_response(response)
+    decoded_response = rpc.decode_batchexecute_response(response)
     assert decoded_response and isinstance(decoded_response[0], list)
 
     for name in ("list_notebooks.request.txt", "chat_ask.request.txt"):
         body = (fixtures / name).read_text(encoding="utf-8")
-        decoded_request = rpc.decode_request(body)
-        assert rpc.encode_request(decoded_request) == body
+        decoded_request = rpc.decode_batchexecute_request(body)
+        encoded = "f.req=" + urllib.parse.quote(
+            json.dumps(decoded_request, separators=(",", ":")), safe=""
+        ) + "&at=SYNTHETIC_XSRF_TOKEN&\n"
+        assert encoded == body
