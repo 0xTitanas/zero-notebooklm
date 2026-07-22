@@ -1,0 +1,15 @@
+Usage: notebooklm research status [OPTIONS]
+
+  Check research status for the current notebook.
+
+  Shows whether research is in progress, completed, or not running.
+
+  Examples:
+    notebooklm research status
+    notebooklm research status --json
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

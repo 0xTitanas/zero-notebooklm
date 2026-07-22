@@ -1,0 +1,37 @@
+Usage: notebooklm generate report [OPTIONS] [DESCRIPTION]
+
+  Generate a report (briefing doc, study guide, blog post, or custom).
+
+  Use --json for machine-readable output.
+
+  Examples:
+    notebooklm generate report                              # briefing-doc (default)
+    notebooklm generate report --format study-guide         # study guide
+    notebooklm generate report -s src_001 -s src_002        # from specific sources
+    notebooklm generate report "Create a white paper..."    # custom report
+    notebooklm generate report --format briefing-doc --append "Focus on AI trends"
+    notebooklm generate report --format study-guide --append "Target audience: beginners"
+
+Options:
+  --prompt-file PROMPT_FILE       Read prompt/query text from a file (or '-'
+                                  for stdin) instead of the positional
+                                  argument
+  --format [briefing-doc|study-guide|blog-post|custom]
+                                  Report format (default: briefing-doc)
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  -s, --source TEXT               Limit to specific source IDs
+  --language TEXT                 Output language (default: --language >
+                                  NOTEBOOKLM_HL env > config > 'en')
+  --append TEXT                   Append extra instructions to the built-in
+                                  prompt for non-custom formats. Has no effect
+                                  with --format custom.
+  --wait / --no-wait              Wait for completion (default: no-wait)
+  --timeout INTEGER               Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE        Seconds between status checks (default: 2)
+                                  [x>=1]
+  --retry INTEGER RANGE           Retry N times with exponential backoff on
+                                  rate limit  [x>=0]
+  --json                          Output as JSON
+  --help                          Show this message and exit.

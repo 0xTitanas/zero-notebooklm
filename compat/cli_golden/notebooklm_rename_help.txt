@@ -1,0 +1,11 @@
+Usage: notebooklm rename [OPTIONS] NEW_TITLE
+
+  Rename a notebook.
+
+  NOTEBOOK_ID supports partial matching (e.g., 'abc' matches 'abc123...').
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

@@ -1,0 +1,37 @@
+Usage: notebooklm source add [OPTIONS] CONTENT
+
+  Add a source to a notebook.
+
+  Source type is auto-detected (URL/file/youtube/text) — see ``--type`` to
+  override. A path-shaped argument that does not exist on disk is still
+  ingested as inline text but a stderr warning is emitted; pass ``--type
+  text`` to suppress.
+
+Options:
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  --type [url|text|file|youtube]  Source type (auto-detected if not specified)
+  --title TEXT                    Custom title for text and uploaded-file
+                                  sources
+  --mime-type TEXT                MIME type for uploaded file sources.
+                                  Overrides filename-extension inference.
+  --request-timeout, --timeout FLOAT
+                                  HTTP request timeout in seconds (default:
+                                  30, from the library). Increase when adding
+                                  slow URLs or large files that exceed the
+                                  default. (--timeout is a back-compat alias.)
+  --follow-symlinks               Follow symbolic links when uploading a file.
+                                  By default, symlinks are rejected so a
+                                  workspace symlink cannot silently exfiltrate
+                                  the file it points at (e.g.
+                                  ~/Downloads/foo.pdf -> /etc/passwd).
+  --allow-internal                Allow URLs that point at internal hosts
+                                  (``localhost``, ``127.0.0.1``, private IP
+                                  ranges, link-local). By default these are
+                                  rejected to prevent the CLI from being used
+                                  as an SSRF trampoline. Non-http(s) schemes
+                                  (``file://``, ``ftp://``, ...) are rejected
+                                  even with this flag.
+  --json                          Output as JSON
+  --help                          Show this message and exit.

@@ -1,0 +1,32 @@
+Usage: notebooklm artifact [OPTIONS] COMMAND [ARGS]...
+
+  Artifact management commands.
+
+  Commands:
+    list         List all artifacts (or by type)
+    get          Get artifact details
+    rename       Rename an artifact
+    delete       Delete an artifact
+    export       Export to Google Docs/Sheets
+    poll         Poll generation status (single check)
+    wait         Wait for generation to complete (blocking)
+    retry        Retry a failed artifact in place
+    suggestions  Get AI-suggested report topics
+
+  Partial ID Support:
+    ARTIFACT_ID arguments support partial matching. Instead of typing the full
+    UUID, you can use a prefix (e.g., 'abc' matches 'abc123def456...').
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  delete       Delete an artifact.
+  export       Export artifact to Google Docs/Sheets.
+  get          Get artifact details.
+  list         List artifacts in a notebook.
+  poll         Single non-blocking generation status check.
+  rename       Rename an artifact.
+  retry        Retry a failed Studio artifact in place (the UI "Retry"...
+  suggestions  Get AI-suggested report topics based on notebook content.
+  wait         Block until artifact generation finishes (or times out).

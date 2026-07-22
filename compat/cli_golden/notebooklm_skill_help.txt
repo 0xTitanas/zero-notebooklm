@@ -1,0 +1,12 @@
+Usage: notebooklm skill [OPTIONS] COMMAND [ARGS]...
+
+  Manage NotebookLM agent skill integration.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  install    Install or update the NotebookLM skill for supported agent...
+  show       Display the packaged skill content or an installed target.
+  status     Check installed skill targets and version info.
+  uninstall  Remove the NotebookLM skill from supported agent directories.

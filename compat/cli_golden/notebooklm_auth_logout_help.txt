@@ -1,0 +1,15 @@
+Usage: notebooklm auth logout [OPTIONS]
+
+  Log out by clearing saved authentication.
+
+  Removes both the saved cookie file (storage_state.json) and the cached
+  browser profile. After logout, run 'notebooklm login' to authenticate with a
+  different Google account.
+
+  Examples:
+    notebooklm auth logout                       # Clear auth for active profile
+    notebooklm -p work auth logout               # Clear auth for 'work' profile
+    notebooklm --storage A.json auth logout      # Clear the override auth file
+
+Options:
+  --help  Show this message and exit.

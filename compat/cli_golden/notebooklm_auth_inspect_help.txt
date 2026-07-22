@@ -1,0 +1,38 @@
+Usage: notebooklm auth inspect [OPTIONS]
+
+  List Google accounts visible to a browser's cookie store.
+
+  Read-only — never writes to disk. Use this before ``notebooklm login
+  --browser-cookies <browser> --account <email>`` to see which account emails
+  are available.
+
+  For Chromium-family browsers (chrome, brave, edge, …) with multiple user-
+  profiles, accounts from every populated profile are surfaced and deduped by
+  email. Pass ``-v`` to see the originating user-profile per account, or
+  ``--json`` for a structured ``browser_profile`` field. Use
+  ``chrome::<profile-name-or-directory>`` to inspect only one Chromium user-
+  profile.
+
+  Examples:
+    notebooklm auth inspect --browser chrome
+    notebooklm auth inspect --browser 'chrome::Profile 1'
+    notebooklm auth inspect --browser chrome -v
+    notebooklm auth inspect --browser firefox --json
+
+Options:
+  --browser TEXT          Browser to read cookies from (chrome, firefox,
+                          brave, edge, safari, arc, ...). 'auto' picks the
+                          first one rookiepy can read. Use 'chrome::<profile>'
+                          for one Chromium profile or 'firefox::<container>'
+                          for one Firefox container. Requires: pip install
+                          'notebooklm-py[cookies]'
+  --include-domains TEXT  Opt in to enumerating accounts via sibling-product
+                          cookies. Same syntax as 'notebooklm login --include-
+                          domains'. By default this command only consults
+                          required Google auth cookies, which is sufficient
+                          for account discovery on every tested path.
+  --json                  Output as JSON
+  -v, --verbose           Also show which browser user-profile each account's
+                          cookies came from. Useful for Chromium-family
+                          browsers with multiple user-profiles.
+  --help                  Show this message and exit.

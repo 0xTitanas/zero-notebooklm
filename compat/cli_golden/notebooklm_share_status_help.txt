@@ -1,0 +1,12 @@
+Usage: notebooklm share status [OPTIONS]
+
+  Show sharing status and shared users.
+
+  Displays whether the notebook is public, the share URL if enabled, and a
+  list of users who have access with their permission levels.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

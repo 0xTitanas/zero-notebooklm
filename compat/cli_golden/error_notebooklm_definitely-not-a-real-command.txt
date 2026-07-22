@@ -1,0 +1,4 @@
+Usage: notebooklm [OPTIONS] COMMAND [ARGS]...
+Try 'notebooklm --help' for help.
+
+Error: No such command 'definitely-not-a-real-command'.

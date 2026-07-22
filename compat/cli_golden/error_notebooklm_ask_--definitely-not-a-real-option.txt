@@ -1,0 +1,4 @@
+Usage: notebooklm ask [OPTIONS] [QUESTION]
+Try 'notebooklm ask --help' for help.
+
+Error: No such option '--definitely-not-a-real-option'.

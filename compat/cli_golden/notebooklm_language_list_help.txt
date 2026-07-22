@@ -1,0 +1,9 @@
+Usage: notebooklm language list [OPTIONS]
+
+  List all supported language codes.
+
+  Shows language codes with their native names for easy identification.
+
+Options:
+  --json  Output as JSON
+  --help  Show this message and exit.

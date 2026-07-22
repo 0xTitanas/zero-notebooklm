@@ -1,0 +1,20 @@
+Usage: notebooklm auth check [OPTIONS]
+
+  Check authentication status and diagnose issues.
+
+  Validates that authentication is properly configured by checking: - Storage
+  file exists and is readable - JSON structure is valid - Required cookies
+  (SID + ``__Secure-1PSIDTS``) are present - Cookie domains are correct
+
+  Use --test to also verify tokens can be fetched from NotebookLM (requires
+  network access).
+
+  Examples:
+    notebooklm auth check           # Quick local validation
+    notebooklm auth check --test    # Full validation with network test
+    notebooklm auth check --json    # Machine-readable output
+
+Options:
+  --test  Test token fetch (makes network request)
+  --json  Output as JSON
+  --help  Show this message and exit.

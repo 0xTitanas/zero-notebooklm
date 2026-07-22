@@ -1,0 +1,16 @@
+Usage: notebooklm doctor [OPTIONS]
+
+  Check profile setup, auth status, and migration.
+
+  Diagnoses common issues with profiles, authentication, and directory
+  structure. Use --fix to automatically repair detected problems.
+
+  Examples:
+    notebooklm doctor           # Check for issues
+    notebooklm doctor --fix     # Fix detected issues
+    notebooklm doctor --json    # Machine-readable output
+
+Options:
+  --fix   Attempt to fix detected issues
+  --json  Output as JSON
+  --help  Show this message and exit.

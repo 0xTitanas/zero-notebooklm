@@ -1,0 +1,41 @@
+[build-system]
+requires = []
+backend-path = ["scripts"]
+build-backend = "zero_build"
+
+[project]
+name = "zero-notebooklm"
+version = "0.7.2"
+description = "Stdlib-only NotebookLM client and CLI with notebooklm-py 0.7.2 compatibility targets."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["notebooklm", "stdlib", "cli", "google", "automation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Repository = "https://github.com/0xTitanas/zero-notebooklm"
+Security = "https://github.com/0xTitanas/zero-notebooklm/security/advisories/new"
+
+[project.scripts]
+notebooklm = "notebooklm.cli:console"
+notebooklm-bare = "notebooklm.cli:console"
+
+[tool.setuptools]
+packages = ["notebooklm", "notebooklm.rpc", "notebooklm_bare"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+notebooklm = ["data/*", "data/rpc_fixtures/*"]

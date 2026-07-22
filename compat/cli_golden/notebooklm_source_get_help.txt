@@ -1,0 +1,9 @@
+Usage: notebooklm source get [OPTIONS] SOURCE_ID
+
+  Get source details.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

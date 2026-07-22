@@ -1,0 +1,3 @@
+)]}'
+
+[["wrb.fr","list-sources-rpc","[[\"fake-source-0001\",\"Synthetic Web Source\",\"https://example.test/notebooklm-bare/source\",1,1750000100,2],[\"fake-source-0002\",\"Synthetic Pasted Text Source\",null,2,1750000200,2]]",null,null,null,"generic"]]

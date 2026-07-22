@@ -1,0 +1,18 @@
+Usage: notebooklm language [OPTIONS] COMMAND [ARGS]...
+
+  Manage output language for artifact generation.
+
+  ⚠️  Language is a GLOBAL setting that affects all notebooks in your account.
+
+  Examples:
+    notebooklm language list           # Show all supported languages
+    notebooklm language get            # Show current language
+    notebooklm language set zh_Hans    # Set to Simplified Chinese
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  get   Get current language setting.
+  list  List all supported language codes.
+  set   Set default language for artifact generation.

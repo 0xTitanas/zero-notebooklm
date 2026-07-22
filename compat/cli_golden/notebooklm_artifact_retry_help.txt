@@ -1,0 +1,28 @@
+Usage: notebooklm artifact retry [OPTIONS] ARTIFACT_ID
+
+  Retry a failed Studio artifact in place (the UI "Retry" action).
+
+  Re-runs generation for an already-failed artifact WITHOUT deleting it. The
+  same ARTIFACT_ID is preserved, so `poll`/`wait` keep working against it.
+  ARTIFACT_ID can be a full UUID or a unique prefix (e.g. `abc` matches
+  `abc123def...`); unlike `poll`, it is resolved against `artifact list`, so
+  the artifact must already appear there (a failed artifact always does).
+
+  A synchronous refusal (rate limit / quota / not-retryable) exits non-zero
+  with a typed error rather than reporting a started task. Pass `--wait` to
+  block until the retried generation reaches a terminal state.
+
+  Examples:
+    # Kick off an in-place retry and return immediately:
+    notebooklm artifact retry abc123 -n nb_456
+    # Retry and block until it completes (or fails again):
+    notebooklm artifact retry abc123 -n nb_456 --wait
+
+Options:
+  -n, --notebook TEXT       Notebook ID (uses current if not set). Supports
+                            partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --wait                    Block until the retried generation finishes
+  --timeout INTEGER         Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE  Seconds between status checks (default: 2)  [x>=1]
+  --json                    Output as JSON
+  --help                    Show this message and exit.

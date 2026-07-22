@@ -1,0 +1,6 @@
+Usage: notebooklm clear [OPTIONS]
+
+  Clear current notebook context.
+
+Options:
+  --help  Show this message and exit.

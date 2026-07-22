@@ -1,0 +1,62 @@
+Usage: notebooklm [OPTIONS] COMMAND [ARGS]...
+
+  NotebookLM CLI.
+
+  Quick start:
+    notebooklm login              # Authenticate first
+    notebooklm list               # List your notebooks
+    notebooklm create "My Notes"  # Create a notebook
+    notebooklm ask "Hi"           # Ask the current notebook a question
+
+  Tip: Use partial notebook IDs (e.g., 'notebooklm use abc' matches 'abc123...')
+
+Options:
+  --version           Show the version and exit.
+  --storage PATH      Path to storage_state.json (default:
+                      ~/.notebooklm/profiles/<profile>/storage_state.json)
+  -p, --profile TEXT  Profile name (default: from config or 'default'). Use
+                      'notebooklm profile list' to see profiles.
+  -v, --verbose       Increase verbosity (-v for INFO, -vv for DEBUG)
+  --quiet             Suppress status output and INFO/WARN log records (only
+                      errors survive). Mutually exclusive with -v/-vv.
+  --help              Show this message and exit.
+
+Session:
+  login       Log in to NotebookLM via browser.
+  use         Set the current notebook context.
+  status      Show current context (active notebook and conversation).
+  clear       Clear current notebook context.
+  doctor      Check profile setup, auth status, and migration.
+  auth        Authentication management commands.
+  completion  Print the shell completion script for SHELL.
+
+Notebooks:
+  list      List all notebooks.
+  create    Create a new notebook.
+  delete    Delete a notebook.
+  rename    Rename a notebook.
+  summary   Get notebook summary with AI-generated insights.
+  metadata  Export notebook metadata with sources list.
+
+Chat:
+  ask        Ask a notebook a question.
+  configure  Configure chat persona and response settings.
+  history    Get conversation history or save it as a note.
+
+Command Groups (use: notebooklm <group> <command>):
+  source    add, add-drive, add-research, clean, delete, delete-by-title,
+            fulltext, get, guide, list, refresh, rename, stale, wait
+  artifact  delete, export, get, list, poll, rename, retry, suggestions, wait
+  note      create, delete, get, list, rename, save
+  share     add, public, remove, status, update, view-level
+  research  status, wait
+  profile   create, delete, list, rename, switch
+  agent     show
+  skill     install, show, status, uninstall
+  language  get, list, set
+
+Artifact Actions (use: notebooklm <action> <type>):
+  generate  audio, cinematic-video, data-table, flashcards, infographic, mind-
+            map, quiz, report, revise-slide, slide-deck, video
+  download  audio, cinematic-video, data-table, flashcards, infographic, mind-
+            map, quiz, report, slide-deck, video

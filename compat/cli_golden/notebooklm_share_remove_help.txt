@@ -1,0 +1,14 @@
+Usage: notebooklm share remove [OPTIONS] EMAIL
+
+  Remove a user's access to the notebook.
+
+  Examples:
+    notebooklm share remove user@example.com
+    notebooklm share remove user@example.com -y  # Skip confirmation
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  -y, --yes            Skip confirmation
+  --json               Output as JSON
+  --help               Show this message and exit.

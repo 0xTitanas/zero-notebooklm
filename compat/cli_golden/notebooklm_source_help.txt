@@ -1,0 +1,41 @@
+Usage: notebooklm source [OPTIONS] COMMAND [ARGS]...
+
+  Source management commands.
+
+  Commands:
+    list             List sources in a notebook
+    add              Add a source (url, text, file, youtube)
+    add-drive        Add a Google Drive document
+    add-research     Search web/drive and add sources from results
+    get              Get source details
+    fulltext         Get full indexed text content
+    guide            Get AI-generated source summary and keywords
+    stale            Check if source needs refresh
+    wait             Wait for a source to finish processing
+    clean            Remove duplicate, error, and access-blocked sources
+    delete           Delete a source
+    delete-by-title  Delete a source by exact title
+    rename           Rename a source
+    refresh          Refresh a URL/Drive source
+
+  Partial ID Support: SOURCE_ID arguments support partial-prefix matching
+  (e.g. 'abc' matches 'abc123def456...').
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  add              Add a source to a notebook.
+  add-drive        Add a Google Drive document as a source.
+  add-research     Search web or drive and add sources from results.
+  clean            Automatically remove duplicate, error, and...
+  delete           Delete a source.
+  delete-by-title  Delete a source by exact title.
+  fulltext         Get full content of a source.
+  get              Get source details.
+  guide            Get AI-generated source summary and keywords.
+  list             List all sources in a notebook.
+  refresh          Refresh a URL/Drive source.
+  rename           Rename a source.
+  stale            Check if a URL/Drive source needs refresh.
+  wait             Wait for a source to finish processing.

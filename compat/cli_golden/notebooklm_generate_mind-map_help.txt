@@ -1,0 +1,32 @@
+Usage: notebooklm generate mind-map [OPTIONS]
+
+  Generate mind map.
+
+  Two kinds (issue #1256):
+    --kind note-backed   JSON tree, synchronous (default)
+    --kind interactive   interactive studio artifact, polled to completion
+  Both export the same JSON node tree via 'download mind-map'.
+
+  Heads up: the default --kind will switch to 'interactive' in v0.8.0
+  (NotebookLM's web app already creates interactive maps). Pass --kind
+  explicitly to pin your choice. --instructions applies to note-backed only.
+
+  Use --json for machine-readable output.
+
+Options:
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  -s, --source TEXT               Limit to specific source IDs
+  --language TEXT                 Output language (default: --language >
+                                  NOTEBOOKLM_HL env > config > 'en')
+  --instructions TEXT             Custom instructions for the mind map (note-
+                                  backed only)
+  --kind [interactive|note-backed]
+                                  Which mind map to generate: 'interactive'
+                                  (studio artifact, polled to completion) or
+                                  'note-backed' (JSON tree, synchronous). The
+                                  default becomes 'interactive' in v0.8.0.
+                                  [default: note-backed]
+  --json                          Output as JSON
+  --help                          Show this message and exit.

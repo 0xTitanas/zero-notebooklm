@@ -1,0 +1,22 @@
+Usage: notebooklm research [OPTIONS] COMMAND [ARGS]...
+
+  Research management commands.
+
+  Commands:
+    status    Check research status (non-blocking)
+    wait      Wait for research to complete (blocking)
+
+  Use 'source add-research' to start a research session.
+  These commands are for monitoring ongoing research.
+
+  Example workflow:
+    notebooklm source add-research "AI" --mode deep --no-wait
+    notebooklm research status
+    notebooklm research wait --import-all
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  status  Check research status for the current notebook.
+  wait    Wait for research to complete.

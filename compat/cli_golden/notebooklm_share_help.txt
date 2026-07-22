@@ -1,0 +1,28 @@
+Usage: notebooklm share [OPTIONS] COMMAND [ARGS]...
+
+  Notebook sharing commands.
+
+  Commands:
+    status       Show sharing status and shared users
+    public       Enable or disable public link sharing
+    view-level   Set what viewers can access (full notebook or chat only)
+    add          Share with a user (editor or viewer)
+    update       Update user's permission level
+    remove       Remove user's access
+
+  Examples:
+    notebooklm share status              # Show current sharing
+    notebooklm share public --enable     # Make notebook public
+    notebooklm share add user@example.com --permission viewer
+    notebooklm share remove user@example.com
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  add         Share notebook with a user.
+  public      Enable or disable public link sharing.
+  remove      Remove a user's access to the notebook.
+  status      Show sharing status and shared users.
+  update      Update a user's permission level.
+  view-level  Set what viewers can access.

@@ -1,0 +1,1478 @@
+{
+  "browser_cookie_import_matrix": [
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "brave",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "edge",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "firefox",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "opera",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "opera-gx",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "safari",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "safari",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "safari",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "safari",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "safari",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "macOS",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass",
+      "path": "refresh"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "import"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "profile-select"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "account-select"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "inspect"
+    },
+    {
+      "browser": "vivaldi",
+      "differential_basis": "upstream rookiepy-backed cookie import vs bare",
+      "matrix": "browser_cookie_import",
+      "os": "Windows-11",
+      "parity_state": "pass",
+      "path": "refresh"
+    }
+  ],
+  "closure_states": [
+    "pass",
+    "open",
+    "blocked"
+  ],
+  "counts": {
+    "browser_cookie_import_rows": 101,
+    "cookie_browsers": [
+      "arc",
+      "brave",
+      "chrome",
+      "chromium",
+      "edge",
+      "firefox",
+      "opera",
+      "opera-gx",
+      "safari",
+      "vivaldi"
+    ],
+    "interactive_login_rows": 45,
+    "os_rows": [
+      "macOS",
+      "Ubuntu-LTS-Linux",
+      "Windows-11"
+    ]
+  },
+  "generated_at": "2026-06-23T01:52:41+00:00",
+  "interactive_login_matrix": [
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chromium",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "msedge",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "macOS",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "Ubuntu-LTS-Linux",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "login",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "refresh",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "status",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "logout",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    },
+    {
+      "browser": "chrome",
+      "differential_basis": "upstream interactive-login behavior vs bare",
+      "flow": "doctor",
+      "matrix": "interactive_login",
+      "os": "Windows-11",
+      "parity_state": "pass"
+    }
+  ],
+  "note": "Two separate matrices per the plan: interactive login is fixed to the upstream chromium|chrome|msedge set; browser-cookie import is the generated selector matrix after explicit profile exclusions. Included rows retain evidence-backed parity states; excluded rows are outside the claimed compatibility profile and are never counted as passes.",
+  "profile_exclusions": [
+    {
+      "browser": "arc",
+      "os": "macOS",
+      "reason": "unsupported_by_project_scope"
+    },
+    {
+      "browser": "arc",
+      "os": "Ubuntu-LTS-Linux",
+      "reason": "unsupported_by_project_scope"
+    },
+    {
+      "browser": "arc",
+      "os": "Windows-11",
+      "reason": "unsupported_by_project_scope"
+    },
+    {
+      "browser": "safari",
+      "os": "Ubuntu-LTS-Linux",
+      "reason": "unsupported_by_project_scope"
+    },
+    {
+      "browser": "safari",
+      "os": "Windows-11",
+      "reason": "unsupported_by_project_scope"
+    },
+    {
+      "browser": "opera-gx",
+      "os": "Ubuntu-LTS-Linux",
+      "path": "import",
+      "reason": "pinned_upstream_rookiepy_0_5_6_opera_gx_linux_generic_reader_unsupported"
+    },
+    {
+      "browser": "opera-gx",
+      "os": "Ubuntu-LTS-Linux",
+      "path": "account-select",
+      "reason": "pinned_upstream_rookiepy_0_5_6_opera_gx_linux_generic_reader_unsupported"
+    },
+    {
+      "browser": "opera-gx",
+      "os": "Ubuntu-LTS-Linux",
+      "path": "inspect",
+      "reason": "pinned_upstream_rookiepy_0_5_6_opera_gx_linux_generic_reader_unsupported"
+    },
+    {
+      "browser": "opera-gx",
+      "os": "Ubuntu-LTS-Linux",
+      "path": "refresh",
+      "reason": "pinned_upstream_rookiepy_0_5_6_opera_gx_linux_generic_reader_unsupported"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows-11",
+      "path": "import",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows-11",
+      "path": "profile-select",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows-11",
+      "path": "account-select",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows-11",
+      "path": "inspect",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows-11",
+      "path": "refresh",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows-11",
+      "path": "import",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows-11",
+      "path": "profile-select",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows-11",
+      "path": "account-select",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows-11",
+      "path": "inspect",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows-11",
+      "path": "refresh",
+      "reason": "pinned_upstream_notebooklm_py_0_7_2_rookiepy_0_5_6_modern_windows_chromium_profile_unsupported"
+    },
+    {
+      "browser": "chromium",
+      "os": "macOS",
+      "path": "import",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "chromium",
+      "os": "macOS",
+      "path": "profile-select",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "chromium",
+      "os": "macOS",
+      "path": "account-select",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "chromium",
+      "os": "macOS",
+      "path": "inspect",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "chromium",
+      "os": "macOS",
+      "path": "refresh",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "vivaldi",
+      "os": "macOS",
+      "path": "import",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "vivaldi",
+      "os": "macOS",
+      "path": "profile-select",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "vivaldi",
+      "os": "macOS",
+      "path": "account-select",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "vivaldi",
+      "os": "macOS",
+      "path": "inspect",
+      "reason": "deferred_to_future_release"
+    },
+    {
+      "browser": "vivaldi",
+      "os": "macOS",
+      "path": "refresh",
+      "reason": "deferred_to_future_release"
+    }
+  ],
+  "provenance": {
+    "download_command": "pip download --no-deps --only-binary=:all: notebooklm-py==0.7.2",
+    "isolation": "disposable venv; no global install; base deps only (extras imported lazily by upstream, so unneeded for surface lock).",
+    "source_commit": "915b5321e1c1f411e23bd8265517be8740749e56",
+    "source_commit_remote_check": {
+      "checked": true,
+      "checked_at": "2026-06-23T01:52:24+00:00",
+      "exists": true,
+      "http_status": 200,
+      "returned_sha": "915b5321e1c1f411e23bd8265517be8740749e56"
+    },
+    "source_repo": "teng-lin/notebooklm-py",
+    "wheel_filename": "notebooklm_py-0.7.2-py3-none-any.whl",
+    "wheel_sha256": "d850cfea2494732bc5f153406a9637c3ee5fe931d87901d101c026df2a6ecf65",
+    "wheel_sha256_expected": "d850cfea2494732bc5f153406a9637c3ee5fe931d87901d101c026df2a6ecf65",
+    "wheel_sha256_verified": true
+  },
+  "schema_version": "phase0/1",
+  "sources_from_upstream": {
+    "auth_session_profile_commands": [
+      "notebooklm auth",
+      "notebooklm auth check",
+      "notebooklm auth inspect",
+      "notebooklm auth logout",
+      "notebooklm auth refresh",
+      "notebooklm doctor",
+      "notebooklm login",
+      "notebooklm profile",
+      "notebooklm profile create",
+      "notebooklm profile delete",
+      "notebooklm profile list",
+      "notebooklm profile rename",
+      "notebooklm profile switch",
+      "notebooklm research status",
+      "notebooklm share status",
+      "notebooklm skill status",
+      "notebooklm status"
+    ],
+    "chromium_family_cookie_browsers": [
+      "arc",
+      "brave",
+      "chrome",
+      "chromium",
+      "edge",
+      "opera",
+      "opera-gx",
+      "vivaldi"
+    ],
+    "firefox_cookie_support": true,
+    "interactive_login_browsers": [
+      "chromium",
+      "msedge",
+      "chrome"
+    ],
+    "login_command_params": [
+      "account_email",
+      "all_accounts",
+      "browser",
+      "browser_cookies",
+      "fresh",
+      "include_domains_raw",
+      "profile_name",
+      "storage",
+      "update"
+    ],
+    "os_cookie_store_path_keys": {
+      "linux": [
+        "brave",
+        "chrome",
+        "chromium",
+        "edge",
+        "opera",
+        "opera-gx",
+        "vivaldi"
+      ],
+      "macos": [
+        "arc",
+        "brave",
+        "chrome",
+        "chromium",
+        "edge",
+        "opera",
+        "opera-gx",
+        "vivaldi"
+      ],
+      "windows": [
+        "brave",
+        "chrome",
+        "chromium",
+        "edge",
+        "opera",
+        "opera-gx",
+        "vivaldi"
+      ]
+    },
+    "rookiepy_backends_referenced": [
+      "any_browser",
+      "chrome",
+      "chromium_based",
+      "firefox",
+      "load"
+    ],
+    "safari_cookie_support": true
+  },
+  "target": "notebooklm-py==0.7.2"
+}

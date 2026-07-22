@@ -1,0 +1,12 @@
+Usage: notebooklm source guide [OPTIONS] SOURCE_ID
+
+  Get AI-generated source summary and keywords.
+
+  Shows the "Source Guide" — an AI-generated overview with a summary,
+  highlighted keywords, and topic tags.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

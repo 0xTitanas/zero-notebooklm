@@ -1,0 +1,2276 @@
+{
+  "schema_version": "cli_api_row_evidence/1",
+  "target": "notebooklm-py==0.7.2",
+  "description": "Phase 19 CLI/API promoted-row evidence mapping. All 90 CLI and 9 API rows are promoted to pass via committed offline direct differential evidence (scripts/cli_api_direct_differential.py). Selected-profile auth rows are closed; RPC rows are handled by Phase 20 fixture-backed evidence. exact_one_to_one_claim_ready remains false because explicit scope exclusions remain; release_candidate_ready remains false.",
+  "exact_one_to_one_claim_ready": false,
+  "category_promotion": {
+    "cli": true,
+    "api": true
+  },
+  "cli_mapping_count": 90,
+  "api_mapping_count": 9,
+  "api_scenario_mapping_count": 108,
+  "cli_mappings": [
+    {
+      "row_id": "cli.notebooklm.agent.show",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm agent show"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.delete",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact delete"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.export",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact export"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.get",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact get"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.list",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact list"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.poll",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact poll"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.rename",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact rename"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.retry",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact retry"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.suggestions",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact suggestions"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.artifact.wait",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm artifact wait"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.ask",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm ask"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.auth.check",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm auth check"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.auth.inspect",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm auth inspect"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.auth.logout",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm auth logout"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.auth.refresh",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm auth refresh"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.clear",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm clear"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.completion",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm completion"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.configure",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm configure"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.create",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm create"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.delete",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm delete"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.doctor",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm doctor"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.audio",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download audio"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.cinematic-video",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download cinematic-video"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.data-table",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download data-table"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.flashcards",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download flashcards"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.infographic",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download infographic"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.mind-map",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download mind-map"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.quiz",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download quiz"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.report",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download report"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.slide-deck",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download slide-deck"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.download.video",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm download video"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.audio",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate audio"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.cinematic-video",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate cinematic-video"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.data-table",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate data-table"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.flashcards",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate flashcards"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.infographic",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate infographic"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.mind-map",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate mind-map"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.quiz",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate quiz"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.report",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate report"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.revise-slide",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate revise-slide"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.slide-deck",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate slide-deck"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.generate.video",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm generate video"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.history",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm history"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.language.get",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm language get"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.language.list",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm language list"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.language.set",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm language set"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.list",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm list"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.login",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm login"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.metadata",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm metadata"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.note.create",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm note create"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.note.delete",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm note delete"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.note.get",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm note get"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.note.list",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm note list"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.note.rename",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm note rename"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.note.save",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm note save"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.profile.create",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm profile create"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.profile.delete",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm profile delete"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.profile.list",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm profile list"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.profile.rename",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm profile rename"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.profile.switch",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm profile switch"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.rename",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm rename"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.research.status",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm research status"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.research.wait",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm research wait"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.share.add",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm share add"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.share.public",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm share public"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.share.remove",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm share remove"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.share.status",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm share status"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.share.update",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm share update"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.share.view-level",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm share view-level"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.skill.install",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm skill install"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.skill.show",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm skill show"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.skill.status",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm skill status"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.skill.uninstall",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm skill uninstall"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.add",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source add"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.add-drive",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source add-drive"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.add-research",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source add-research"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.clean",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source clean"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.delete",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source delete"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.delete-by-title",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source delete-by-title"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.fulltext",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source fulltext"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.get",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source get"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.guide",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source guide"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.list",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source list"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.refresh",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source refresh"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.rename",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source rename"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.stale",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source stale"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.source.wait",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm source wait"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.status",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm status"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.summary",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm summary"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "cli.notebooklm.use",
+      "category": "cli",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooklm use"
+      ],
+      "comparator": "cli.help_stdout_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "help_formatting",
+        "terminal_width",
+        "platform_path",
+        "stdout_stderr_exit_code"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare CLI --help output against committed upstream golden from compat/cli_golden/; 103/103 help pages match; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    }
+  ],
+  "api_mappings": [
+    {
+      "row_id": "api.client.artifacts",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "artifacts.delete",
+        "artifacts.download_audio",
+        "artifacts.download_data_table",
+        "artifacts.download_flashcards",
+        "artifacts.download_infographic",
+        "artifacts.download_mind_map",
+        "artifacts.download_quiz",
+        "artifacts.download_report",
+        "artifacts.download_slide_deck",
+        "artifacts.download_video",
+        "artifacts.export",
+        "artifacts.export_data_table",
+        "artifacts.export_report",
+        "artifacts.generate_audio",
+        "artifacts.generate_cinematic_video",
+        "artifacts.generate_data_table",
+        "artifacts.generate_flashcards",
+        "artifacts.generate_infographic",
+        "artifacts.generate_mind_map",
+        "artifacts.generate_quiz",
+        "artifacts.generate_report",
+        "artifacts.generate_slide_deck",
+        "artifacts.generate_study_guide",
+        "artifacts.generate_video",
+        "artifacts.get",
+        "artifacts.get_or_none",
+        "artifacts.list",
+        "artifacts.list_audio",
+        "artifacts.list_data_tables",
+        "artifacts.list_flashcards",
+        "artifacts.list_infographics",
+        "artifacts.list_quizzes",
+        "artifacts.list_reports",
+        "artifacts.list_slide_decks",
+        "artifacts.list_video",
+        "artifacts.poll_status",
+        "artifacts.rename",
+        "artifacts.retry_failed",
+        "artifacts.revise_slide",
+        "artifacts.suggest_reports",
+        "artifacts.wait_for_completion"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.chat",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "chat.ask",
+        "chat.configure",
+        "chat.delete_conversation",
+        "chat.get_conversation_id",
+        "chat.get_conversation_turns",
+        "chat.get_history",
+        "chat.save_answer_as_note",
+        "chat.set_mode"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.mind_maps",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "mind_maps.delete",
+        "mind_maps.generate",
+        "mind_maps.get",
+        "mind_maps.get_or_none",
+        "mind_maps.get_tree",
+        "mind_maps.list",
+        "mind_maps.rename"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.notebooks",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notebooks.create",
+        "notebooks.delete",
+        "notebooks.get",
+        "notebooks.get_description",
+        "notebooks.get_metadata",
+        "notebooks.get_or_none",
+        "notebooks.get_raw",
+        "notebooks.get_source_ids",
+        "notebooks.get_summary",
+        "notebooks.list",
+        "notebooks.remove_from_recent",
+        "notebooks.rename",
+        "notebooks.share"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.notes",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "notes.create",
+        "notes.delete",
+        "notes.delete_mind_map",
+        "notes.get",
+        "notes.get_or_none",
+        "notes.list",
+        "notes.list_mind_maps",
+        "notes.update"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.research",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "research.import_sources",
+        "research.import_sources_with_verification",
+        "research.poll",
+        "research.start",
+        "research.wait_for_completion"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.settings",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "settings.get_account_limits",
+        "settings.get_account_tier",
+        "settings.get_output_language",
+        "settings.set_output_language"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.sharing",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "sharing.add_user",
+        "sharing.get_status",
+        "sharing.remove_user",
+        "sharing.set_public",
+        "sharing.set_view_level",
+        "sharing.update_user"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    },
+    {
+      "row_id": "api.client.sources",
+      "category": "api",
+      "status": "pass",
+      "row_status": "pass",
+      "scenario_refs": [
+        "sources.add_drive",
+        "sources.add_file",
+        "sources.add_text",
+        "sources.add_url",
+        "sources.check_freshness",
+        "sources.delete",
+        "sources.get",
+        "sources.get_fulltext",
+        "sources.get_guide",
+        "sources.get_or_none",
+        "sources.list",
+        "sources.refresh",
+        "sources.rename",
+        "sources.wait_for_sources",
+        "sources.wait_until_ready",
+        "sources.wait_until_registered"
+      ],
+      "comparator": "api.signature_normalized",
+      "allowed_normalizations": [
+        "whitespace",
+        "type_annotation_format",
+        "id_redaction"
+      ],
+      "closed_system": true,
+      "no_live": true,
+      "evidence_basis": "Phase 17-18 offline direct differential: cli_api_direct_differential.py compares bare Python API signatures against committed upstream golden from compat/api_golden/; 9/9 sub-clients matched; closed_system=true, no_live=true; Phase 18 subprocess --strict exits 0",
+      "missing_for_promotion": [],
+      "promotion_allowed": true
+    }
+  ]
+}

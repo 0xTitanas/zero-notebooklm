@@ -1,0 +1,842 @@
+{
+  "annotation_identity_deviations": [
+    {
+      "annotation": "httpx.Cookies | None",
+      "location": "notebooklm.AuthTokens(cookie_jar)"
+    },
+    {
+      "annotation": "httpx.Cookies | None",
+      "location": "notebooklm.AuthTokens.cookie_jar"
+    },
+    {
+      "annotation": "httpx.Timeout | None",
+      "location": "notebooklm.NotebookLMClient(upload_timeout)"
+    },
+    {
+      "annotation": "httpx.Timeout | None",
+      "location": "notebooklm.NotebookLMClient.__init__(upload_timeout)"
+    },
+    {
+      "annotation": "httpx.Timeout | None",
+      "location": "notebooklm.NotebookLMClient.from_storage(upload_timeout)"
+    },
+    {
+      "annotation": "httpx.Cookies | None",
+      "location": "notebooklm.auth.AuthTokens(cookie_jar)"
+    },
+    {
+      "annotation": "httpx.Cookies | None",
+      "location": "notebooklm.auth.AuthTokens.cookie_jar"
+    },
+    {
+      "annotation": "httpx.Cookies",
+      "location": "notebooklm.auth.build_cookie_jar->return"
+    },
+    {
+      "annotation": "httpx.Cookies",
+      "location": "notebooklm.auth.build_httpx_cookies_from_storage->return"
+    },
+    {
+      "annotation": "httpx.Cookies",
+      "location": "notebooklm.auth.load_httpx_cookies->return"
+    },
+    {
+      "annotation": "httpx.Cookies",
+      "location": "notebooklm.auth.save_cookies_to_storage(cookie_jar)"
+    },
+    {
+      "annotation": "httpx.Cookies",
+      "location": "notebooklm.auth.snapshot_cookie_jar(cookie_jar)"
+    },
+    {
+      "annotation": "httpx.Timeout | None",
+      "location": "notebooklm.client.NotebookLMClient(upload_timeout)"
+    },
+    {
+      "annotation": "httpx.Timeout | None",
+      "location": "notebooklm.client.NotebookLMClient.__init__(upload_timeout)"
+    },
+    {
+      "annotation": "httpx.Timeout | None",
+      "location": "notebooklm.client.NotebookLMClient.from_storage(upload_timeout)"
+    }
+  ],
+  "client": {
+    "async_public_methods": [
+      "close",
+      "drain",
+      "refresh_auth",
+      "rpc_call"
+    ],
+    "classmethods": [
+      "from_storage"
+    ],
+    "init_signature": {
+      "parameters": [
+        {
+          "annotation": null,
+          "default_repr": null,
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "self"
+        },
+        {
+          "annotation": "AuthTokens",
+          "default_repr": null,
+          "has_default": false,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "auth"
+        },
+        {
+          "annotation": "float",
+          "default_repr": "30.0",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "timeout"
+        },
+        {
+          "annotation": "Path | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "storage_path"
+        },
+        {
+          "annotation": "float | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "keepalive"
+        },
+        {
+          "annotation": "float",
+          "default_repr": "60.0",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "keepalive_min_interval"
+        },
+        {
+          "annotation": "int",
+          "default_repr": "3",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "rate_limit_max_retries"
+        },
+        {
+          "annotation": "int",
+          "default_repr": "3",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "server_error_max_retries"
+        },
+        {
+          "annotation": "ConnectionLimits | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "limits"
+        },
+        {
+          "annotation": "int | None",
+          "default_repr": "4",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "max_concurrent_uploads"
+        },
+        {
+          "annotation": "int | None",
+          "default_repr": "16",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "max_concurrent_rpcs"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "upload_timeout"
+        },
+        {
+          "annotation": "Callable[[RpcTelemetryEvent], object] | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "on_rpc_event"
+        },
+        {
+          "annotation": "CookieSaver | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "cookie_saver"
+        },
+        {
+          "annotation": "CookieRotator | None",
+          "default_repr": "None",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "cookie_rotator"
+        },
+        {
+          "annotation": "float | None",
+          "default_repr": "180.0",
+          "has_default": true,
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "name": "chat_timeout"
+        }
+      ],
+      "return_annotation": null,
+      "text": "(self, auth: 'AuthTokens', timeout: 'float' = 30.0, storage_path: 'Path | None' = None, keepalive: 'float | None' = None, keepalive_min_interval: 'float' = 60.0, rate_limit_max_retries: 'int' = 3, server_error_max_retries: 'int' = 3, limits: 'ConnectionLimits | None' = None, max_concurrent_uploads: 'int | None' = 4, max_concurrent_rpcs: 'int | None' = 16, upload_timeout: 'httpx.Timeout | None' = None, on_rpc_event: 'Callable[[RpcTelemetryEvent], object] | None' = None, cookie_saver: 'CookieSaver | None' = None, cookie_rotator: 'CookieRotator | None' = None, chat_timeout: 'float | None' = 180.0)"
+    },
+    "is_async_context_manager": true,
+    "properties": [
+      "auth",
+      "is_connected"
+    ]
+  },
+  "dataclasses": {
+    "Account": {
+      "fields": [
+        "authuser",
+        "email",
+        "is_default",
+        "browser_profile"
+      ],
+      "init_signature": "(authuser: 'int', email: 'str', is_default: 'bool', browser_profile: 'str | None' = None) -> None",
+      "module": "notebooklm.auth"
+    },
+    "AccountLimits": {
+      "fields": [
+        "notebook_limit",
+        "source_limit",
+        "raw_limits"
+      ],
+      "init_signature": "(notebook_limit: 'int | None' = None, source_limit: 'int | None' = None, raw_limits: 'tuple[Any, ...]' = <factory>) -> None",
+      "module": "notebooklm"
+    },
+    "AccountTier": {
+      "fields": [
+        "tier",
+        "plan_name"
+      ],
+      "init_signature": "(tier: 'str | None' = None, plan_name: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "Artifact": {
+      "fields": [
+        "id",
+        "title",
+        "_artifact_type",
+        "status",
+        "created_at",
+        "url",
+        "_variant"
+      ],
+      "init_signature": "(id: 'str', title: 'str', _artifact_type: 'int', status: 'int', created_at: 'datetime | None' = None, url: 'str | None' = None, _variant: 'int | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "AskResult": {
+      "fields": [
+        "answer",
+        "conversation_id",
+        "turn_number",
+        "is_follow_up",
+        "references",
+        "raw_response"
+      ],
+      "init_signature": "(answer: 'str', conversation_id: 'str', turn_number: 'int', is_follow_up: 'bool', references: 'list[ChatReference]' = <factory>, raw_response: 'str' = '') -> None",
+      "module": "notebooklm"
+    },
+    "AuthTokens": {
+      "fields": [
+        "cookies",
+        "csrf_token",
+        "session_id",
+        "storage_path",
+        "cookie_jar",
+        "authuser",
+        "cookie_snapshot",
+        "account_email"
+      ],
+      "init_signature": "(cookies: 'DomainCookieMap', csrf_token: 'str', session_id: 'str', storage_path: 'Path | None' = None, cookie_jar: 'httpx.Cookies | None' = None, authuser: 'int' = 0, cookie_snapshot: 'CookieSnapshot | None' = None, account_email: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "ChatReference": {
+      "fields": [
+        "source_id",
+        "citation_number",
+        "cited_text",
+        "start_char",
+        "end_char",
+        "chunk_id",
+        "passage_id",
+        "answer_start_char",
+        "answer_end_char",
+        "score"
+      ],
+      "init_signature": "(source_id: 'str', citation_number: 'int | None' = None, cited_text: 'str | None' = None, start_char: 'int | None' = None, end_char: 'int | None' = None, chunk_id: 'str | None' = None, passage_id: 'str | None' = None, answer_start_char: 'int | None' = None, answer_end_char: 'int | None' = None, score: 'float | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "CitedSourceSelection": {
+      "fields": [
+        "sources",
+        "cited_url_count",
+        "matched_url_source_count",
+        "used_fallback"
+      ],
+      "init_signature": "(sources: 'list[ResearchSourceInput]', cited_url_count: 'int', matched_url_source_count: 'int', used_fallback: 'bool' = False) -> None",
+      "module": "notebooklm"
+    },
+    "ClientMetricsSnapshot": {
+      "fields": [
+        "rpc_calls_started",
+        "rpc_calls_succeeded",
+        "rpc_calls_failed",
+        "rpc_rate_limit_retries",
+        "rpc_server_error_retries",
+        "rpc_auth_retries",
+        "rpc_latency_seconds_total",
+        "rpc_queue_wait_seconds_total",
+        "rpc_queue_wait_seconds_max",
+        "upload_queue_wait_seconds_total",
+        "upload_queue_wait_seconds_max",
+        "lock_wait_seconds_total",
+        "lock_wait_seconds_max"
+      ],
+      "init_signature": "(rpc_calls_started: 'int' = 0, rpc_calls_succeeded: 'int' = 0, rpc_calls_failed: 'int' = 0, rpc_rate_limit_retries: 'int' = 0, rpc_server_error_retries: 'int' = 0, rpc_auth_retries: 'int' = 0, rpc_latency_seconds_total: 'float' = 0.0, rpc_queue_wait_seconds_total: 'float' = 0.0, rpc_queue_wait_seconds_max: 'float' = 0.0, upload_queue_wait_seconds_total: 'float' = 0.0, upload_queue_wait_seconds_max: 'float' = 0.0, lock_wait_seconds_total: 'float' = 0.0, lock_wait_seconds_max: 'float' = 0.0) -> None",
+      "module": "notebooklm"
+    },
+    "ConnectionLimits": {
+      "fields": [
+        "max_connections",
+        "max_keepalive_connections",
+        "keepalive_expiry"
+      ],
+      "init_signature": "(max_connections: 'int' = 100, max_keepalive_connections: 'int' = 50, keepalive_expiry: 'float' = 30.0) -> None",
+      "module": "notebooklm"
+    },
+    "ConversationTurn": {
+      "fields": [
+        "query",
+        "answer",
+        "turn_number"
+      ],
+      "init_signature": "(query: 'str', answer: 'str', turn_number: 'int') -> None",
+      "module": "notebooklm"
+    },
+    "CookieSaveResult": {
+      "fields": [
+        "ok",
+        "cas_rejected_keys"
+      ],
+      "init_signature": "(ok: 'bool', cas_rejected_keys: 'frozenset[CookieSnapshotKey]' = frozenset()) -> None",
+      "module": "notebooklm.auth"
+    },
+    "GenerationStatus": {
+      "fields": [
+        "task_id",
+        "status",
+        "url",
+        "error",
+        "error_code",
+        "metadata"
+      ],
+      "init_signature": "(task_id: 'str', status: 'str', url: 'str | None' = None, error: 'str | None' = None, error_code: 'str | None' = None, metadata: 'dict[str, Any] | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "MindMap": {
+      "fields": [
+        "id",
+        "notebook_id",
+        "title",
+        "kind",
+        "created_at",
+        "tree"
+      ],
+      "init_signature": "(id: 'str', notebook_id: 'str', title: 'str', kind: 'MindMapKind', created_at: 'datetime | None' = None, tree: 'dict[str, Any] | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "MindMapResult": {
+      "fields": [
+        "mind_map",
+        "note_id"
+      ],
+      "init_signature": "(mind_map: 'Any' = None, note_id: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "Note": {
+      "fields": [
+        "id",
+        "notebook_id",
+        "title",
+        "content",
+        "created_at"
+      ],
+      "init_signature": "(id: 'str', notebook_id: 'str', title: 'str', content: 'str', created_at: 'datetime | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "Notebook": {
+      "fields": [
+        "id",
+        "title",
+        "created_at",
+        "sources_count",
+        "is_owner"
+      ],
+      "init_signature": "(id: 'str', title: 'str', created_at: 'datetime | None' = None, sources_count: 'int' = 0, is_owner: 'bool' = True) -> None",
+      "module": "notebooklm"
+    },
+    "NotebookDescription": {
+      "fields": [
+        "summary",
+        "suggested_topics"
+      ],
+      "init_signature": "(summary: 'str', suggested_topics: 'list[SuggestedTopic]' = <factory>) -> None",
+      "module": "notebooklm"
+    },
+    "NotebookMetadata": {
+      "fields": [
+        "notebook",
+        "sources"
+      ],
+      "init_signature": "(notebook: 'Notebook', sources: 'list[SourceSummary]' = <factory>) -> None",
+      "module": "notebooklm"
+    },
+    "ReportSuggestion": {
+      "fields": [
+        "title",
+        "description",
+        "prompt",
+        "audience_level"
+      ],
+      "init_signature": "(title: 'str', description: 'str', prompt: 'str', audience_level: 'int' = 2) -> None",
+      "module": "notebooklm"
+    },
+    "ResearchSource": {
+      "fields": [
+        "url",
+        "title",
+        "result_type",
+        "research_task_id",
+        "report_markdown"
+      ],
+      "init_signature": "(url: 'str', title: 'str', result_type: 'ResearchResultType' = 1, research_task_id: 'str | None' = None, report_markdown: 'str' = '') -> None",
+      "module": "notebooklm"
+    },
+    "ResearchStart": {
+      "fields": [
+        "task_id",
+        "report_id",
+        "notebook_id",
+        "query",
+        "mode"
+      ],
+      "init_signature": "(task_id: 'str', report_id: 'str | None', notebook_id: 'str', query: 'str', mode: 'str') -> None",
+      "module": "notebooklm"
+    },
+    "ResearchTask": {
+      "fields": [
+        "task_id",
+        "status",
+        "query",
+        "sources",
+        "summary",
+        "report",
+        "tasks"
+      ],
+      "init_signature": "(task_id: 'str', status: 'ResearchStatus', query: 'str' = '', sources: 'tuple[ResearchSource, ...]' = (), summary: 'str' = '', report: 'str' = '', tasks: 'tuple[ResearchTask, ...]' = ()) -> None",
+      "module": "notebooklm"
+    },
+    "RpcTelemetryEvent": {
+      "fields": [
+        "method",
+        "status",
+        "elapsed_seconds",
+        "request_id",
+        "error_type"
+      ],
+      "init_signature": "(method: 'str', status: \"Literal['success', 'error']\", elapsed_seconds: 'float', request_id: 'str | None' = None, error_type: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "ShareStatus": {
+      "fields": [
+        "notebook_id",
+        "is_public",
+        "access",
+        "view_level",
+        "shared_users",
+        "share_url"
+      ],
+      "init_signature": "(notebook_id: 'str', is_public: 'bool', access: 'ShareAccess', view_level: 'ShareViewLevel', shared_users: 'list[SharedUser]' = <factory>, share_url: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "SharedUser": {
+      "fields": [
+        "email",
+        "permission",
+        "display_name",
+        "avatar_url"
+      ],
+      "init_signature": "(email: 'str', permission: 'SharePermission', display_name: 'str | None' = None, avatar_url: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "Source": {
+      "fields": [
+        "id",
+        "title",
+        "url",
+        "_type_code",
+        "created_at",
+        "status"
+      ],
+      "init_signature": "(id: 'str', title: 'str | None' = None, url: 'str | None' = None, _type_code: 'int | None' = None, created_at: 'datetime | None' = None, status: 'SourceStatus' = <SourceStatus.READY: 2>) -> None",
+      "module": "notebooklm"
+    },
+    "SourceFulltext": {
+      "fields": [
+        "source_id",
+        "title",
+        "content",
+        "_type_code",
+        "url",
+        "char_count"
+      ],
+      "init_signature": "(source_id: 'str', title: 'str', content: 'str', _type_code: 'int | None' = None, url: 'str | None' = None, char_count: 'int' = 0) -> None",
+      "module": "notebooklm"
+    },
+    "SourceGuide": {
+      "fields": [
+        "summary",
+        "keywords"
+      ],
+      "init_signature": "(summary: 'str' = '', keywords: 'tuple[str, ...]' = ()) -> None",
+      "module": "notebooklm"
+    },
+    "SourceSummary": {
+      "fields": [
+        "kind",
+        "title",
+        "url"
+      ],
+      "init_signature": "(kind: 'SourceType', title: 'str | None' = None, url: 'str | None' = None) -> None",
+      "module": "notebooklm"
+    },
+    "SuggestedTopic": {
+      "fields": [
+        "question",
+        "prompt"
+      ],
+      "init_signature": "(question: 'str', prompt: 'str') -> None",
+      "module": "notebooklm"
+    }
+  },
+  "description": "Curated public signatures: client lifecycle, sub-client async methods, and public dataclasses from notebooklm-py==0.7.2.",
+  "subclients": {
+    "artifacts": {
+      "async_methods": [
+        "delete",
+        "download_audio",
+        "download_data_table",
+        "download_flashcards",
+        "download_infographic",
+        "download_mind_map",
+        "download_quiz",
+        "download_report",
+        "download_slide_deck",
+        "download_video",
+        "export",
+        "export_data_table",
+        "export_report",
+        "generate_audio",
+        "generate_cinematic_video",
+        "generate_data_table",
+        "generate_flashcards",
+        "generate_infographic",
+        "generate_mind_map",
+        "generate_quiz",
+        "generate_report",
+        "generate_slide_deck",
+        "generate_study_guide",
+        "generate_video",
+        "get",
+        "get_or_none",
+        "list",
+        "list_audio",
+        "list_data_tables",
+        "list_flashcards",
+        "list_infographics",
+        "list_quizzes",
+        "list_reports",
+        "list_slide_decks",
+        "list_video",
+        "poll_status",
+        "rename",
+        "retry_failed",
+        "revise_slide",
+        "suggest_reports",
+        "wait_for_completion"
+      ],
+      "class": "ArtifactsAPI",
+      "method_signatures": {
+        "__init__": "(self, *, rpc: notebooklm._runtime.contracts.RpcCaller, drain: 'TransportDrainTracker', lifecycle: 'ClientLifecycle', notebooks: notebooklm._notebook_metadata.NotebookSourceIdProvider, mind_maps: notebooklm._mind_map.NoteBackedMindMapService, note_service: notebooklm._note_service.NoteService, storage_path: pathlib._local.Path | None = None) -> None",
+        "delete": "(self, notebook_id: str, artifact_id: str) -> None",
+        "download_audio": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, *, artifacts_data: list[typing.Any] | None = None) -> str",
+        "download_data_table": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, *, artifacts_data: list[typing.Any] | None = None) -> str",
+        "download_flashcards": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, output_format: str = 'json', *, artifacts: list[notebooklm.types.Artifact] | None = None) -> str",
+        "download_infographic": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, *, artifacts_data: list[typing.Any] | None = None) -> str",
+        "download_mind_map": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, *, mind_maps: list[typing.Any] | None = None, artifacts_data: list[typing.Any] | None = None) -> str",
+        "download_quiz": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, output_format: str = 'json', *, artifacts: list[notebooklm.types.Artifact] | None = None) -> str",
+        "download_report": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, *, artifacts_data: list[typing.Any] | None = None) -> str",
+        "download_slide_deck": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, output_format: str = 'pdf', *, artifacts_data: list[typing.Any] | None = None) -> str",
+        "download_video": "(self, notebook_id: str, output_path: str, artifact_id: str | None = None, *, artifacts_data: list[typing.Any] | None = None) -> str",
+        "export": "(self, notebook_id: str, artifact_id: str | None = None, content: str | None = None, title: str = 'Export', export_type: notebooklm.rpc.types.ExportType = <ExportType.DOCS: 1>) -> Any",
+        "export_data_table": "(self, notebook_id: str, artifact_id: str, title: str = 'Export') -> Any",
+        "export_report": "(self, notebook_id: str, artifact_id: str, title: str = 'Export', export_type: notebooklm.rpc.types.ExportType = <ExportType.DOCS: 1>) -> Any",
+        "generate_audio": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None, audio_format: notebooklm.rpc.types.AudioFormat | None = None, audio_length: notebooklm.rpc.types.AudioLength | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_cinematic_video": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_data_table": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_flashcards": "(self, notebook_id: str, source_ids: list[str] | None = None, instructions: str | None = None, quantity: notebooklm.rpc.types.QuizQuantity | None = None, difficulty: notebooklm.rpc.types.QuizDifficulty | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_infographic": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None, orientation: notebooklm.rpc.types.InfographicOrientation | None = None, detail_level: notebooklm.rpc.types.InfographicDetail | None = None, style: notebooklm.rpc.types.InfographicStyle | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_mind_map": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None) -> notebooklm.types.MindMapResult",
+        "generate_quiz": "(self, notebook_id: str, source_ids: list[str] | None = None, instructions: str | None = None, quantity: notebooklm.rpc.types.QuizQuantity | None = None, difficulty: notebooklm.rpc.types.QuizDifficulty | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_report": "(self, notebook_id: str, report_format: notebooklm.rpc.types.ReportFormat = <ReportFormat.BRIEFING_DOC: 'briefing_doc'>, source_ids: list[str] | None = None, language: str | None = 'en', custom_prompt: str | None = None, extra_instructions: str | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_slide_deck": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None, slide_format: notebooklm.rpc.types.SlideDeckFormat | None = None, slide_length: notebooklm.rpc.types.SlideDeckLength | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_study_guide": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', extra_instructions: str | None = None) -> notebooklm.types.GenerationStatus",
+        "generate_video": "(self, notebook_id: str, source_ids: list[str] | None = None, language: str | None = 'en', instructions: str | None = None, video_format: notebooklm.rpc.types.VideoFormat | None = None, video_style: notebooklm.rpc.types.VideoStyle | None = None, style_prompt: str | None = None) -> notebooklm.types.GenerationStatus",
+        "get": "(self, notebook_id: str, artifact_id: str) -> notebooklm.types.Artifact | None",
+        "get_or_none": "(self, notebook_id: str, artifact_id: str) -> notebooklm.types.Artifact | None",
+        "list": "(self, notebook_id: str, artifact_type: notebooklm.types.ArtifactType | None = None) -> list[notebooklm.types.Artifact]",
+        "list_audio": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_data_tables": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_flashcards": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_infographics": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_quizzes": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_reports": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_slide_decks": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "list_video": "(self, notebook_id: str) -> list[notebooklm.types.Artifact]",
+        "poll_status": "(self, notebook_id: str, task_id: str) -> notebooklm.types.GenerationStatus",
+        "rename": "(self, notebook_id: str, artifact_id: str, new_title: str, *, return_object: bool = True) -> notebooklm.types.Artifact | None",
+        "retry_failed": "(self, notebook_id: str, artifact_id: str) -> notebooklm.types.GenerationStatus",
+        "revise_slide": "(self, notebook_id: str, artifact_id: str, slide_index: int, prompt: str) -> notebooklm.types.GenerationStatus",
+        "suggest_reports": "(self, notebook_id: str) -> list[notebooklm.types.ReportSuggestion]",
+        "wait_for_completion": "(self, notebook_id: str, task_id: str, initial_interval: float = 2.0, max_interval: float = 10.0, timeout: float = 300.0, max_not_found: int = 5, min_not_found_window: float = 10.0, on_status_change: collections.abc.Callable[[notebooklm.types.GenerationStatus], object] | None = None) -> notebooklm.types.GenerationStatus"
+      },
+      "module": "notebooklm._artifacts"
+    },
+    "chat": {
+      "async_methods": [
+        "ask",
+        "configure",
+        "delete_conversation",
+        "get_conversation_id",
+        "get_conversation_turns",
+        "get_history",
+        "save_answer_as_note",
+        "set_mode"
+      ],
+      "class": "ChatAPI",
+      "method_signatures": {
+        "__init__": "(self, *, rpc: 'RpcCaller', transport: 'RuntimeTransport', reqid: 'ReqidCounter', loop_guard: 'LoopGuard', chat_timeout: 'float | None' = 180.0, conversation_cache: 'ConversationCache | None' = None, notebooks: 'NotebookSourceIdProvider | None' = None)",
+        "ask": "(self, notebook_id: 'str', question: 'str', source_ids: 'list[str] | None' = None, conversation_id: 'str | None' = None) -> 'AskResult'",
+        "cache_size": "(self) -> 'int'",
+        "clear_cache": "(self, conversation_id: 'str | None' = None) -> 'bool'",
+        "configure": "(self, notebook_id: 'str', goal: 'ChatGoal | None' = None, response_length: 'ChatResponseLength | None' = None, custom_prompt: 'str | None' = None) -> 'None'",
+        "delete_conversation": "(self, notebook_id: 'str', conversation_id: 'str') -> 'bool'",
+        "get_cached_turns": "(self, conversation_id: 'str') -> 'list[ConversationTurn]'",
+        "get_conversation_id": "(self, notebook_id: 'str') -> 'str | None'",
+        "get_conversation_turns": "(self, notebook_id: 'str', conversation_id: 'str', limit: 'int' = 2) -> 'Any'",
+        "get_history": "(self, notebook_id: 'str', limit: 'int' = 100, conversation_id: 'str | None' = None) -> 'list[tuple[str, str]]'",
+        "reset_after_open": "(self) -> 'None'",
+        "save_answer_as_note": "(self, notebook_id: 'str', ask_result: 'AskResult', *, title: 'str | None' = None) -> 'Note'",
+        "set_bound_loop": "(self, loop: 'asyncio.AbstractEventLoop | None') -> 'None'",
+        "set_mode": "(self, notebook_id: 'str', mode: 'ChatMode') -> 'None'"
+      },
+      "module": "notebooklm._chat.api"
+    },
+    "mind_maps": {
+      "async_methods": [
+        "delete",
+        "generate",
+        "get",
+        "get_or_none",
+        "get_tree",
+        "list",
+        "rename"
+      ],
+      "class": "MindMapsAPI",
+      "method_signatures": {
+        "__init__": "(self, *, rpc: 'RpcCaller', mind_maps: 'NoteBackedMindMapService', artifacts: 'ArtifactsAPI', notebooks: 'NotebooksAPI') -> 'None'",
+        "delete": "(self, notebook_id: 'str', mind_map_id: 'str', *, kind: 'MindMapKind | None' = None) -> 'None'",
+        "generate": "(self, notebook_id: 'str', source_ids: 'builtins.list[str] | None' = None, *, kind: 'MindMapKind', language: 'str | None' = 'en', instructions: 'str | None' = None, wait: 'bool' = True) -> 'MindMap'",
+        "get": "(self, notebook_id: 'str', mind_map_id: 'str') -> 'MindMap | None'",
+        "get_or_none": "(self, notebook_id: 'str', mind_map_id: 'str') -> 'MindMap | None'",
+        "get_tree": "(self, notebook_id: 'str', mind_map_id: 'str', *, kind: 'MindMapKind | None' = None) -> 'dict[str, Any] | None'",
+        "list": "(self, notebook_id: 'str') -> 'builtins.list[MindMap]'",
+        "rename": "(self, notebook_id: 'str', mind_map_id: 'str', new_title: 'str', *, kind: 'MindMapKind | None' = None, return_object: 'bool' = True) -> 'MindMap | None'"
+      },
+      "module": "notebooklm._mind_maps_api"
+    },
+    "notebooks": {
+      "async_methods": [
+        "create",
+        "delete",
+        "get",
+        "get_description",
+        "get_metadata",
+        "get_or_none",
+        "get_raw",
+        "get_source_ids",
+        "get_summary",
+        "list",
+        "remove_from_recent",
+        "rename",
+        "share"
+      ],
+      "class": "NotebooksAPI",
+      "method_signatures": {
+        "__init__": "(self, rpc: notebooklm._runtime.contracts.RpcCaller, sources_api: notebooklm._notebook_metadata.NotebookSourceLister | None = None, *, metadata_service: notebooklm._notebook_metadata.NotebookMetadataService | None = None, share_manager: notebooklm._sharing_manager.ShareManager | None = None) -> None",
+        "create": "(self, title: str) -> notebooklm.types.Notebook",
+        "delete": "(self, notebook_id: str) -> None",
+        "get": "(self, notebook_id: str) -> notebooklm.types.Notebook",
+        "get_description": "(self, notebook_id: str) -> notebooklm.types.NotebookDescription",
+        "get_metadata": "(self, notebook_id: str) -> notebooklm.types.NotebookMetadata",
+        "get_or_none": "(self, notebook_id: str) -> notebooklm.types.Notebook | None",
+        "get_raw": "(self, notebook_id: str) -> Any",
+        "get_share_url": "(self, notebook_id: str, artifact_id: str | None = None) -> str",
+        "get_source_ids": "(self, notebook_id: str) -> list[str]",
+        "get_summary": "(self, notebook_id: str) -> str",
+        "list": "(self) -> list[notebooklm.types.Notebook]",
+        "remove_from_recent": "(self, notebook_id: str) -> None",
+        "rename": "(self, notebook_id: str, new_title: str) -> notebooklm.types.Notebook",
+        "share": "(self, notebook_id: str, public: bool = True, artifact_id: str | None = None) -> dict"
+      },
+      "module": "notebooklm._notebooks"
+    },
+    "notes": {
+      "async_methods": [
+        "create",
+        "delete",
+        "delete_mind_map",
+        "get",
+        "get_or_none",
+        "list",
+        "list_mind_maps",
+        "update"
+      ],
+      "class": "NotesAPI",
+      "method_signatures": {
+        "__init__": "(self, *, notes: 'NoteService', mind_maps: 'NoteBackedMindMapService')",
+        "create": "(self, notebook_id: 'str', title: 'str' = 'New Note', content: 'str' = '') -> 'Note'",
+        "delete": "(self, notebook_id: 'str', note_id: 'str') -> 'None'",
+        "delete_mind_map": "(self, notebook_id: 'str', mind_map_id: 'str') -> 'None'",
+        "get": "(self, notebook_id: 'str', note_id: 'str') -> 'Note | None'",
+        "get_or_none": "(self, notebook_id: 'str', note_id: 'str') -> 'Note | None'",
+        "list": "(self, notebook_id: 'str') -> 'list[Note]'",
+        "list_mind_maps": "(self, notebook_id: 'str') -> 'builtins.list[Any]'",
+        "update": "(self, notebook_id: 'str', note_id: 'str', content: 'str', title: 'str') -> 'None'"
+      },
+      "module": "notebooklm._notes"
+    },
+    "research": {
+      "async_methods": [
+        "import_sources",
+        "import_sources_with_verification",
+        "poll",
+        "start",
+        "wait_for_completion"
+      ],
+      "class": "ResearchAPI",
+      "method_signatures": {
+        "__init__": "(self, rpc: 'RpcCaller', *, source_lister: 'NotebookSourceLister | None' = None)",
+        "extract_report_urls": "(report: 'str') -> 'set[str]'",
+        "import_sources": "(self, notebook_id: 'str', task_id: 'str', sources: 'Sequence[ResearchSourceInput]') -> 'list[dict[str, str]]'",
+        "import_sources_with_verification": "(self, notebook_id: 'str', task_id: 'str', sources: 'Sequence[ResearchSourceInput]', *, max_elapsed: 'float' = 1800, initial_delay: 'float' = 5, backoff_factor: 'float' = 2, max_delay: 'float' = 60) -> 'list[dict[str, str]]'",
+        "poll": "(self, notebook_id: 'str', task_id: 'str | None' = None) -> 'ResearchTask'",
+        "select_cited_sources": "(sources: 'Sequence[ResearchSourceInput]', report: 'str') -> 'CitedSourceSelection'",
+        "start": "(self, notebook_id: 'str', query: 'str', source: 'str' = 'web', mode: 'str' = 'fast') -> 'ResearchStart | None'",
+        "wait_for_completion": "(self, notebook_id: 'str', task_id: 'str | None' = None, *, timeout: 'float' = 1800, interval: 'float' = 5, initial_interval: 'float' = <object object at 0x101231860>) -> 'ResearchTask'"
+      },
+      "module": "notebooklm._research"
+    },
+    "settings": {
+      "async_methods": [
+        "get_account_limits",
+        "get_account_tier",
+        "get_output_language",
+        "set_output_language"
+      ],
+      "class": "SettingsAPI",
+      "method_signatures": {
+        "__init__": "(self, rpc: notebooklm._runtime.contracts.RpcCaller) -> None",
+        "get_account_limits": "(self) -> notebooklm.types.AccountLimits",
+        "get_account_tier": "(self) -> notebooklm.types.AccountTier",
+        "get_output_language": "(self) -> str | None",
+        "set_output_language": "(self, language: str) -> str | None"
+      },
+      "module": "notebooklm._settings"
+    },
+    "sharing": {
+      "async_methods": [
+        "add_user",
+        "get_status",
+        "remove_user",
+        "set_public",
+        "set_view_level",
+        "update_user"
+      ],
+      "class": "SharingAPI",
+      "method_signatures": {
+        "__init__": "(self, rpc: notebooklm._runtime.contracts.RpcCaller)",
+        "add_user": "(self, notebook_id: str, email: str, permission: notebooklm.rpc.types.SharePermission = <SharePermission.VIEWER: 3>, notify: bool = True, welcome_message: str = '') -> notebooklm.types.ShareStatus",
+        "get_status": "(self, notebook_id: str) -> notebooklm.types.ShareStatus",
+        "remove_user": "(self, notebook_id: str, email: str) -> notebooklm.types.ShareStatus",
+        "set_public": "(self, notebook_id: str, public: bool) -> notebooklm.types.ShareStatus",
+        "set_view_level": "(self, notebook_id: str, level: notebooklm.rpc.types.ShareViewLevel) -> notebooklm.types.ShareStatus",
+        "update_user": "(self, notebook_id: str, email: str, permission: notebooklm.rpc.types.SharePermission) -> notebooklm.types.ShareStatus"
+      },
+      "module": "notebooklm._sharing"
+    },
+    "sources": {
+      "async_methods": [
+        "add_drive",
+        "add_file",
+        "add_text",
+        "add_url",
+        "check_freshness",
+        "delete",
+        "get",
+        "get_fulltext",
+        "get_guide",
+        "get_or_none",
+        "list",
+        "refresh",
+        "rename",
+        "wait_for_sources",
+        "wait_until_ready",
+        "wait_until_registered"
+      ],
+      "class": "SourcesAPI",
+      "method_signatures": {
+        "__init__": "(self, rpc: notebooklm._runtime.contracts.RpcCaller, *, uploader: notebooklm._source.upload.SourceUploadPipeline, upload_timeout: httpx.Timeout | None = None, max_concurrent_uploads: int | None = 4)",
+        "add_drive": "(self, notebook_id: str, file_id: str, title: str, mime_type: str = 'application/vnd.google-apps.document', *, wait: bool = False, wait_timeout: float = 120.0) -> notebooklm.types.Source",
+        "add_file": "(self, notebook_id: str, file_path: str | pathlib._local.Path, mime_type: str | None = None, *, wait: bool = False, wait_timeout: float = 120.0, title: str | None = None, on_progress: collections.abc.Callable[[int, int], object] | None = None) -> notebooklm.types.Source",
+        "add_text": "(self, notebook_id: str, title: str, content: str, *, wait: bool = False, wait_timeout: float = 120.0, idempotent: bool = False) -> notebooklm.types.Source",
+        "add_url": "(self, notebook_id: str, url: str, *, wait: bool = False, wait_timeout: float = 120.0) -> notebooklm.types.Source",
+        "check_freshness": "(self, notebook_id: str, source_id: str) -> bool",
+        "delete": "(self, notebook_id: str, source_id: str) -> None",
+        "get": "(self, notebook_id: str, source_id: str) -> notebooklm.types.Source | None",
+        "get_fulltext": "(self, notebook_id: str, source_id: str, *, output_format: Literal['text', 'markdown'] = 'text') -> notebooklm.types.SourceFulltext",
+        "get_guide": "(self, notebook_id: str, source_id: str) -> notebooklm.types.SourceGuide",
+        "get_or_none": "(self, notebook_id: str, source_id: str) -> notebooklm.types.Source | None",
+        "list": "(self, notebook_id: str, *, strict: bool = False) -> list[notebooklm.types.Source]",
+        "refresh": "(self, notebook_id: str, source_id: str) -> bool",
+        "rename": "(self, notebook_id: str, source_id: str, new_title: str, *, return_object: bool = True) -> notebooklm.types.Source | None",
+        "wait_for_sources": "(self, notebook_id: str, source_ids: list[str], timeout: float = 120.0, **kwargs: Any) -> list[notebooklm.types.Source]",
+        "wait_until_ready": "(self, notebook_id: str, source_id: str, timeout: float = 120.0, initial_interval: float = 1.0, max_interval: float = 10.0, backoff_factor: float = 1.5, transient_error_types: tuple[int | None, ...] | None = None) -> notebooklm.types.Source",
+        "wait_until_registered": "(self, notebook_id: str, source_id: str, timeout: float = 30.0, initial_interval: float = 0.5, max_interval: float = 5.0, backoff_factor: float = 1.5, transient_error_types: tuple[int | None, ...] | None = None) -> notebooklm.types.Source"
+      },
+      "module": "notebooklm._sources"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+Usage: notebooklm generate video [OPTIONS] [DESCRIPTION]
+
+  Generate video overview.
+
+  Use --format cinematic for AI-generated documentary footage (Veo 3).
+  Cinematic videos ignore --style and take ~30-40 min (requires AI Ultra).
+
+  Use --json for machine-readable output.
+
+  Example:
+    notebooklm generate video "a funny explainer for kids age 5"
+    notebooklm generate video "professional presentation" --style classic
+    notebooklm generate video --style custom --style-prompt "hand-drawn diagrams"
+    notebooklm generate video --format cinematic "documentary overview"
+    notebooklm generate video -s src_001 "from specific source"
+
+Options:
+  --prompt-file PROMPT_FILE       Read prompt/query text from a file (or '-'
+                                  for stdin) instead of the positional
+                                  argument
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  --format [explainer|brief|cinematic]
+                                  Video format; 'cinematic' uses Veo 3 footage
+                                  (default: explainer)
+  --style [auto|custom|classic|whiteboard|kawaii|anime|watercolor|retro-print|heritage|paper-craft]
+                                  Visual style (default: auto). Use 'custom'
+                                  with --style-prompt.
+  --style-prompt TEXT             Custom visual style prompt
+  --language TEXT                 Output language (default: --language >
+                                  NOTEBOOKLM_HL env > config > 'en')
+  -s, --source TEXT               Limit to specific source IDs
+  --wait / --no-wait              Wait for completion (default: no-wait)
+  --timeout INTEGER               Maximum seconds to wait (default: 1800;
+                                  cinematic format defaults to 3600)
+  --interval INTEGER RANGE        Seconds between status checks (default: 2)
+                                  [x>=1]
+  --retry INTEGER RANGE           Retry N times with exponential backoff on
+                                  rate limit  [x>=0]
+  --json                          Output as JSON
+  --help                          Show this message and exit.

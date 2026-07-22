@@ -1,0 +1,23 @@
+Usage: notebooklm metadata [OPTIONS]
+
+  Export notebook metadata with sources list.
+
+  Outputs notebook details (id, title, created_at, is_owner) along with a
+  simplified list of sources (type, title, url).
+
+  By default, outputs in human-readable format. Use --json for machine
+  parsing.
+
+  NOTEBOOK_ID supports partial matching (e.g., 'abc' matches 'abc123...').
+
+  Examples:
+    notebooklm metadata              # Human-readable for current notebook
+    notebooklm metadata -n abc       # Human-readable for notebook starting with 'abc'
+    notebooklm metadata --json       # JSON output
+    notebooklm metadata -n abc --json  # JSON for specific notebook
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON (default: human-readable)
+  --help               Show this message and exit.

@@ -1,0 +1,606 @@
+{
+  "description": "Public exception hierarchy (bases + MRO) from notebooklm-py==0.7.2.",
+  "exceptions": [
+    {
+      "bases": [
+        "ArtifactError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactDownloadError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactDownloadError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactError"
+    },
+    {
+      "bases": [
+        "RPCError",
+        "ArtifactError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactFeatureUnavailableError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactFeatureUnavailableError"
+    },
+    {
+      "bases": [
+        "ArtifactTimeoutError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactInProgressTimeoutError",
+        "notebooklm.exceptions.ArtifactTimeoutError",
+        "notebooklm.exceptions.WaitTimeoutError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.TimeoutError",
+        "builtins.OSError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactInProgressTimeoutError"
+    },
+    {
+      "bases": [
+        "NotFoundError",
+        "RPCError",
+        "ArtifactError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactNotFoundError",
+        "notebooklm.exceptions.NotFoundError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactNotFoundError"
+    },
+    {
+      "bases": [
+        "ArtifactError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactNotReadyError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactNotReadyError"
+    },
+    {
+      "bases": [
+        "ArtifactError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactParseError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactParseError"
+    },
+    {
+      "bases": [
+        "ArtifactTimeoutError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactPendingTimeoutError",
+        "notebooklm.exceptions.ArtifactTimeoutError",
+        "notebooklm.exceptions.WaitTimeoutError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.TimeoutError",
+        "builtins.OSError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactPendingTimeoutError"
+    },
+    {
+      "bases": [
+        "WaitTimeoutError",
+        "ArtifactError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ArtifactTimeoutError",
+        "notebooklm.exceptions.WaitTimeoutError",
+        "notebooklm.exceptions.ArtifactError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.TimeoutError",
+        "builtins.OSError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ArtifactTimeoutError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.AuthError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "AuthError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.AuthExtractionError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "AuthExtractionError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ChatError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ChatError"
+    },
+    {
+      "bases": [
+        "ChatError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ChatResponseParseError",
+        "notebooklm.exceptions.ChatError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ChatResponseParseError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ClientError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ClientError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ConfigurationError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ConfigurationError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.DecodingError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "DecodingError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.IdempotencyVariantError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "IdempotencyVariantError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.MindMapError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "MindMapError"
+    },
+    {
+      "bases": [
+        "NotFoundError",
+        "RPCError",
+        "MindMapError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.MindMapNotFoundError",
+        "notebooklm.exceptions.NotFoundError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.MindMapError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "MindMapNotFoundError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NetworkError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NetworkError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NonIdempotentRetryError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NonIdempotentRetryError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NotFoundError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NotFoundError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NoteError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NoteError"
+    },
+    {
+      "bases": [
+        "NotFoundError",
+        "RPCError",
+        "NoteError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NoteNotFoundError",
+        "notebooklm.exceptions.NotFoundError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NoteError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NoteNotFoundError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NotebookError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NotebookError"
+    },
+    {
+      "bases": [
+        "Exception"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NotebookLMError"
+    },
+    {
+      "bases": [
+        "NotebookError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NotebookLimitError",
+        "notebooklm.exceptions.NotebookError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NotebookLimitError"
+    },
+    {
+      "bases": [
+        "NotFoundError",
+        "RPCError",
+        "NotebookError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.NotebookNotFoundError",
+        "notebooklm.exceptions.NotFoundError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "NotebookNotFoundError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "RPCError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.RPCResponseTooLargeError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "RPCResponseTooLargeError"
+    },
+    {
+      "bases": [
+        "NetworkError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.RPCTimeoutError",
+        "notebooklm.exceptions.NetworkError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "RPCTimeoutError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.RateLimitError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "RateLimitError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ResearchError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ResearchError"
+    },
+    {
+      "bases": [
+        "ValidationError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ResearchTaskMismatchError",
+        "notebooklm.exceptions.ValidationError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ResearchTaskMismatchError"
+    },
+    {
+      "bases": [
+        "WaitTimeoutError",
+        "ResearchError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ResearchTimeoutError",
+        "notebooklm.exceptions.WaitTimeoutError",
+        "notebooklm.exceptions.ResearchError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.TimeoutError",
+        "builtins.OSError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ResearchTimeoutError"
+    },
+    {
+      "bases": [
+        "RPCError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ServerError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ServerError"
+    },
+    {
+      "bases": [
+        "SourceError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.SourceAddError",
+        "notebooklm.exceptions.SourceError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "SourceAddError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.SourceError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "SourceError"
+    },
+    {
+      "bases": [
+        "NotFoundError",
+        "RPCError",
+        "SourceError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.SourceNotFoundError",
+        "notebooklm.exceptions.NotFoundError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.SourceError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "SourceNotFoundError"
+    },
+    {
+      "bases": [
+        "SourceError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.SourceProcessingError",
+        "notebooklm.exceptions.SourceError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "SourceProcessingError"
+    },
+    {
+      "bases": [
+        "WaitTimeoutError",
+        "SourceError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.SourceTimeoutError",
+        "notebooklm.exceptions.WaitTimeoutError",
+        "notebooklm.exceptions.SourceError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.TimeoutError",
+        "builtins.OSError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "SourceTimeoutError"
+    },
+    {
+      "bases": [
+        "DecodingError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.UnknownRPCMethodError",
+        "notebooklm.exceptions.DecodingError",
+        "notebooklm.exceptions.RPCError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "UnknownRPCMethodError"
+    },
+    {
+      "bases": [
+        "NotebookLMError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.ValidationError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "ValidationError"
+    },
+    {
+      "bases": [
+        "NotebookLMError",
+        "TimeoutError"
+      ],
+      "mro": [
+        "notebooklm.exceptions.WaitTimeoutError",
+        "notebooklm.exceptions.NotebookLMError",
+        "builtins.TimeoutError",
+        "builtins.OSError",
+        "builtins.Exception",
+        "builtins.BaseException"
+      ],
+      "name": "WaitTimeoutError"
+    }
+  ]
+}

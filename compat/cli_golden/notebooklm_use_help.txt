@@ -1,0 +1,23 @@
+Usage: notebooklm use [OPTIONS] NOTEBOOK_ID
+
+  Set the current notebook context.
+
+  Once set, all commands will use this notebook by default. You can still
+  override by passing --notebook explicitly.
+
+  Supports partial IDs - 'notebooklm use abc' matches 'abc123...'
+
+  By default, the notebook must exist on the server; a typo or unreachable
+  backend results in a non-zero exit and the saved context is left untouched.
+  Pass --force to bypass verification.
+
+  Example:
+    notebooklm use nb123
+    notebooklm ask "what is this about?"   # Uses nb123
+    notebooklm generate video "a fun explainer"  # Uses nb123
+
+Options:
+  --force  Skip the existence check and persist the notebook ID even if
+           verification fails. Use for offline work or debugging.
+  --json   Output as JSON
+  --help   Show this message and exit.

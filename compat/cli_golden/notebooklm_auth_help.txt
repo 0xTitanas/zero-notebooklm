@@ -1,0 +1,12 @@
+Usage: notebooklm auth [OPTIONS] COMMAND [ARGS]...
+
+  Authentication management commands.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  check    Check authentication status and diagnose issues.
+  inspect  List Google accounts visible to a browser's cookie store.
+  logout   Log out by clearing saved authentication.
+  refresh  Refresh stored cookies by exercising the auth path once.

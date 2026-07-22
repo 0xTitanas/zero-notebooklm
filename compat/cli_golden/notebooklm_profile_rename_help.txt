@@ -1,0 +1,9 @@
+Usage: notebooklm profile rename [OPTIONS] OLD_NAME NEW_NAME
+
+  Rename a profile.
+
+  Example:
+    notebooklm profile rename work work-old
+
+Options:
+  --help  Show this message and exit.

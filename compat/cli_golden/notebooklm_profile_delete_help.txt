@@ -1,0 +1,13 @@
+Usage: notebooklm profile delete [OPTIONS] NAME
+
+  Delete a profile and its data.
+
+  Removes the profile directory including auth cookies, context, and browser
+  profile. Cannot delete the currently active default profile.
+
+  Example:
+    notebooklm profile delete old-account --yes
+
+Options:
+  -y, --yes  Skip confirmation
+  --help     Show this message and exit.

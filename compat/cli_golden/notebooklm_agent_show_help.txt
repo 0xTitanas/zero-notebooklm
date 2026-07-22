@@ -1,0 +1,6 @@
+Usage: notebooklm agent show [OPTIONS] {codex|claude}
+
+  Display instructions for Codex or Claude Code.
+
+Options:
+  --help  Show this message and exit.

@@ -1,0 +1,30 @@
+Usage: notebooklm generate quiz [OPTIONS] [DESCRIPTION]
+
+  Generate quiz.
+
+  Use --json for machine-readable output.
+
+  Example:
+    notebooklm generate quiz "focus on vocabulary terms"
+    notebooklm generate quiz "test key concepts" --difficulty hard --quantity more
+
+Options:
+  --prompt-file PROMPT_FILE       Read prompt/query text from a file (or '-'
+                                  for stdin) instead of the positional
+                                  argument
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  --quantity [fewer|standard|more]
+                                  Number of questions (default: standard)
+  --difficulty [easy|medium|hard]
+                                  Question difficulty (default: medium)
+  -s, --source TEXT               Limit to specific source IDs
+  --wait / --no-wait              Wait for completion (default: no-wait)
+  --timeout INTEGER               Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE        Seconds between status checks (default: 2)
+                                  [x>=1]
+  --retry INTEGER RANGE           Retry N times with exponential backoff on
+                                  rate limit  [x>=0]
+  --json                          Output as JSON
+  --help                          Show this message and exit.

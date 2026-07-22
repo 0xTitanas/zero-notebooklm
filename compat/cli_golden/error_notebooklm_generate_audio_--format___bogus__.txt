@@ -1,0 +1,4 @@
+Usage: notebooklm generate audio [OPTIONS] [DESCRIPTION]
+Try 'notebooklm generate audio --help' for help.
+
+Error: Invalid value for '--format': '__bogus__' is not one of 'deep-dive', 'brief', 'critique', 'debate'.

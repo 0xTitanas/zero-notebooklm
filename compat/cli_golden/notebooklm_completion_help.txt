@@ -1,0 +1,24 @@
+Usage: notebooklm completion [OPTIONS] {bash|zsh|fish}
+
+  Print the shell completion script for SHELL.
+
+  Pipe the output into a file your shell sources at startup. Click handles the
+  ``_NOTEBOOKLM_COMPLETE`` env-var protocol automatically once the script is
+  sourced; only the script needs to be installed.
+
+  Install (one-time):
+    # bash (~/.bashrc)
+    notebooklm completion bash > ~/.notebooklm-complete.bash
+    echo 'source ~/.notebooklm-complete.bash' >> ~/.bashrc
+
+    # zsh (anywhere on $fpath)   notebooklm completion zsh >
+    ~/.zfunc/_notebooklm
+
+    # fish   notebooklm completion fish >
+    ~/.config/fish/completions/notebooklm.fish
+
+  Then ``notebooklm <cmd> -n <TAB>`` lists notebook IDs from the active
+  profile (best-effort — no suggestions when not authenticated).
+
+Options:
+  --help  Show this message and exit.

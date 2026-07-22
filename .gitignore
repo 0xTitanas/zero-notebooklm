@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local secrets / auth material
+.env
+.env.*
+*.cookies
+*cookies*.json
+*storage_state*.json
+*.har
+*.log
+
+# Local agent/review handoff artifacts
+.ai-bridge/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+notebooklm-py-reference/

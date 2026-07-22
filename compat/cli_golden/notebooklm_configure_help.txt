@@ -1,0 +1,27 @@
+Usage: notebooklm configure [OPTIONS]
+
+  Configure chat persona and response settings.
+
+  Modes:
+    default        General purpose (default behavior)
+    learning-guide Educational focus with learning-oriented responses
+    concise        Brief, to-the-point responses
+    detailed       Verbose, comprehensive responses
+
+  Examples:
+    notebooklm configure --mode learning-guide
+    notebooklm configure --persona "Act as a chemistry tutor"
+    notebooklm configure --mode detailed --response-length longer
+    notebooklm configure --mode concise --json   # Machine-readable output
+
+Options:
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  --mode [default|learning-guide|concise|detailed]
+                                  Predefined chat mode
+  --persona TEXT                  Custom persona prompt (up to 10,000 chars)
+  --response-length [default|longer|shorter]
+                                  Response verbosity
+  --json                          Output as JSON
+  --help                          Show this message and exit.

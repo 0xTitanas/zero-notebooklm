@@ -1,0 +1,26 @@
+Usage: notebooklm skill install [OPTIONS]
+
+  Install or update the NotebookLM skill for supported agent directories.
+
+  With ``--scope project`` the install is hardened against accidental
+  overwrites: by default, if any target file exists with content that differs
+  from the packaged skill, no files are written and the command exits 1. Pass
+  ``--force`` to overwrite, ``--no-clobber`` to skip differing targets, or
+  ``--dry-run`` to preview without writing.
+
+Options:
+  --scope [user|project]        Install for the current user or into the
+                                current project.  [default: user]
+  --target [all|claude|agents]  Install for Claude Code, universal agent skill
+                                directories, or both.  [default: all]
+  --dry-run                     Project scope only. Print what would be
+                                written without touching the filesystem;
+                                combine with --force or --no-clobber to
+                                preview that mode.
+  --no-clobber                  Project scope only. Skip target files whose
+                                existing content differs from the packaged
+                                skill; still creates targets that do not yet
+                                exist.
+  --force                       Project scope only. Overwrite differing target
+                                files unconditionally.
+  --help                        Show this message and exit.

@@ -1,0 +1,34 @@
+Usage: notebooklm download mind-map [OPTIONS] [OUTPUT_PATH]
+
+  Download mind map(s) as JSON files.
+
+  Examples:
+      # Download latest mind-map to default filename
+      notebooklm download mind-map
+
+      # Download to specific path     notebooklm download mind-map my-mind-
+      map.json
+
+      # Download all mind-map files to directory     notebooklm download mind-
+      map --all ./mind-maps/
+
+      # Download specific artifact by name     notebooklm download mind-map
+      --name "chapter 3"
+
+      # Preview without downloading     notebooklm download mind-map --all
+      --dry-run
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --latest             Download latest (default behavior)
+  --earliest           Download earliest
+  --all                Download all artifacts
+  --name TEXT          Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT  Select by artifact ID
+  --json               Output as JSON
+  --dry-run            Preview without downloading
+  --force              Overwrite existing files
+  --no-clobber         Don't overwrite existing files (single download fails;
+                       --all skips them)
+  --help               Show this message and exit.

@@ -1,0 +1,18 @@
+Usage: notebooklm share public [OPTIONS]
+
+  Enable or disable public link sharing.
+
+  When public sharing is enabled, anyone with the link can view the notebook
+  (read-only access).
+
+  Examples:
+    notebooklm share public              # Enable (default)
+    notebooklm share public --enable     # Enable explicitly
+    notebooklm share public --disable    # Disable
+
+Options:
+  -n, --notebook TEXT   Notebook ID (uses current if not set). Supports
+                        partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --enable / --disable  Enable or disable public sharing
+  --json                Output as JSON
+  --help                Show this message and exit.

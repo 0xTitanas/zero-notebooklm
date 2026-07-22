@@ -1,0 +1,38 @@
+Usage: notebooklm generate [OPTIONS] COMMAND [ARGS]...
+
+  Generate content from notebook.
+
+  LLM-friendly design: Describe what you want in natural language.
+
+  Examples:
+    notebooklm use nb123
+    notebooklm generate video "a funny explainer for kids age 5"
+    notebooklm generate audio "deep dive focusing on chapter 3"
+    notebooklm generate quiz "focus on vocabulary terms"
+
+  Types:
+    audio        Audio overview (podcast)
+    video        Video overview
+    slide-deck   Slide deck
+    quiz         Quiz
+    flashcards   Flashcards
+    infographic  Infographic
+    data-table   Data table
+    mind-map     Mind map
+    report       Report (briefing-doc, study-guide, blog-post, custom)
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  audio            Generate audio overview (podcast).
+  cinematic-video  Generate cinematic video overview (AI-generated...
+  data-table       Generate data table.
+  flashcards       Generate flashcards.
+  infographic      Generate infographic.
+  mind-map         Generate mind map.
+  quiz             Generate quiz.
+  report           Generate a report (briefing doc, study guide, blog...
+  revise-slide     Revise an individual slide in an existing slide deck.
+  slide-deck       Generate slide deck.
+  video            Generate video overview.

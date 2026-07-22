@@ -1,0 +1,9 @@
+Usage: notebooklm agent [OPTIONS] COMMAND [ARGS]...
+
+  Show bundled instructions for supported agent environments.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  show  Display instructions for Codex or Claude Code.

@@ -1,0 +1,11 @@
+Usage: notebooklm skill show [OPTIONS]
+
+  Display the packaged skill content or an installed target.
+
+Options:
+  --scope [user|project]          Read an installed skill from user or project
+                                  scope.  [default: user]
+  --target [source|claude|agents]
+                                  Show the packaged skill source or an
+                                  installed target.  [default: source]
+  --help                          Show this message and exit.

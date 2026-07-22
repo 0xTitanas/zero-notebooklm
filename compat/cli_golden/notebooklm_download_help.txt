@@ -1,0 +1,30 @@
+Usage: notebooklm download [OPTIONS] COMMAND [ARGS]...
+
+  Download generated content.
+
+  Types:
+    audio             Download audio file
+    video             Download video file
+    cinematic-video   Download cinematic video (alias for video)
+    slide-deck        Download slide deck (PDF or PPTX)
+    infographic       Download infographic image
+    report            Download report as markdown
+    mind-map          Download mind map as JSON
+    data-table        Download data table as CSV
+    quiz              Download quiz questions
+    flashcards        Download flashcard deck
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  audio            Download audio overview(s) to file.
+  cinematic-video  Download cinematic video overview(s) to file.
+  data-table       Download data table(s) as CSV files.
+  flashcards       Download flashcard deck.
+  infographic      Download infographic(s) to file.
+  mind-map         Download mind map(s) as JSON files.
+  quiz             Download quiz questions.
+  report           Download report(s) as markdown files.
+  slide-deck       Download slide deck(s) as PDF or PPTX.
+  video            Download video overview(s) to file.

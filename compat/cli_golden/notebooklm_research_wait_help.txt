@@ -1,0 +1,22 @@
+Usage: notebooklm research wait [OPTIONS]
+
+  Wait for research to complete.
+
+  Blocks until research is completed or timeout is reached. Useful for scripts
+  and LLM agents that need to wait for deep research.
+
+  Examples:
+    notebooklm research wait
+    notebooklm research wait --timeout 600 --import-all
+    notebooklm research wait --import-all --cited-only
+    notebooklm research wait --json
+
+Options:
+  -n, --notebook TEXT       Notebook ID (uses current if not set). Supports
+                            partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --timeout INTEGER         Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE  Seconds between status checks (default: 5)  [x>=1]
+  --import-all              Import all found sources when done
+  --cited-only              With --import-all, import only cited sources
+  --json                    Output as JSON
+  --help                    Show this message and exit.

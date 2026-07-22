@@ -1,0 +1,17 @@
+Usage: notebooklm language get [OPTIONS]
+
+  Get current language setting.
+
+  Shows the currently configured output language for artifact generation. By
+  default, fetches from server (the source of truth) and updates local config
+  if different. Use --local to read the local config offline without
+  contacting the server (no auth required).
+
+  Without --local an auth/network/RPC failure surfaces as the structured error
+  envelope with a non-zero exit code -- it is not silently degraded to the
+  stale local value.
+
+Options:
+  --local  Show local config only (skip server sync)
+  --json   Output as JSON
+  --help   Show this message and exit.

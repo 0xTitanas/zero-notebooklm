@@ -1,0 +1,23 @@
+Usage: notebooklm share add [OPTIONS] EMAIL
+
+  Share notebook with a user.
+
+  Adds a user with the specified permission level. By default, sends an email
+  notification to the user.
+
+  Examples:
+    notebooklm share add user@example.com
+    notebooklm share add user@example.com --permission editor
+    notebooklm share add user@example.com -m "Check out my research!"
+    notebooklm share add user@example.com --no-notify
+
+Options:
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  -p, --permission [editor|viewer]
+                                  Permission level (default: viewer)
+  --no-notify                     Don't send email notification
+  -m, --message TEXT              Welcome message for the user
+  --json                          Output as JSON
+  --help                          Show this message and exit.

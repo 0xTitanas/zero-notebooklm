@@ -1,0 +1,9 @@
+Usage: notebooklm artifact suggestions [OPTIONS]
+
+  Get AI-suggested report topics based on notebook content.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

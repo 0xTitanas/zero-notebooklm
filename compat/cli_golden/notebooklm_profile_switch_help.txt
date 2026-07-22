@@ -1,0 +1,10 @@
+Usage: notebooklm profile switch [OPTIONS] NAME
+
+  Set the default profile.
+
+  Example:
+    notebooklm profile switch work
+    notebooklm list                   # Now uses 'work' profile
+
+Options:
+  --help  Show this message and exit.

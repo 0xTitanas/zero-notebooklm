@@ -1,0 +1,3516 @@
+{
+  "auth_mappings": [
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.windows11.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.windows11.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.windows11.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.windows11.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.windows11.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.windows11.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.windows11.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.windows11.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.brave.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.brave.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chrome.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chrome.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.windows11.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.windows11.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.windows11.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.windows11.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.windows11.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.windows11.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.windows11.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.windows11.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.chromium.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.chromium.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.edge.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.edge.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.windows11.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.windows11.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.windows11.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.windows11.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.windows11.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.windows11.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.windows11.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.windows11.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.firefox.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.firefox.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.windows11.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.windows11.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.windows11.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.windows11.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.windows11.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.windows11.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.windows11.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.windows11.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.windows11.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.windows11.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.windows11.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.windows11.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.windows11.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.windows11.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.windows11.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.windows11.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.opera_gx.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.opera_gx.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.safari.macos.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.safari.macos.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.safari.macos.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.safari.macos.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.safari.macos.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.safari.macos.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.safari.macos.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.safari.macos.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.safari.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.safari.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.ubuntu.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.ubuntu.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.ubuntu.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.ubuntu.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.ubuntu.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.ubuntu.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.ubuntu.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.ubuntu.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.windows11.import",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.windows11.import",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.windows11.profile_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.windows11.profile_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.windows11.account_select",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.windows11.account_select",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.windows11.inspect",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.windows11.inspect",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.cookie_import.vivaldi.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.cookie_import.vivaldi.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.macos.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.macos.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.macos.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.macos.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.macos.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.macos.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.macos.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.macos.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.ubuntu.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.ubuntu.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.ubuntu.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.ubuntu.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.ubuntu.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.ubuntu.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.ubuntu.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.ubuntu.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.windows11.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.windows11.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.windows11.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.windows11.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.windows11.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.windows11.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chromium.windows11.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chromium.windows11.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.macos.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.macos.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.macos.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.macos.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.macos.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.macos.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.macos.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.macos.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.ubuntu.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.ubuntu.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.ubuntu.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.ubuntu.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.ubuntu.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.ubuntu.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.ubuntu.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.ubuntu.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.windows11.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.windows11.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.windows11.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.windows11.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.windows11.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.windows11.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.msedge.windows11.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.msedge.windows11.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.macos.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.macos.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.macos.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.macos.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.macos.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.macos.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.macos.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.macos.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.macos.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.macos.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.ubuntu.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.ubuntu.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.ubuntu.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.ubuntu.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.ubuntu.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.ubuntu.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.ubuntu.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.ubuntu.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.ubuntu.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.ubuntu.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.windows11.login",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.windows11.login",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.windows11.refresh",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.windows11.refresh",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.windows11.status",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.windows11.status",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.windows11.logout",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.windows11.logout",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    },
+    {
+      "allowed_normalizations": [
+        "timestamp",
+        "token_redaction",
+        "cookie_redaction",
+        "nondeterministic_live"
+      ],
+      "category": "auth",
+      "comparator": "auth.session_state_normalized",
+      "evidence_basis": "auth closure redacted proof satisfies: live_differential_result, session_credential_evidence for auth.interactive.chrome.windows11.doctor",
+      "missing_for_promotion": [],
+      "promotion_allowed": true,
+      "required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "row_id": "auth.interactive.chrome.windows11.doctor",
+      "row_status": "pass",
+      "satisfied_required_evidence": [
+        "live_differential_result",
+        "session_credential_evidence"
+      ],
+      "status": "pass"
+    }
+  ],
+  "category_promotion": {
+    "auth": false
+  },
+  "description": "Auth-row evidence mapping for the 146-row current-release compatibility profile. All included rows are explicitly mapped and evidence-backed; 49 explicit profile exclusions are outside scope rather than counted as passes or not applicable. These comprise 25 Arc/Safari paths, four Opera GX/Ubuntu generic paths unsupported by the exact pinned upstream, 10 Windows Chrome/Edge paths that Zero supports but pinned notebooklm-py==0.7.2 / rookiepy==0.5.6 cannot execute, and 10 Chromium/Vivaldi macOS cookie paths deferred to a future release.",
+  "exact_one_to_one_claim_ready": false,
+  "mapping_count": 146,
+  "schema_version": "auth_row_evidence/1",
+  "target": "notebooklm-py==0.7.2"
+}

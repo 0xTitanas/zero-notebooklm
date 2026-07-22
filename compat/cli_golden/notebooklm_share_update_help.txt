@@ -1,0 +1,18 @@
+Usage: notebooklm share update [OPTIONS] EMAIL
+
+  Update a user's permission level.
+
+  Changes the permission level for a user who already has access.
+
+  Examples:
+    notebooklm share update user@example.com --permission editor
+    notebooklm share update user@example.com -p viewer
+
+Options:
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  -p, --permission [editor|viewer]
+                                  New permission level  [required]
+  --json                          Output as JSON
+  --help                          Show this message and exit.

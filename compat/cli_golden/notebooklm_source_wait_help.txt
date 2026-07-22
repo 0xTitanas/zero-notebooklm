@@ -1,0 +1,15 @@
+Usage: notebooklm source wait [OPTIONS] SOURCE_ID
+
+  Wait for a source to finish processing.
+
+  Polls until the source is ready or fails. Exit code 0=ready, 1=missing or
+  processing failed, 2=timeout. Spawn this in a subagent after ``source add``
+  returns so the main conversation can continue.
+
+Options:
+  -n, --notebook TEXT       Notebook ID (uses current if not set). Supports
+                            partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --timeout INTEGER         Maximum seconds to wait (default: 120)
+  --interval INTEGER RANGE  Seconds between status checks (default: 1)  [x>=1]
+  --json                    Output as JSON
+  --help                    Show this message and exit.

@@ -1,0 +1,65 @@
+Usage: notebooklm login [OPTIONS]
+
+  Log in to NotebookLM via browser.
+
+  Opens a browser window for Google login. Authentication is saved
+  automatically once login is detected (no terminal interaction needed).
+
+  Use --browser chrome if the bundled Chromium crashes (e.g. macOS 15+). Use
+  --browser msedge if your organization requires Microsoft Edge for SSO.
+
+  Note: Cannot be used when the env-var auth fast path is active (use file-
+  based auth or unset the env var first).
+
+Options:
+  --storage PATH                  Where to save storage_state.json (default:
+                                  profile-specific location)
+  --browser [chromium|msedge|chrome]
+                                  Browser to use for login (default:
+                                  chromium). Use 'chrome' for system Google
+                                  Chrome (workaround when bundled Chromium
+                                  crashes, e.g. macOS 15+), 'msedge' for
+                                  Microsoft Edge.
+  --browser-cookies TEXT          Read cookies from an installed browser
+                                  instead of launching Playwright. Optionally
+                                  specify browser: chrome, firefox, brave,
+                                  edge, safari, arc, ... For Chromium-family
+                                  profiles, target one with
+                                  'chrome::<profile>' (e.g. 'chrome::Profile
+                                  1' or 'brave::Work'). For Firefox Multi-
+                                  Account Containers, target a specific
+                                  container with 'firefox::<container-name>'
+                                  (or 'firefox::none' for the default).
+                                  Requires: pip install 'notebooklm-
+                                  py[cookies]'
+  --account TEXT                  Pick a signed-in Google account by email
+                                  when several are present in the browser.
+                                  Only valid with --browser-cookies.
+  --all-accounts                  Extract every Google account signed in to
+                                  the browser into its own profile (auto-named
+                                  from each account's email). Only valid with
+                                  --browser-cookies.
+  --update                        With --all-accounts: when an account's
+                                  natural profile name (e.g. 'alice' for
+                                  alice@example.com) already exists but has no
+                                  account metadata, update that profile in
+                                  place instead of creating a suffixed
+                                  'alice-2'. Profiles that already bind a
+                                  different email are still given a suffix to
+                                  avoid clobbering. Only valid with --all-
+                                  accounts.
+  --profile-name TEXT             Write a targeted --account browser-cookie
+                                  login to this named profile instead of the
+                                  active profile. Only valid with --browser-
+                                  cookies.
+  --fresh                         Start with a clean browser session (deletes
+                                  cached browser profile). Use to switch
+                                  Google accounts.
+  --include-domains TEXT          Opt in to extracting sibling-product cookies
+                                  (default: required Google auth/Drive cookies
+                                  only). Pass labels comma-separated or repeat
+                                  the flag: --include-domains=youtube,docs OR
+                                  --include-domains=youtube --include-
+                                  domains=docs. Supported labels: youtube,
+                                  docs, myaccount, mail, all.
+  --help                          Show this message and exit.

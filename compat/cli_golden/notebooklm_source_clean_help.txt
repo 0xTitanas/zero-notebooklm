@@ -1,0 +1,11 @@
+Usage: notebooklm source clean [OPTIONS]
+
+  Automatically remove duplicate, error, and access-blocked sources.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --dry-run            Show what would be deleted without actually deleting
+  -y, --yes            Skip confirmation
+  --json               Output as JSON
+  --help               Show this message and exit.

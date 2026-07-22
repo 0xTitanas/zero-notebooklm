@@ -1,0 +1,3 @@
+)]}'
+
+[["wrb.fr","list-notes-rpc","[[\"fake-note-0001\",\"fake-notebook-0001\",\"Synthetic Study Note\",\"A fixture-backed note for NotebookLM Bare parity tests.\",1750000300],[\"fake-note-0002\",\"fake-notebook-0001\",\"Synthetic Follow-up Note\",\"Second synthetic note; contains no real NotebookLM data.\",1750000400]]",null,null,null,"generic"]]

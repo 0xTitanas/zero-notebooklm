@@ -1,0 +1,19 @@
+Usage: notebooklm note create [OPTIONS] [CONTENT]
+
+  Create a new note.
+
+  Examples:
+    notebooklm note create                        # Empty note with default title
+    notebooklm note create "My note content"     # Note with content
+    notebooklm note create "Content" -t "Title"  # Note with title and content
+    cat notes.md | notebooklm note create --content -    # Content from stdin
+    cat notes.md | notebooklm note create -              # Same, positional form
+
+Options:
+  --content TEXT       Note content (or '-' to read from stdin). Mutually
+                       exclusive with the positional CONTENT argument.
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  -t, --title TEXT     Note title
+  --json               Output as JSON
+  --help               Show this message and exit.

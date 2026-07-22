@@ -1,0 +1,48 @@
+Usage: notebooklm ask [OPTIONS] [QUESTION]
+
+  Ask a notebook a question.
+
+  By default, continues the last conversation. Use --new to start fresh. The
+  answer includes inline citations like [1], [2] that reference sources. Use
+  --json to get structured output with source IDs for each reference.
+
+  Example:
+    notebooklm ask "what are the main themes?"
+    notebooklm ask -c <id> "continue this one"
+    notebooklm ask --new "ignore last conversation, start fresh"
+    notebooklm ask -s src_001 -s src_002 "question about specific sources"
+    notebooklm ask "explain X" --json             # Get answer with source references
+    notebooklm ask "explain X" --save-as-note     # Save response as a note
+
+Options:
+  --prompt-file PROMPT_FILE       Read prompt/query text from a file (or '-'
+                                  for stdin) instead of the positional
+                                  argument
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  -c, --conversation-id TEXT      Continue a specific conversation
+  --new                           Start a fresh conversation. DESTRUCTIVE:
+                                  this deletes the notebook's current server-
+                                  side conversation (turns are not
+                                  recoverable) before asking. Prompts for
+                                  confirmation unless ``--yes`` is passed.
+  -y, --yes                       Skip the ``--new`` destructive-delete
+                                  confirmation prompt. ``--json`` implies
+                                  ``--yes`` so scripted callers never hang.
+  -s, --source TEXT               Limit to specific source IDs (can be
+                                  repeated)
+  --json                          Output as JSON (includes references)
+  --save-as-note                  Save response as a note. When the answer has
+                                  citations, the saved note preserves
+                                  interactive [N] hover-anchor links (matching
+                                  the NotebookLM web UI's 'Save to note'
+                                  behavior); otherwise falls back to a plain-
+                                  text note.
+  -t, --note-title TEXT           Note title (use with --save-as-note)
+  --request-timeout, --timeout INTEGER RANGE
+                                  HTTP request/read timeout in seconds for
+                                  this ask. Defaults to the library's chat
+                                  timeout. (--timeout is a back-compat alias.)
+                                  [x>=1]
+  --help                          Show this message and exit.

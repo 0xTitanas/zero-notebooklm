@@ -1,0 +1,34 @@
+Usage: notebooklm download infographic [OPTIONS] [OUTPUT_PATH]
+
+  Download infographic(s) to file.
+
+  Examples:
+      # Download latest infographic to default filename
+      notebooklm download infographic
+
+      # Download to specific path     notebooklm download infographic my-
+      infographic.png
+
+      # Download all infographic files to directory     notebooklm download
+      infographic --all ./infographic/
+
+      # Download specific artifact by name     notebooklm download infographic
+      --name "chapter 3"
+
+      # Preview without downloading     notebooklm download infographic --all
+      --dry-run
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --latest             Download latest (default behavior)
+  --earliest           Download earliest
+  --all                Download all artifacts
+  --name TEXT          Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT  Select by artifact ID
+  --json               Output as JSON
+  --dry-run            Preview without downloading
+  --force              Overwrite existing files
+  --no-clobber         Don't overwrite existing files (single download fails;
+                       --all skips them)
+  --help               Show this message and exit.

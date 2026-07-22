@@ -1,0 +1,28 @@
+Usage: notebooklm history [OPTIONS]
+
+  Get conversation history or save it as a note.
+
+  Shows all Q&A turns from the most recent conversation.
+
+  Example:
+    notebooklm history                      # Show Q&A history
+    notebooklm history -n nb123             # Show history for specific notebook
+    notebooklm history --clear              # Clear local cache
+    notebooklm history --save               # Save history as a note
+    notebooklm history --save --note-title "Summary"  # Save with custom title
+    notebooklm history --json               # Machine-readable JSON output
+    notebooklm history --show-all           # Full Q&A content
+    notebooklm history --no-truncate        # Full Q&A content in the table view
+
+Options:
+  -n, --notebook TEXT    Notebook ID (uses current if not set). Supports
+                         partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  -l, --limit INTEGER    Maximum number of Q&A turns to show
+  --clear                Clear local conversation cache
+  --save                 Save history as a note
+  -t, --note-title TEXT  Note title (with --save)
+  --json                 Output as JSON
+  --show-all             Show full Q&A content instead of preview
+  --no-truncate          Disable the 50-char preview cap on Question/Answer
+                         columns in the table view.
+  --help                 Show this message and exit.

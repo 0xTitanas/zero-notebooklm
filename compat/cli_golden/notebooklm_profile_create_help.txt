@@ -1,0 +1,13 @@
+Usage: notebooklm profile create [OPTIONS] NAME
+
+  Create a new profile.
+
+  Creates an empty profile directory. Use 'notebooklm -p NAME login' to
+  authenticate.
+
+  Example:
+    notebooklm profile create work
+    notebooklm -p work login
+
+Options:
+  --help  Show this message and exit.

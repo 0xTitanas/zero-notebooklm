@@ -1,0 +1,17 @@
+Usage: notebooklm share view-level [OPTIONS] {full|chat}
+
+  Set what viewers can access.
+
+  LEVEL options:
+    full   - Viewers see chat, sources, and notes
+    chat   - Viewers only see the chat interface
+
+  Examples:
+    notebooklm share view-level full     # Full notebook access
+    notebooklm share view-level chat     # Chat only
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

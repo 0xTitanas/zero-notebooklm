@@ -1,0 +1,7 @@
+Usage: notebooklm profile list [OPTIONS]
+
+  List all profiles and their status.
+
+Options:
+  --json  Output as JSON
+  --help  Show this message and exit.

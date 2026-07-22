@@ -1,0 +1,41 @@
+Usage: notebooklm download quiz [OPTIONS] [OUTPUT_PATH]
+
+  Download quiz questions.
+
+  Examples:
+      # Download latest quiz to default filename
+      notebooklm download quiz
+
+      # Download to specific path     notebooklm download quiz my-quiz.json
+
+      # Download all quiz files to directory     notebooklm download quiz
+      --all ./quizzes/
+
+      # Download specific artifact by name     notebooklm download quiz --name
+      "chapter 3"
+
+      # Preview without downloading     notebooklm download quiz --all --dry-
+      run
+
+      # Download as markdown or html     notebooklm download quiz --format
+      markdown quiz.md     notebooklm download quiz --format html quiz.html
+
+      # Machine-readable output     notebooklm download quiz --json
+
+Options:
+  -n, --notebook TEXT            Notebook ID (uses current if not set).
+                                 Supports partial IDs.  [env var:
+                                 NOTEBOOKLM_NOTEBOOK]
+  --latest                       Download latest (default behavior)
+  --earliest                     Download earliest
+  --all                          Download all artifacts
+  --name TEXT                    Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT            Select by artifact ID
+  --json                         Output as JSON
+  --dry-run                      Preview without downloading
+  --force                        Overwrite existing files
+  --no-clobber                   Don't overwrite existing files (single
+                                 download fails; --all skips them)
+  --format [json|markdown|html]  Output format: json (default), markdown, or
+                                 html
+  --help                         Show this message and exit.

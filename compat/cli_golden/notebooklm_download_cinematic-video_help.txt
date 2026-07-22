@@ -1,0 +1,21 @@
+Usage: notebooklm download cinematic-video [OPTIONS] [OUTPUT_PATH]
+
+  Download cinematic video overview(s) to file.
+
+  Alias for 'download video' — cinematic and standard videos share the same
+  artifact type.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --latest             Download latest (default behavior)
+  --earliest           Download earliest
+  --all                Download all artifacts
+  --name TEXT          Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT  Select by artifact ID
+  --json               Output as JSON
+  --dry-run            Preview without downloading
+  --force              Overwrite existing files
+  --no-clobber         Don't overwrite existing files (single download fails;
+                       --all skips them)
+  --help               Show this message and exit.

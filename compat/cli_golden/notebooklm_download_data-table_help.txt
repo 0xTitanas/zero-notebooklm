@@ -1,0 +1,34 @@
+Usage: notebooklm download data-table [OPTIONS] [OUTPUT_PATH]
+
+  Download data table(s) as CSV files.
+
+  Examples:
+      # Download latest data-table to default filename
+      notebooklm download data-table
+
+      # Download to specific path     notebooklm download data-table my-data-
+      table.csv
+
+      # Download all data-table files to directory     notebooklm download
+      data-table --all ./data-tables/
+
+      # Download specific artifact by name     notebooklm download data-table
+      --name "chapter 3"
+
+      # Preview without downloading     notebooklm download data-table --all
+      --dry-run
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --latest             Download latest (default behavior)
+  --earliest           Download earliest
+  --all                Download all artifacts
+  --name TEXT          Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT  Select by artifact ID
+  --json               Output as JSON
+  --dry-run            Preview without downloading
+  --force              Overwrite existing files
+  --no-clobber         Don't overwrite existing files (single download fails;
+                       --all skips them)
+  --help               Show this message and exit.

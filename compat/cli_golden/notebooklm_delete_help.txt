@@ -1,0 +1,12 @@
+Usage: notebooklm delete [OPTIONS]
+
+  Delete a notebook.
+
+  Supports partial IDs - 'notebooklm delete -n abc' matches 'abc123...'
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  -y, --yes            Skip confirmation
+  --json               Output as JSON
+  --help               Show this message and exit.

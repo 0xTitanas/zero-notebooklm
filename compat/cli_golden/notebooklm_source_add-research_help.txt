@@ -1,0 +1,32 @@
+Usage: notebooklm source add-research [OPTIONS] [QUERY]
+
+  Search web or drive and add sources from results.
+
+  See ``--from``, ``--mode``, ``--import-all``, ``--cited-only``, ``--no-
+  wait``, and ``--timeout``. Read the query from a file with ``--prompt-
+  file``.
+
+Options:
+  --prompt-file PROMPT_FILE  Read prompt/query text from a file (or '-' for
+                             stdin) instead of the positional argument
+  -n, --notebook TEXT        Notebook ID (uses current if not set). Supports
+                             partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --from [web|drive]         Search source (default: web)
+  --mode [fast|deep]         Search mode (default: fast)
+  --import-all               Import all found sources
+  --cited-only               With --import-all, import only cited sources
+  --no-wait                  Start research and return immediately (use
+                             'research status/wait' to monitor)
+  --timeout INTEGER          Per-phase seconds budget for (a) the research-
+                             completion poll loop and (b) the --import-all
+                             retry loop (default: 1800). Each phase gets the
+                             full budget independently, so worst-case total
+                             wall time is up to 2× this value. Matches
+                             'research wait --timeout' semantics. Bumping this
+                             is required for deep research that runs longer
+                             than the legacy 5-minute cap — otherwise the CLI
+                             gives up before IMPORT_RESEARCH fires and the
+                             NotebookLM web UI is left showing an 'Add
+                             sources?' modal.
+  --json                     Output as JSON
+  --help                     Show this message and exit.

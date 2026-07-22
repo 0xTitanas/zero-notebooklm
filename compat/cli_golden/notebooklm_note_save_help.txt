@@ -1,0 +1,14 @@
+Usage: notebooklm note save [OPTIONS] NOTE_ID
+
+  Update note content.
+
+  NOTE_ID can be a full UUID or a partial prefix (e.g., 'abc' matches
+  'abc123...').
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --title TEXT         New title
+  --content TEXT       New content
+  --json               Output as JSON
+  --help               Show this message and exit.

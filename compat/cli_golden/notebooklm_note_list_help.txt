@@ -1,0 +1,9 @@
+Usage: notebooklm note list [OPTIONS]
+
+  List all notes in a notebook.
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

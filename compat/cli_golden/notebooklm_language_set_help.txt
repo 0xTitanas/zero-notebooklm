@@ -1,0 +1,17 @@
+Usage: notebooklm language set [OPTIONS] CODE
+
+  Set default language for artifact generation.
+
+  ⚠️  This is a GLOBAL setting that affects all notebooks in your account.
+
+  Saves to local config and syncs to server (use --local to skip server sync).
+
+  Example:
+    notebooklm language set zh_Hans    # Simplified Chinese
+    notebooklm language set ja         # Japanese
+    notebooklm language set en         # English
+
+Options:
+  --local  Set local config only (skip server sync)
+  --json   Output as JSON
+  --help   Show this message and exit.

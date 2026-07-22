@@ -1,0 +1,272 @@
+{
+  "base_runtime_requirements": [
+    "click<9,>=8.0.0",
+    "filelock<4,>=3.13",
+    "httpx<0.29,>=0.27.0",
+    "rich<16,>=13.0.0"
+  ],
+  "behavioral_influence": {
+    "click": {
+      "bare_replacement": "argparse-based CLI parity surface (stdlib).",
+      "extra": null,
+      "role": "CLI framework: command tree, options, prompts, exit codes."
+    },
+    "filelock": {
+      "bare_replacement": "stdlib os.open(O_CREAT|O_EXCL)/fcntl/msvcrt lock helper.",
+      "extra": null,
+      "role": "Cross-process lock for profile/session/cookie files."
+    },
+    "httpx": {
+      "annotation_identity_deviations": [
+        {
+          "annotation": "httpx.Cookies | None",
+          "location": "notebooklm.AuthTokens(cookie_jar)"
+        },
+        {
+          "annotation": "httpx.Cookies | None",
+          "location": "notebooklm.AuthTokens.cookie_jar"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "location": "notebooklm.NotebookLMClient(upload_timeout)"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "location": "notebooklm.NotebookLMClient.__init__(upload_timeout)"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "location": "notebooklm.NotebookLMClient.from_storage(upload_timeout)"
+        },
+        {
+          "annotation": "httpx.Cookies | None",
+          "location": "notebooklm.auth.AuthTokens(cookie_jar)"
+        },
+        {
+          "annotation": "httpx.Cookies | None",
+          "location": "notebooklm.auth.AuthTokens.cookie_jar"
+        },
+        {
+          "annotation": "httpx.Cookies",
+          "location": "notebooklm.auth.build_cookie_jar->return"
+        },
+        {
+          "annotation": "httpx.Cookies",
+          "location": "notebooklm.auth.build_httpx_cookies_from_storage->return"
+        },
+        {
+          "annotation": "httpx.Cookies",
+          "location": "notebooklm.auth.load_httpx_cookies->return"
+        },
+        {
+          "annotation": "httpx.Cookies",
+          "location": "notebooklm.auth.save_cookies_to_storage(cookie_jar)"
+        },
+        {
+          "annotation": "httpx.Cookies",
+          "location": "notebooklm.auth.snapshot_cookie_jar(cookie_jar)"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "location": "notebooklm.client.NotebookLMClient(upload_timeout)"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "location": "notebooklm.client.NotebookLMClient.__init__(upload_timeout)"
+        },
+        {
+          "annotation": "httpx.Timeout | None",
+          "location": "notebooklm.client.NotebookLMClient.from_storage(upload_timeout)"
+        }
+      ],
+      "bare_replacement": "stdlib urllib/http.client + selector/executor async boundary.",
+      "extra": null,
+      "role": "Async HTTP transport, Timeout/Cookies types, connection limits."
+    },
+    "markdownify": {
+      "bare_replacement": "stdlib html.parser-based converter.",
+      "extra": "markdown",
+      "lazy_import_sites": [
+        "notebooklm/_source/content.py"
+      ],
+      "role": "HTML->Markdown conversion for source content extraction."
+    },
+    "playwright": {
+      "bare_replacement": "documented bare-CDP / OS browser launch helper.",
+      "extra": "browser",
+      "lazy_import_sites": [
+        "notebooklm/cli/services/playwright_login.py"
+      ],
+      "role": "Interactive browser login automation (chromium|chrome|msedge)."
+    },
+    "rich": {
+      "bare_replacement": "plain stdlib output writer with JSON mode.",
+      "extra": null,
+      "role": "Human-facing console rendering (tables, panels, progress)."
+    },
+    "rookiepy": {
+      "bare_replacement": "stdlib sqlite3 + OS credential facilities (Keychain/DPAPI/secret).",
+      "extra": "cookies",
+      "lazy_import_sites": [
+        "notebooklm/cli/_chromium_profiles.py",
+        "notebooklm/cli/services/login/browser_accounts.py"
+      ],
+      "role": "Browser cookie-store extraction (chromium-family, firefox, safari)."
+    }
+  },
+  "denylisted_runtime_imports": [
+    "httpx",
+    "httpcore",
+    "h11",
+    "requests",
+    "click",
+    "rich",
+    "filelock",
+    "rookiepy",
+    "playwright",
+    "selenium",
+    "websockets",
+    "fastmcp",
+    "mcp",
+    "pydantic",
+    "anyio",
+    "sniffio",
+    "starlette",
+    "uvicorn",
+    "bs4",
+    "lxml",
+    "markdownify",
+    "dotenv",
+    "certifi",
+    "markdown_it"
+  ],
+  "extras": {
+    "all": [
+      "markdownify<2,>=0.14.1; extra == 'all'",
+      "mypy<3,>=1.0.0; extra == 'all'",
+      "packaging<27,>=23.0; extra == 'all'",
+      "playwright<2,>=1.40.0; extra == 'all'",
+      "pre-commit<5,>=4.5.1; extra == 'all'",
+      "pytest-asyncio<2,>=0.23.0; extra == 'all'",
+      "pytest-cov<8,>=4.0.0; extra == 'all'",
+      "pytest-httpx<0.37,>=0.30.0; extra == 'all'",
+      "pytest-rerunfailures<17,>=14.0; extra == 'all'",
+      "pytest-timeout<3,>=2.3.0; extra == 'all'",
+      "pytest-xdist<4,>=3.6.0; extra == 'all'",
+      "pytest<10,>=8.0.0; extra == 'all'",
+      "python-dotenv<2,>=1.0.0; extra == 'all'",
+      "ruff==0.15.15; extra == 'all'",
+      "tomli<3,>=2.0.0; (python_version < '3.11') and extra == 'all'",
+      "vcrpy<9,>=6.0.0; extra == 'all'"
+    ],
+    "browser": [
+      "playwright<2,>=1.40.0; extra == 'browser'"
+    ],
+    "cookies": [
+      "rookiepy<1,>=0.1.0; extra == 'cookies'"
+    ],
+    "dev": [
+      "mypy<3,>=1.0.0; extra == 'dev'",
+      "packaging<27,>=23.0; extra == 'dev'",
+      "pre-commit<5,>=4.5.1; extra == 'dev'",
+      "pytest-asyncio<2,>=0.23.0; extra == 'dev'",
+      "pytest-cov<8,>=4.0.0; extra == 'dev'",
+      "pytest-httpx<0.37,>=0.30.0; extra == 'dev'",
+      "pytest-rerunfailures<17,>=14.0; extra == 'dev'",
+      "pytest-timeout<3,>=2.3.0; extra == 'dev'",
+      "pytest-xdist<4,>=3.6.0; extra == 'dev'",
+      "pytest<10,>=8.0.0; extra == 'dev'",
+      "python-dotenv<2,>=1.0.0; extra == 'dev'",
+      "ruff==0.15.15; extra == 'dev'",
+      "tomli<3,>=2.0.0; (python_version < '3.11') and extra == 'dev'",
+      "vcrpy<9,>=6.0.0; extra == 'dev'"
+    ],
+    "markdown": [
+      "markdownify<2,>=0.14.1; extra == 'markdown'"
+    ]
+  },
+  "generated_at": "2026-06-23T01:52:41+00:00",
+  "installed_base_versions": {
+    "certifi": "2026.6.17",
+    "click": "8.4.1",
+    "filelock": "3.29.4",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "markdown-it-py": "4.2.0",
+    "pygments": "2.20.0",
+    "rich": "15.0.0"
+  },
+  "provenance": {
+    "download_command": "pip download --no-deps --only-binary=:all: notebooklm-py==0.7.2",
+    "isolation": "disposable venv; no global install; base deps only (extras imported lazily by upstream, so unneeded for surface lock).",
+    "source_commit": "915b5321e1c1f411e23bd8265517be8740749e56",
+    "source_commit_remote_check": {
+      "checked": true,
+      "checked_at": "2026-06-23T01:52:24+00:00",
+      "exists": true,
+      "http_status": 200,
+      "returned_sha": "915b5321e1c1f411e23bd8265517be8740749e56"
+    },
+    "source_repo": "teng-lin/notebooklm-py",
+    "wheel_filename": "notebooklm_py-0.7.2-py3-none-any.whl",
+    "wheel_sha256": "d850cfea2494732bc5f153406a9637c3ee5fe931d87901d101c026df2a6ecf65",
+    "wheel_sha256_expected": "d850cfea2494732bc5f153406a9637c3ee5fe931d87901d101c026df2a6ecf65",
+    "wheel_sha256_verified": true
+  },
+  "pypi_to_import_name": {
+    "beautifulsoup4": "bs4",
+    "markdown-it-py": "markdown_it",
+    "notebooklm-py": "notebooklm",
+    "python-dotenv": "dotenv"
+  },
+  "requires_dist_raw": [
+    "click<9,>=8.0.0",
+    "filelock<4,>=3.13",
+    "httpx<0.29,>=0.27.0",
+    "markdownify<2,>=0.14.1; extra == 'all'",
+    "markdownify<2,>=0.14.1; extra == 'markdown'",
+    "mypy<3,>=1.0.0; extra == 'all'",
+    "mypy<3,>=1.0.0; extra == 'dev'",
+    "packaging<27,>=23.0; extra == 'all'",
+    "packaging<27,>=23.0; extra == 'dev'",
+    "playwright<2,>=1.40.0; extra == 'all'",
+    "playwright<2,>=1.40.0; extra == 'browser'",
+    "pre-commit<5,>=4.5.1; extra == 'all'",
+    "pre-commit<5,>=4.5.1; extra == 'dev'",
+    "pytest-asyncio<2,>=0.23.0; extra == 'all'",
+    "pytest-asyncio<2,>=0.23.0; extra == 'dev'",
+    "pytest-cov<8,>=4.0.0; extra == 'all'",
+    "pytest-cov<8,>=4.0.0; extra == 'dev'",
+    "pytest-httpx<0.37,>=0.30.0; extra == 'all'",
+    "pytest-httpx<0.37,>=0.30.0; extra == 'dev'",
+    "pytest-rerunfailures<17,>=14.0; extra == 'all'",
+    "pytest-rerunfailures<17,>=14.0; extra == 'dev'",
+    "pytest-timeout<3,>=2.3.0; extra == 'all'",
+    "pytest-timeout<3,>=2.3.0; extra == 'dev'",
+    "pytest-xdist<4,>=3.6.0; extra == 'all'",
+    "pytest-xdist<4,>=3.6.0; extra == 'dev'",
+    "pytest<10,>=8.0.0; extra == 'all'",
+    "pytest<10,>=8.0.0; extra == 'dev'",
+    "python-dotenv<2,>=1.0.0; extra == 'all'",
+    "python-dotenv<2,>=1.0.0; extra == 'dev'",
+    "rich<16,>=13.0.0",
+    "rookiepy<1,>=0.1.0; extra == 'cookies'",
+    "ruff==0.15.15; extra == 'all'",
+    "ruff==0.15.15; extra == 'dev'",
+    "tomli<3,>=2.0.0; (python_version < '3.11') and extra == 'all'",
+    "tomli<3,>=2.0.0; (python_version < '3.11') and extra == 'dev'",
+    "vcrpy<9,>=6.0.0; extra == 'all'",
+    "vcrpy<9,>=6.0.0; extra == 'dev'"
+  ],
+  "requires_python": ">=3.10",
+  "rookiepy_backends_referenced": [
+    "any_browser",
+    "chrome",
+    "chromium_based",
+    "firefox",
+    "load"
+  ],
+  "schema_version": "phase0/1",
+  "target": "notebooklm-py==0.7.2"
+}

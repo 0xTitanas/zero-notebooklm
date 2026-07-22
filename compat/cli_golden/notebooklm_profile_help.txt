@@ -1,0 +1,13 @@
+Usage: notebooklm profile [OPTIONS] COMMAND [ARGS]...
+
+  Manage authentication profiles for multiple accounts.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  create  Create a new profile.
+  delete  Delete a profile and its data.
+  list    List all profiles and their status.
+  rename  Rename a profile.
+  switch  Set the default profile.

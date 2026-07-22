@@ -1,0 +1,26 @@
+Usage: notebooklm generate data-table [OPTIONS] [DESCRIPTION]
+
+  Generate data table.
+
+  Use --json for machine-readable output.
+
+  Example:
+    notebooklm generate data-table "comparison of key concepts"
+    notebooklm generate data-table -s src_001 "timeline of events"
+
+Options:
+  --prompt-file PROMPT_FILE  Read prompt/query text from a file (or '-' for
+                             stdin) instead of the positional argument
+  -n, --notebook TEXT        Notebook ID (uses current if not set). Supports
+                             partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --language TEXT            Output language (default: --language >
+                             NOTEBOOKLM_HL env > config > 'en')
+  -s, --source TEXT          Limit to specific source IDs
+  --wait / --no-wait         Wait for completion (default: no-wait)
+  --timeout INTEGER          Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE   Seconds between status checks (default: 2)
+                             [x>=1]
+  --retry INTEGER RANGE      Retry N times with exponential backoff on rate
+                             limit  [x>=0]
+  --json                     Output as JSON
+  --help                     Show this message and exit.

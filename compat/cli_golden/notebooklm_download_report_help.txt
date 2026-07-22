@@ -1,0 +1,33 @@
+Usage: notebooklm download report [OPTIONS] [OUTPUT_PATH]
+
+  Download report(s) as markdown files.
+
+  Examples:
+      # Download latest report to default filename
+      notebooklm download report
+
+      # Download to specific path     notebooklm download report my-report.md
+
+      # Download all report files to directory     notebooklm download report
+      --all ./reports/
+
+      # Download specific artifact by name     notebooklm download report
+      --name "chapter 3"
+
+      # Preview without downloading     notebooklm download report --all
+      --dry-run
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --latest             Download latest (default behavior)
+  --earliest           Download earliest
+  --all                Download all artifacts
+  --name TEXT          Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT  Select by artifact ID
+  --json               Output as JSON
+  --dry-run            Preview without downloading
+  --force              Overwrite existing files
+  --no-clobber         Don't overwrite existing files (single download fails;
+                       --all skips them)
+  --help               Show this message and exit.

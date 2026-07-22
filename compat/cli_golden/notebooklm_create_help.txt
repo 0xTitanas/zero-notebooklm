@@ -1,0 +1,13 @@
+Usage: notebooklm create [OPTIONS] TITLE
+
+  Create a new notebook.
+
+  By default, creates the notebook without changing the active context. Pass
+  --use (or -u) to make the new notebook the current context, so subsequent
+  commands like 'source add' target it.
+
+Options:
+  -u, --use  Set the new notebook as the current context (like 'notebooklm use
+             <id>').
+  --json     Output as JSON
+  --help     Show this message and exit.

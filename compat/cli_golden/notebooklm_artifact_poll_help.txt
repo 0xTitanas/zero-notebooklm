@@ -1,0 +1,27 @@
+Usage: notebooklm artifact poll [OPTIONS] TASK_ID
+
+  Single non-blocking generation status check.
+
+  TASK_ID is the identifier returned by `notebooklm generate <type>` (it
+  appears in the `task_id` field of the JSON payload, or after `Started:`
+  in the human-readable output). Pass it through unchanged — `poll` does
+  NOT prefix-match against `artifact list`, so a freshly-issued task_id
+  works even before the artifact appears in the list.
+
+  Note: this is the same identifier `wait` accepts. The API uses one ID
+  that serves as both the generation task_id (during creation) and the
+  artifact_id (once listed); the difference is operational, not semantic:
+    - `poll`: one-shot check, accepts the raw task_id from `generate`.
+    - `wait`: blocks until terminal, prefix-matches against `artifact list`.
+
+  Examples:
+    # Right after `generate audio` returns task_id "abc123def...":
+    notebooklm artifact poll abc123def
+    # JSON output for scripting:
+    notebooklm artifact poll abc123def --json
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json               Output as JSON
+  --help               Show this message and exit.

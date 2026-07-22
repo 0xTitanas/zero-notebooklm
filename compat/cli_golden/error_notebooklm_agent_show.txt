@@ -1,0 +1,6 @@
+Usage: notebooklm agent show [OPTIONS] {codex|claude}
+Try 'notebooklm agent show --help' for help.
+
+Error: Missing argument '{codex|claude}'. Choose from:
+	codex,
+	claude

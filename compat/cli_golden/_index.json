@@ -1,0 +1,784 @@
+{
+  "counts": {
+    "errors": 6,
+    "help": 103,
+    "misc": 1
+  },
+  "description": "Normalized golden output captured from real upstream notebooklm-py==0.7.2 (NO_COLOR, COLUMNS=80). help present for every one of the 103 Click-tree nodes.",
+  "errors": [
+    {
+      "command": "notebooklm definitely-not-a-real-command",
+      "exit_code": 2,
+      "file": "cli_golden/error_notebooklm_definitely-not-a-real-command.txt",
+      "label": "unknown-command",
+      "sha256": "62f7f2e47b6f5ff0ebea053f4e6cb45f7c2cc0106e5b0a4798408dddd59e7afa"
+    },
+    {
+      "command": "notebooklm ask --definitely-not-a-real-option",
+      "exit_code": 2,
+      "file": "cli_golden/error_notebooklm_ask_--definitely-not-a-real-option.txt",
+      "label": "unknown-option",
+      "sha256": "32a9e17cb0addc8facaff97d687f7748552481c6cadb517390cee5a8cfb33bf5"
+    },
+    {
+      "command": "notebooklm source",
+      "exit_code": 2,
+      "file": "cli_golden/error_notebooklm_source.txt",
+      "label": "group-missing-subcommand",
+      "sha256": "419ca10e64f0fe5509fcb9d130456cd00435b022ff9aa6f58eb96ed13ea4ced8"
+    },
+    {
+      "command": "notebooklm source add --type __bogus__ __dummy_content__",
+      "exit_code": 2,
+      "file": "cli_golden/error_notebooklm_source_add_--type___bogus_____dummy_content__.txt",
+      "label": "invalid-choice-add",
+      "sha256": "996d81d17fdf39dc80a55c5660cafe7dee5e7c2464a97b42cb4814a8f6dbbb18"
+    },
+    {
+      "command": "notebooklm generate audio --format __bogus__",
+      "exit_code": 2,
+      "file": "cli_golden/error_notebooklm_generate_audio_--format___bogus__.txt",
+      "label": "invalid-choice-audio",
+      "sha256": "815fb79c47311d7ba82ec02affa563e7267066bfdb368f821292e268240dc651"
+    },
+    {
+      "command": "notebooklm agent show",
+      "exit_code": 2,
+      "file": "cli_golden/error_notebooklm_agent_show.txt",
+      "label": "missing-required-argument",
+      "sha256": "f718d3a5ea96bf835bd1762574643b04f74c3d0c15647039bec9ab7e5a8f8684"
+    }
+  ],
+  "generated_at": "2026-06-23T01:52:40+00:00",
+  "help": [
+    {
+      "command": "notebooklm",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_help.txt",
+      "kind": "group",
+      "sha256": "e3c0ea36c3feb9e65fac2a8d5028b71c9d766a1a59ded30f579e42ae452fb43a"
+    },
+    {
+      "command": "notebooklm agent",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_agent_help.txt",
+      "kind": "group",
+      "sha256": "7901f100a49a6b062cacca38f14a3b0a7c973b0f4141ccb4b14d422658db7a29"
+    },
+    {
+      "command": "notebooklm agent show",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_agent_show_help.txt",
+      "kind": "command",
+      "sha256": "63b5ecbfabb7a671596b1f85e742b2746fa4a4855545755155461524f598cd6f"
+    },
+    {
+      "command": "notebooklm artifact",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_help.txt",
+      "kind": "group",
+      "sha256": "c242c537a1f62dbcfab5bffca569c912feaebe6401d6334ab9ee94dc777e9491"
+    },
+    {
+      "command": "notebooklm artifact delete",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_delete_help.txt",
+      "kind": "command",
+      "sha256": "0256680dafa3d7bc8549bb3fcc4570ab721506db9f944013eeb1d9454e52d46d"
+    },
+    {
+      "command": "notebooklm artifact export",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_export_help.txt",
+      "kind": "command",
+      "sha256": "07d5e1dc9c96f004b4f2147cbc4773115ab437da9543594d39b09ca10865dee4"
+    },
+    {
+      "command": "notebooklm artifact get",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_get_help.txt",
+      "kind": "command",
+      "sha256": "b192cd82f0d7be9e3c75b942601ccbeb72773578d5467f7001134d7398b3b2b6"
+    },
+    {
+      "command": "notebooklm artifact list",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_list_help.txt",
+      "kind": "command",
+      "sha256": "8b668d951286674f0791b076123a0dbf354773eddcfd8079c8d72da7ae4a5922"
+    },
+    {
+      "command": "notebooklm artifact poll",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_poll_help.txt",
+      "kind": "command",
+      "sha256": "be8105ca47f87cf98431e769677917c34fea04bec770e923dabb1271cc9122ee"
+    },
+    {
+      "command": "notebooklm artifact rename",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_rename_help.txt",
+      "kind": "command",
+      "sha256": "c5e933f3e2b3987153cabdb8fe2a1499b9ba06f0272cda4167562ea868a00ad1"
+    },
+    {
+      "command": "notebooklm artifact retry",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_retry_help.txt",
+      "kind": "command",
+      "sha256": "cd948f6497c33e148668f167e8002aa38596397a70e1101338c93022a935d539"
+    },
+    {
+      "command": "notebooklm artifact suggestions",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_suggestions_help.txt",
+      "kind": "command",
+      "sha256": "05166a06116a724828b85a5832559089c3f7fe57afe1d7cb0e568090ba3532dd"
+    },
+    {
+      "command": "notebooklm artifact wait",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_artifact_wait_help.txt",
+      "kind": "command",
+      "sha256": "7aad03407d483e90a9cc46f6220d155f9f44059c4bf7651ec846e180f017c358"
+    },
+    {
+      "command": "notebooklm ask",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_ask_help.txt",
+      "kind": "command",
+      "sha256": "38b2ab2d67d6da6d65792945faa6711468bbaa52af359806df5444c914c39bc9"
+    },
+    {
+      "command": "notebooklm auth",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_auth_help.txt",
+      "kind": "group",
+      "sha256": "5be76d0a5980dbaeb7f8e6699c42415c6d9f4eaedfdc7f99620292e7b9b6ee5d"
+    },
+    {
+      "command": "notebooklm auth check",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_auth_check_help.txt",
+      "kind": "command",
+      "sha256": "362e84dccb60bffe7f7f8ebe0f90147a3e33e0cf9ee7e382c12bc54d465571b6"
+    },
+    {
+      "command": "notebooklm auth inspect",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_auth_inspect_help.txt",
+      "kind": "command",
+      "sha256": "bf0c98497dcc6fab03dfb295a6c8524143ecc8760641f65677da6316c593ac09"
+    },
+    {
+      "command": "notebooklm auth logout",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_auth_logout_help.txt",
+      "kind": "command",
+      "sha256": "d63d5571190023b294d17f1439b7e898b6f030cba17e5cac917d196ad59b77e3"
+    },
+    {
+      "command": "notebooklm auth refresh",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_auth_refresh_help.txt",
+      "kind": "command",
+      "sha256": "7358c6666faaa34bcff1d24f3358bd69f6568ffaf999858f1fe1f5a5d3004722"
+    },
+    {
+      "command": "notebooklm clear",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_clear_help.txt",
+      "kind": "command",
+      "sha256": "06a3aba59184f0b8d6accd5775ce060810ff405ba110a991eae12d93a1db3914"
+    },
+    {
+      "command": "notebooklm completion",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_completion_help.txt",
+      "kind": "command",
+      "sha256": "02beb2b70bd6487164469145d9ae2e856d6e8d65162c7a4015516f6d41368000"
+    },
+    {
+      "command": "notebooklm configure",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_configure_help.txt",
+      "kind": "command",
+      "sha256": "5c399b85b5ad7483b09851a0fe300e66afb304f9f07f0d18b722d3571079c82b"
+    },
+    {
+      "command": "notebooklm create",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_create_help.txt",
+      "kind": "command",
+      "sha256": "7ba12cd7beea6ef3f5739b142fbfd4388d386836cb1890f5d4da3fed298b0517"
+    },
+    {
+      "command": "notebooklm delete",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_delete_help.txt",
+      "kind": "command",
+      "sha256": "24100e32ed03d7f05329735ae54b9692aa773813ca0290229fd7392e8fe12566"
+    },
+    {
+      "command": "notebooklm doctor",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_doctor_help.txt",
+      "kind": "command",
+      "sha256": "39fc7f4b7931fc9536e81093c90071293df8d5ae781c44bcc31e11d7f96cbfc5"
+    },
+    {
+      "command": "notebooklm download",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_help.txt",
+      "kind": "group",
+      "sha256": "2dc0bddb98b461adab8904570e75f76395c72c181411895fe0494574c0ee3666"
+    },
+    {
+      "command": "notebooklm download audio",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_audio_help.txt",
+      "kind": "command",
+      "sha256": "e71523526ba83fb10ec17af2a0282fbfc1d01a1e9211ae85b0ab4ad4da5e3b25"
+    },
+    {
+      "command": "notebooklm download cinematic-video",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_cinematic-video_help.txt",
+      "kind": "command",
+      "sha256": "b035d234dc662862c8e3afc1c598a95a3de1f3c57210c95810ed9efe8ab9cf45"
+    },
+    {
+      "command": "notebooklm download data-table",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_data-table_help.txt",
+      "kind": "command",
+      "sha256": "af00848ad48946e163ce1970ccc69edbcec5ef1b8d5dfe8a721815f71730c2bc"
+    },
+    {
+      "command": "notebooklm download flashcards",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_flashcards_help.txt",
+      "kind": "command",
+      "sha256": "a215f70b5968fbcd849967f298be433f250cdde2ef2037f0a8f7ba19654212ef"
+    },
+    {
+      "command": "notebooklm download infographic",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_infographic_help.txt",
+      "kind": "command",
+      "sha256": "75437b7f1cbcd7ffd26a5d542b5acf39f67db085f26fbf6f0ce94392df82b82a"
+    },
+    {
+      "command": "notebooklm download mind-map",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_mind-map_help.txt",
+      "kind": "command",
+      "sha256": "b0cd65c8972af9bedc1a46ad8f5bae35f57648a1d0b3745d519d8d3695bcdc06"
+    },
+    {
+      "command": "notebooklm download quiz",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_quiz_help.txt",
+      "kind": "command",
+      "sha256": "25fa9cd69b7230101eb6cfe42eb71e9e9243ca874c6e6ba0542a6b6c94db9776"
+    },
+    {
+      "command": "notebooklm download report",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_report_help.txt",
+      "kind": "command",
+      "sha256": "75fcce9c612cb178665943a8dc7efcc550ea1455b3643e847431589a6e7f7912"
+    },
+    {
+      "command": "notebooklm download slide-deck",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_slide-deck_help.txt",
+      "kind": "command",
+      "sha256": "d1403725232ece8920ce853c52f2216d40d0ef046b2033a60b6a30f3dfc22715"
+    },
+    {
+      "command": "notebooklm download video",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_download_video_help.txt",
+      "kind": "command",
+      "sha256": "a04bb4c04a5bd013f5df47d4b31b1e9598db3a7413c41cd24bb7928771bac883"
+    },
+    {
+      "command": "notebooklm generate",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_help.txt",
+      "kind": "group",
+      "sha256": "ce71a3f5f870f439ce5de9c03b6f85ba164d55ededd801dffec6b9546bbb9457"
+    },
+    {
+      "command": "notebooklm generate audio",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_audio_help.txt",
+      "kind": "command",
+      "sha256": "c5c52d983a984d599a7d190ce634126fa0dd980b9af534e8f7f588a6f6cf4508"
+    },
+    {
+      "command": "notebooklm generate cinematic-video",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_cinematic-video_help.txt",
+      "kind": "command",
+      "sha256": "9080758df215a5235f9e336db4dfeefd4d3f7324ff1c907d625f882efc7aa3dc"
+    },
+    {
+      "command": "notebooklm generate data-table",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_data-table_help.txt",
+      "kind": "command",
+      "sha256": "0e1d17f34f425b646118b5eb98c16645c838d684cb2ebf6b746a7e3443780a4d"
+    },
+    {
+      "command": "notebooklm generate flashcards",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_flashcards_help.txt",
+      "kind": "command",
+      "sha256": "8be17b7dbcb68bfc7110efd514debb5743ce7b46275a19bb5ed852b3d7fb34de"
+    },
+    {
+      "command": "notebooklm generate infographic",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_infographic_help.txt",
+      "kind": "command",
+      "sha256": "e0e22cd8c7a6bdb64afcf2c05e54c054dc824efe0beebd23fba9ac20bd243f92"
+    },
+    {
+      "command": "notebooklm generate mind-map",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_mind-map_help.txt",
+      "kind": "command",
+      "sha256": "01022e2511aa57f4552a4dffe177a3c6372567d989751c728364761640218e99"
+    },
+    {
+      "command": "notebooklm generate quiz",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_quiz_help.txt",
+      "kind": "command",
+      "sha256": "b3de956951f1405dc66c851a54a6aaac6c80b79c3d8063938e84a5250f31db4e"
+    },
+    {
+      "command": "notebooklm generate report",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_report_help.txt",
+      "kind": "command",
+      "sha256": "909ffbbcb52f30566ee186ad89b5e792b57dc1f88bce74d7be2d8a716ad136c6"
+    },
+    {
+      "command": "notebooklm generate revise-slide",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_revise-slide_help.txt",
+      "kind": "command",
+      "sha256": "3c365ab268d114327d006f157fe5555fc8a00b75fda7d02e606dc3c08306f463"
+    },
+    {
+      "command": "notebooklm generate slide-deck",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_slide-deck_help.txt",
+      "kind": "command",
+      "sha256": "9295fced12208ee86f1d79b437eda01e102a538cb026e8e014fcc3c491c9d0bf"
+    },
+    {
+      "command": "notebooklm generate video",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_generate_video_help.txt",
+      "kind": "command",
+      "sha256": "11b6906b0c9d90ba5c0b5fc92f277ab955dc403259fc2f044b136f4b71791c34"
+    },
+    {
+      "command": "notebooklm history",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_history_help.txt",
+      "kind": "command",
+      "sha256": "8693cb35d56b0b778626718e56e2560453d3cd2d4893a9db4e24909119ee1e7c"
+    },
+    {
+      "command": "notebooklm language",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_language_help.txt",
+      "kind": "group",
+      "sha256": "88539dbe2c5b261f881ea663650e35c544ca2dac96e239e84c0e075a14f6d233"
+    },
+    {
+      "command": "notebooklm language get",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_language_get_help.txt",
+      "kind": "command",
+      "sha256": "1eb006e3736eabebcc59073a7b31e54f3ae8ddf200f638bbd1ad3c63f73ae1ba"
+    },
+    {
+      "command": "notebooklm language list",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_language_list_help.txt",
+      "kind": "command",
+      "sha256": "6ad109feaa5809fbbf484c7da8d58ee31f781904561bfa03aa48045654bd3505"
+    },
+    {
+      "command": "notebooklm language set",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_language_set_help.txt",
+      "kind": "command",
+      "sha256": "19d0f9980bf5395460925a7e2ede7744b371e970d4f9349c5989e0f44890c263"
+    },
+    {
+      "command": "notebooklm list",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_list_help.txt",
+      "kind": "command",
+      "sha256": "11fbf920acdb74d8d3c27bc4f0854a0f9dc551a357b84aff83f80082016020a9"
+    },
+    {
+      "command": "notebooklm login",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_login_help.txt",
+      "kind": "command",
+      "sha256": "91d958a66a5b1d100e426a5772f3cebe7d859c75e5a4f7aaa2053b86004506f8"
+    },
+    {
+      "command": "notebooklm metadata",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_metadata_help.txt",
+      "kind": "command",
+      "sha256": "d091b27ed5f19f2e46147729be7a5ec4e1542ae3686583a7541dd7bfe290635f"
+    },
+    {
+      "command": "notebooklm note",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_help.txt",
+      "kind": "group",
+      "sha256": "f47cf28c7652357951c0747945e65396d63ef27eadd3f36b8350d28af685e674"
+    },
+    {
+      "command": "notebooklm note create",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_create_help.txt",
+      "kind": "command",
+      "sha256": "fb3c6f6994d52f2111b6b88d91deaca7d5b21b37a0253d95e3e86c985ef6bd0b"
+    },
+    {
+      "command": "notebooklm note delete",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_delete_help.txt",
+      "kind": "command",
+      "sha256": "78d2de89248706165c871cfd1f4a0212e42873906d6c004d13ec315985c1f8b6"
+    },
+    {
+      "command": "notebooklm note get",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_get_help.txt",
+      "kind": "command",
+      "sha256": "16515ce87d5b8fecb2c15e2a8cef8f63a0121d2a68c781308606a0e5f483671a"
+    },
+    {
+      "command": "notebooklm note list",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_list_help.txt",
+      "kind": "command",
+      "sha256": "2be9976125ce135a83801e176166de52ea6a62a2ebdede9cfefe03b24271c154"
+    },
+    {
+      "command": "notebooklm note rename",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_rename_help.txt",
+      "kind": "command",
+      "sha256": "7cacba9e4b1eb7747b3ef72fa698f87c8288c55db9f038162daa3801f6027854"
+    },
+    {
+      "command": "notebooklm note save",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_note_save_help.txt",
+      "kind": "command",
+      "sha256": "e2ff46093a7a3dd5ab71853ff8ea910877ade2c57872e169b12ea44bfb5a951f"
+    },
+    {
+      "command": "notebooklm profile",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_profile_help.txt",
+      "kind": "group",
+      "sha256": "d34f162665f4f0d57cadb662eeca7c0aff5aa91481afd956ffb69600eb98e1b0"
+    },
+    {
+      "command": "notebooklm profile create",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_profile_create_help.txt",
+      "kind": "command",
+      "sha256": "606f075f90502a47ad55c48af5498262b1b01a88168401ee423d046d288902c0"
+    },
+    {
+      "command": "notebooklm profile delete",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_profile_delete_help.txt",
+      "kind": "command",
+      "sha256": "ac6e17d3e230d425852024d25ccdf127adf9a6dbaa71b916a3554a8675f80d59"
+    },
+    {
+      "command": "notebooklm profile list",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_profile_list_help.txt",
+      "kind": "command",
+      "sha256": "fde3e8bed1bb294a1afbbe5b464ca6760ffe64448bc112e0cdf1edd93ccf4aaa"
+    },
+    {
+      "command": "notebooklm profile rename",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_profile_rename_help.txt",
+      "kind": "command",
+      "sha256": "bbdba56fae5f98bd4f9b5bd2c6b7cdd89e61c887e7172f09093ac24cf9b215f2"
+    },
+    {
+      "command": "notebooklm profile switch",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_profile_switch_help.txt",
+      "kind": "command",
+      "sha256": "780f9f07247e3e5014f2842d67fc69afb5a194aef75078e0abbe738d93d9c898"
+    },
+    {
+      "command": "notebooklm rename",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_rename_help.txt",
+      "kind": "command",
+      "sha256": "f9ff02e226afcb342edc7b94ad9a711cd4cf6c254cdb0ee1d4db6db1ecc347b8"
+    },
+    {
+      "command": "notebooklm research",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_research_help.txt",
+      "kind": "group",
+      "sha256": "1df45555eb62d479b37c10bd9510d548863cef02cd6663e0c83822045b7f3f29"
+    },
+    {
+      "command": "notebooklm research status",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_research_status_help.txt",
+      "kind": "command",
+      "sha256": "a91af6ae34faa749cf849385633c487c0205453695389510dea48462852997ec"
+    },
+    {
+      "command": "notebooklm research wait",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_research_wait_help.txt",
+      "kind": "command",
+      "sha256": "3097c981cc302ba8dcfd771b5d93b33ed03851b0a339b65622cbf14d24860958"
+    },
+    {
+      "command": "notebooklm share",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_help.txt",
+      "kind": "group",
+      "sha256": "944af2f276815035dc39b27511b2c8195b83d081375c5a7ad87999425471a06b"
+    },
+    {
+      "command": "notebooklm share add",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_add_help.txt",
+      "kind": "command",
+      "sha256": "0025d4ada5485ab5ba2ade2e97560f9fd47e08b94dc505b9cd470684101cbe17"
+    },
+    {
+      "command": "notebooklm share public",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_public_help.txt",
+      "kind": "command",
+      "sha256": "8ad0f1ae6584970fb673173db18e15d5a57fb1de3054224d281c384e9d62fa6b"
+    },
+    {
+      "command": "notebooklm share remove",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_remove_help.txt",
+      "kind": "command",
+      "sha256": "e1f12db7bc4a0f52d3883c1e3b7b0a83f0474bae5f4ab40b8315b7f5ba0b2470"
+    },
+    {
+      "command": "notebooklm share status",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_status_help.txt",
+      "kind": "command",
+      "sha256": "87664726cfbd167abaefdba5b5c42825c1dd5891ae91e37b7d21c80ee3aedf30"
+    },
+    {
+      "command": "notebooklm share update",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_update_help.txt",
+      "kind": "command",
+      "sha256": "2abff82993b2a0c5f06acd42831210e5ae96c10bbf01c4b87a2ae36240ba46ab"
+    },
+    {
+      "command": "notebooklm share view-level",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_share_view-level_help.txt",
+      "kind": "command",
+      "sha256": "97bbf8185566d1730caa373d750e6496e327d3839f503e51d7221806abfc1341"
+    },
+    {
+      "command": "notebooklm skill",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_skill_help.txt",
+      "kind": "group",
+      "sha256": "e84f8aff23108a2eab182f4adf265ec2f3485a67d4b780c9808b244c2b0c7ad2"
+    },
+    {
+      "command": "notebooklm skill install",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_skill_install_help.txt",
+      "kind": "command",
+      "sha256": "ddf52797462359ad740e9db342005a1defd90fd344306870cec467b572bee808"
+    },
+    {
+      "command": "notebooklm skill show",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_skill_show_help.txt",
+      "kind": "command",
+      "sha256": "690acb11b3daa188e6b1098c81bcc56c2ae5f8ae6a11dc7e4164dd28c25d8c4b"
+    },
+    {
+      "command": "notebooklm skill status",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_skill_status_help.txt",
+      "kind": "command",
+      "sha256": "eec1d26fd593a20b3f3a5d608a77626c0beae1623a475ea2fefe6ad1ad83a59c"
+    },
+    {
+      "command": "notebooklm skill uninstall",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_skill_uninstall_help.txt",
+      "kind": "command",
+      "sha256": "d8070cac21721124264e6045e2d5400153f400f69bc487732054283de062daa2"
+    },
+    {
+      "command": "notebooklm source",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_help.txt",
+      "kind": "group",
+      "sha256": "419ca10e64f0fe5509fcb9d130456cd00435b022ff9aa6f58eb96ed13ea4ced8"
+    },
+    {
+      "command": "notebooklm source add",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_add_help.txt",
+      "kind": "command",
+      "sha256": "b245dbe061148f8e18c2f13e57af56d07bccc0671a4ff0c09a67419f911e91b8"
+    },
+    {
+      "command": "notebooklm source add-drive",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_add-drive_help.txt",
+      "kind": "command",
+      "sha256": "50743694eee0aca0ecf1f60af6236ceedad10708e483fe1377ed80968ab52586"
+    },
+    {
+      "command": "notebooklm source add-research",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_add-research_help.txt",
+      "kind": "command",
+      "sha256": "e83e9d0853231b76560640434daaf0abaa1890a915d35c883f434cabb7d5bc47"
+    },
+    {
+      "command": "notebooklm source clean",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_clean_help.txt",
+      "kind": "command",
+      "sha256": "a169be9cce40e845da513b547d6b081b1e29fbf20287db8145dac7f2edc40c0a"
+    },
+    {
+      "command": "notebooklm source delete",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_delete_help.txt",
+      "kind": "command",
+      "sha256": "b8a5b3b65a242bfd26dcb4a1e6176a7b444afcd2af70c0c3f64bfc1822f936bb"
+    },
+    {
+      "command": "notebooklm source delete-by-title",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_delete-by-title_help.txt",
+      "kind": "command",
+      "sha256": "28d319b548cb2220d5c2a7b4dd29cde09e1759ea457ad0c77fe743c3a7f39905"
+    },
+    {
+      "command": "notebooklm source fulltext",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_fulltext_help.txt",
+      "kind": "command",
+      "sha256": "19228855b1949b1a4e642e3a37dedf1a21240ad6fefb3c82e443155788fe21db"
+    },
+    {
+      "command": "notebooklm source get",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_get_help.txt",
+      "kind": "command",
+      "sha256": "6a229dc86051559c63551f4f72e4de20f547be1a678b2e1dcf1275b0759324c4"
+    },
+    {
+      "command": "notebooklm source guide",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_guide_help.txt",
+      "kind": "command",
+      "sha256": "a9b6ef0591625d89a3975430ab7b632ac49bf64b3f36018d06c3cb9e9559e573"
+    },
+    {
+      "command": "notebooklm source list",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_list_help.txt",
+      "kind": "command",
+      "sha256": "3a3de5ec9e0b87feeb602a6b66fc89ea5fec433f027aba35833970ac937c5c9f"
+    },
+    {
+      "command": "notebooklm source refresh",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_refresh_help.txt",
+      "kind": "command",
+      "sha256": "2c8b1b50831a5006d8236ad746fa3dfb8234e8bc6eb95933fbe810dbcfdf5c9c"
+    },
+    {
+      "command": "notebooklm source rename",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_rename_help.txt",
+      "kind": "command",
+      "sha256": "7f3a80cbdf288f080a7d09ed22634a9f586cb664bd9d6e152b4a61b5ac163685"
+    },
+    {
+      "command": "notebooklm source stale",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_stale_help.txt",
+      "kind": "command",
+      "sha256": "8991b7d58991c53986c633d1af0a577398e4157e00e04ed4cf0f13ba6cadd177"
+    },
+    {
+      "command": "notebooklm source wait",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_source_wait_help.txt",
+      "kind": "command",
+      "sha256": "4f9a7c48bd8f526f4076171724c3069c9601d12a11b708f1d14edc65f24a78bf"
+    },
+    {
+      "command": "notebooklm status",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_status_help.txt",
+      "kind": "command",
+      "sha256": "5b29b64b08be7cab58af1c83688575f4cc56117176fa853f10ff481a332cbb34"
+    },
+    {
+      "command": "notebooklm summary",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_summary_help.txt",
+      "kind": "command",
+      "sha256": "734425276e5d42924324867a01b375a6876b41ac12554e916ebb6402f06ebf78"
+    },
+    {
+      "command": "notebooklm use",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm_use_help.txt",
+      "kind": "command",
+      "sha256": "1543655fd36dc63f8ec2752bafd6c4f679187df34ec1bd038ecaa75eb70782d2"
+    }
+  ],
+  "misc": [
+    {
+      "command": "notebooklm --version",
+      "exit_code": 0,
+      "file": "cli_golden/notebooklm--version.txt",
+      "sha256": "aff3700357f91953dfbf0c7c96a3fcc2d47169c2fbca3e6f2c2a6392f8eca974"
+    }
+  ]
+}

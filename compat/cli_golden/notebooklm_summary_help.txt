@@ -1,0 +1,17 @@
+Usage: notebooklm summary [OPTIONS]
+
+  Get notebook summary with AI-generated insights.
+
+  NOTEBOOK_ID supports partial matching (e.g., 'abc' matches 'abc123...').
+
+  Examples:
+    notebooklm summary              # Summary only
+    notebooklm summary --topics     # With suggested topics
+    notebooklm summary --json       # JSON output
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --topics             Include suggested topics
+  --json               Output as JSON
+  --help               Show this message and exit.

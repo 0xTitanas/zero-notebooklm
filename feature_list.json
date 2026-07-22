@@ -1,0 +1,49 @@
+{
+  "features": [
+    {
+      "evidence": "AGENTS.md, feature_list.json, init.sh, clean-state-checklist.md, evaluator-rubric.md, quality-document.md",
+      "id": "harness-continuity",
+      "notes": "Status is a project ledger signal only; verify with the listed commands before making user-facing claims.",
+      "status": "pass",
+      "title": "Harness continuity files exist and workers must read/update repo-local state.",
+      "updated_at": "2026-06-29 15:36 CDT"
+    },
+    {
+      "evidence": "2026-07-01 13:33 CDT: AuthTokens repr now matches upstream diagnostic shape after explicit approval; exact requested phase2+phase3, full suite, ruff, import-origin, parity-readiness, CLI/API, auth-row, and release-candidate gates passed with expected auth/live blockers.\n2026-07-01 12:51 CDT: token cookie-snapshot CAS-reject slice fixed AuthTokens.from_storage mutated-state return and preserved/partially advanced cookie_snapshot baseline after token-fetch save CAS conflicts. Focused AuthTokens CAS tests passed (3 passed); adjacent auth/client/RPC tests passed (96 passed); exact requested phase2+phase3 passed (873 passed), full suite passed (1365 passed), and ruff/import/parity/readiness/release gates passed with expected auth/live blockers.\n2026-07-01 12:43 CDT: live RPC retry/error/size slice fixed upstream 429 Retry-After retry, 5xx/network retry, public exception mapping, and 50 MiB response-cap behavior. Focused RPC retry/error/size tests passed (4 passed); RPC drift audit passed; phase2+phase3 passed (866 passed); full suite passed (1358 passed); ruff and import-origin passed; CLI behavior audit passed (90/90); CLI/API parity, direct differential, parity-readiness, auth-row promotion, release-candidate audits, and git diff check passed with expected auth/live blockers.",
+      "id": "offline-cli-api-rpc-parity",
+      "notes": "Implementation remains stdlib-only with no project/runtime dependency added. Offline public/private helper surfaces and behavior fixed in this closure include client refresh-auth final-URL redirect handling, refresh command parse-error diagnostics, homepage-only/authuser routing parity, token-fetch snapshot/delta cookie persist race protection, AuthTokens post-init/helper property parity, RotateCookies 15s keepalive timeout parity, direct RPC metrics/telemetry parity, client aexit close-error parity, raw RPC call signature parity, client lifecycle/metrics surface parity, chat citation resolver parity, CLI version output parity, root export-order parity, package import-time logging configuration, the package `python -m notebooklm` entrypoint, synthetic error env guard, logging formatter defaults/delegation, redaction/configuration, exception preview scrubbing, export parity, future-error/deprecation runways, explicit storage auth CLI behavior, login command-local storage parity, auth refresh browser-cookie alias parity, profile delete confirmation/hidden-alias/output parity, profile-list JSON/account metadata parity, list JSON envelope/root CLI golden/conflict parity, RPC requested-id decoding/error mapping/byte-count metric parity, public type helper parity, auth default profile/storage resolution parity, client constructor/storage-path override parity, PSIDTS default-path/recovery persistence parity, shared storage locking, snapshot/delta CAS/domain parity, CLI profile root-storage/list human-output parity, pre-token RotateCookies best-effort parity, RPC safe_index structured-error parity, refresh-command coalescing/Windows split parity, live RPC retry/error/size parity, AuthTokens token-fetch CAS-reject snapshot preservation, login NOTEBOOKLM_AUTH_JSON incompatibility, auth refresh NOTEBOOKLM_AUTH_JSON incompatibility, status/clear/doctor/generate/login/auth-refresh/auth-inspect CLI output/flag/error/default-browser parity and browser-cookie discovery-error parity including browser-cookie conflict/fresh/include-domains handling, and stdlib fake-transport live-RPC request shape parity. Broader universal exact 1:1/release claims remain withheld because of scope exclusions and broader release evidence; no current offline implementation blocker is listed by repo audit artifacts.",
+      "status": "pass",
+      "title": "Offline CLI/API/RPC parity gates remain green at the last verified state.",
+      "updated_at": "2026-07-01 13:33 CDT"
+    },
+    {
+      "evidence": "2026-07-20 CDT: Current verified cross-VM state is the selected current-release auth profile 146 rows (146 pass / 0 open) and overall parity 258 rows (257 pass / 0 open / 1 not applicable). All selected current-release auth rows are closed. There are 49 explicit current-release scope exclusions: 25 Arc/Safari paths, four generic Opera GX Ubuntu paths, 10 Windows Chrome/Edge paths that Zero supports but pinned notebooklm-py==0.7.2 / rookiepy==0.5.6 cannot execute, and 10 macOS Chromium/Vivaldi cookie paths classified deferred_to_future_release. Exclusions are never passes or N/A; the 10 deferred paths are not technical-incompatibility classifications. Historical snapshots remain labeled historical. Universal exact 1:1 and production claims remain false; the public alpha is limited to this selected profile.",
+      "id": "auth-live-1to1-closure",
+      "notes": "Selected current-release auth closure is complete: 146 rows pass and none is open. The 49 explicit exclusions are never passes or N/A; 10 macOS Chromium/Vivaldi cookie paths are deferred_to_future_release current-release scope exclusions, not technical-incompatibility classifications. This supports the bounded public alpha but not universal exact 1:1, production, security-audit, or MCP claims.",
+      "status": "pass",
+      "title": "Selected current-release auth profile closure is verified.",
+      "updated_at": "2026-07-20 CDT"
+    },
+    {
+      "evidence": "2026-07-22 CDT: public-alpha release audit strict-alpha passed with exact 1:1 false; focused release/Windows-Chromium/package band passed 88 with one platform skip; PEP 517 and direct wheels matched byte-for-byte; installed auth-matrix doctor passed; source distribution excluded ignored private paths; clean public-tree init passed; staged spill guard passed.",
+      "id": "public-alpha-release",
+      "notes": "Public alpha is limited to the selected profile and its documented exclusions. Chromium/Vivaldi macOS cookie paths and MCP remain future scope. No universal exact 1:1, production-readiness, or security-audit claim is made.",
+      "status": "pass",
+      "title": "Public alpha release gates pass for the selected compatibility profile.",
+      "updated_at": "2026-07-22 CDT"
+    }
+  ],
+  "last_updated": "2026-07-22 CDT",
+  "project": "ZeroNotebookLM",
+  "rules": [
+    "Keep exactly one implementation feature active unless the repository owner explicitly authorizes parallel lanes.",
+    "Do not mark a feature pass without verification evidence.",
+    "Update this file and any local ledger when the active task, evidence, or blocker changes.",
+    "Treat worker self-report as candidate evidence until an independent reviewer or maintainer verifies it."
+  ],
+  "status_legend": {
+    "blocked": "Known blocker prevents promotion/completion.",
+    "pass": "Verified enough for the current ledger claim; keep evidence current.",
+    "pending": "Not active or awaiting explicit authorization/evidence."
+  }
+}

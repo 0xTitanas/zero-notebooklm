@@ -1,0 +1,160 @@
+{
+  "artifact": "notebooklm-bare phase 0 compatibility oracle",
+  "artifacts": {
+    "api_golden": "compat/api_golden/",
+    "auth_matrix": "compat/auth_matrix.json",
+    "cli_golden": "compat/cli_golden/",
+    "cli_surface": "compat/cli_surface.json",
+    "dependency_graph": "compat/dependency_graph.json",
+    "oracle": "compat/notebooklm_py_0_7_2_oracle.json",
+    "parity_matrix": "compat/parity_matrix.md",
+    "python_api_surface": "compat/python_api_surface.json",
+    "rpc_fixtures": "compat/rpc_fixtures/"
+  },
+  "cli_surface_summary": {
+    "group_paths": [
+      "notebooklm",
+      "notebooklm agent",
+      "notebooklm artifact",
+      "notebooklm auth",
+      "notebooklm download",
+      "notebooklm generate",
+      "notebooklm language",
+      "notebooklm note",
+      "notebooklm profile",
+      "notebooklm research",
+      "notebooklm share",
+      "notebooklm skill",
+      "notebooklm source"
+    ],
+    "groups": 13,
+    "leaves": 90,
+    "nodes": 103
+  },
+  "generated_at": "2026-06-23T01:52:40+00:00",
+  "inspection": {
+    "implementation": "cpython",
+    "python_version": "3.13.13"
+  },
+  "matrix": {
+    "interactive_login_browsers": [
+      "chromium",
+      "chrome",
+      "msedge"
+    ],
+    "os": [
+      "macOS",
+      "Ubuntu-LTS-Linux",
+      "Windows-11"
+    ],
+    "python": [
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13"
+    ]
+  },
+  "parity_profile": {
+    "all_upstream_extras": [
+      "all",
+      "browser",
+      "cookies",
+      "dev",
+      "markdown"
+    ],
+    "note": "base package plus documented browser/cookies/markdown feature surfaces; dev/all are tooling-only and not runtime parity targets.",
+    "selected_extras": [
+      "browser",
+      "cookies",
+      "markdown"
+    ]
+  },
+  "plan_sha256": "176f14caa9d44b0f86697f6f57fc2b4f6aa16d28b3ad8fcf0d49f34302e3b998",
+  "provenance": {
+    "download_command": "pip download --no-deps --only-binary=:all: notebooklm-py==0.7.2",
+    "isolation": "disposable venv; no global install; base deps only (extras imported lazily by upstream, so unneeded for surface lock).",
+    "source_commit": "915b5321e1c1f411e23bd8265517be8740749e56",
+    "source_commit_remote_check": {
+      "checked": true,
+      "checked_at": "2026-06-23T01:52:24+00:00",
+      "exists": true,
+      "http_status": 200,
+      "returned_sha": "915b5321e1c1f411e23bd8265517be8740749e56"
+    },
+    "source_repo": "teng-lin/notebooklm-py",
+    "wheel_filename": "notebooklm_py-0.7.2-py3-none-any.whl",
+    "wheel_sha256": "d850cfea2494732bc5f153406a9637c3ee5fe931d87901d101c026df2a6ecf65",
+    "wheel_sha256_expected": "d850cfea2494732bc5f153406a9637c3ee5fe931d87901d101c026df2a6ecf65",
+    "wheel_sha256_verified": true
+  },
+  "python_api_summary": {
+    "annotation_identity_deviation_count": 15,
+    "enum_count": 29,
+    "exception_count": 44,
+    "is_async_context_manager": true,
+    "public_modules": [
+      "notebooklm",
+      "notebooklm.artifacts",
+      "notebooklm.auth",
+      "notebooklm.client",
+      "notebooklm.config",
+      "notebooklm.exceptions",
+      "notebooklm.io",
+      "notebooklm.log",
+      "notebooklm.migration",
+      "notebooklm.paths",
+      "notebooklm.research",
+      "notebooklm.rpc",
+      "notebooklm.rpc.decoder",
+      "notebooklm.rpc.encoder",
+      "notebooklm.rpc.overrides",
+      "notebooklm.rpc.types",
+      "notebooklm.types",
+      "notebooklm.urls",
+      "notebooklm.utils"
+    ],
+    "root_all_count": 105,
+    "subclients": [
+      "artifacts",
+      "chat",
+      "mind_maps",
+      "notebooks",
+      "notes",
+      "research",
+      "settings",
+      "sharing",
+      "sources"
+    ]
+  },
+  "rpc_shape": {
+    "batchexecute_markers": [
+      "rpcids",
+      "wrb.fr"
+    ],
+    "endpoint_path_literals": [
+      "/_/LabsTailwindUi/data/google\u002einternal.labs.tailwind.orchestration.v1."
+    ],
+    "host_literals": [
+      "notebooklm.google.com"
+    ],
+    "rpc_modules": [
+      "rpc/__init__.py",
+      "rpc/_safe_index.py",
+      "rpc/decoder.py",
+      "rpc/encoder.py",
+      "rpc/overrides.py",
+      "rpc/types.py"
+    ],
+    "xssi_prefixes": [
+      ")]}'"
+    ]
+  },
+  "schema_version": "phase0/1",
+  "target": {
+    "cli_entry_point": "notebooklm = notebooklm.notebooklm_cli:main",
+    "project": "notebooklm-py",
+    "requirement": "notebooklm-py==0.7.2",
+    "requires_python": ">=3.10",
+    "version": "0.7.2"
+  }
+}

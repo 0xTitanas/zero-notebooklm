@@ -1,0 +1,27 @@
+{
+  "batchexecute_markers": [
+    "rpcids",
+    "wrb.fr"
+  ],
+  "description": "batchexecute wire shape extracted from upstream notebooklm-py==0.7.2 rpc modules. Used to author fake-server fixtures and (later) to test the bare parser.",
+  "endpoint_path_literals": [
+    "/_/LabsTailwindUi/data/google\u002einternal.labs.tailwind.orchestration.v1."
+  ],
+  "host_literals": [
+    "notebooklm.google.com"
+  ],
+  "notes": [
+    "Responses are XSSI-guarded: the literal prefix must be stripped before JSON parse.",
+    "Payloads are batchexecute envelopes; the useful data is a JSON string nested inside the 'wrb.fr' row and must be parsed a second time.",
+    "All fixture data below is SYNTHETIC and SANITIZED; no real account, cookie, notebook id, or source content is present."
+  ],
+  "rpc_modules": [
+    "rpc/__init__.py",
+    "rpc/_safe_index.py",
+    "rpc/decoder.py",
+    "rpc/encoder.py",
+    "rpc/overrides.py",
+    "rpc/types.py"
+  ],
+  "xssi_prefix": ")]}'"
+}

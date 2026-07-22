@@ -1,0 +1,34 @@
+Usage: notebooklm generate infographic [OPTIONS] [DESCRIPTION]
+
+  Generate infographic.
+
+  Use --json for machine-readable output.
+
+  Example:
+    notebooklm generate infographic "include statistics and key findings"
+    notebooklm generate infographic --orientation portrait --detail detailed
+
+Options:
+  --prompt-file PROMPT_FILE       Read prompt/query text from a file (or '-'
+                                  for stdin) instead of the positional
+                                  argument
+  -n, --notebook TEXT             Notebook ID (uses current if not set).
+                                  Supports partial IDs.  [env var:
+                                  NOTEBOOKLM_NOTEBOOK]
+  --orientation [landscape|portrait|square]
+                                  Infographic orientation (default: landscape)
+  --detail [concise|standard|detailed]
+                                  Level of detail (default: standard)
+  --style [auto|sketch-note|professional|bento-grid|editorial|instructional|bricks|clay|anime|kawaii|scientific]
+                                  Visual style (default: auto)
+  --language TEXT                 Output language (default: --language >
+                                  NOTEBOOKLM_HL env > config > 'en')
+  -s, --source TEXT               Limit to specific source IDs
+  --wait / --no-wait              Wait for completion (default: no-wait)
+  --timeout INTEGER               Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE        Seconds between status checks (default: 2)
+                                  [x>=1]
+  --retry INTEGER RANGE           Retry N times with exponential backoff on
+                                  rate limit  [x>=0]
+  --json                          Output as JSON
+  --help                          Show this message and exit.

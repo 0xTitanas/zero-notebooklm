@@ -1,0 +1,43 @@
+Usage: notebooklm download flashcards [OPTIONS] [OUTPUT_PATH]
+
+  Download flashcard deck.
+
+  Examples:
+      # Download latest flashcards to default filename
+      notebooklm download flashcards
+
+      # Download to specific path     notebooklm download flashcards my-
+      flashcards.json
+
+      # Download all flashcards files to directory     notebooklm download
+      flashcards --all ./flashcards/
+
+      # Download specific artifact by name     notebooklm download flashcards
+      --name "chapter 3"
+
+      # Preview without downloading     notebooklm download flashcards --all
+      --dry-run
+
+      # Download as markdown or html     notebooklm download flashcards
+      --format markdown cards.md     notebooklm download flashcards --format
+      html cards.html
+
+      # Machine-readable output     notebooklm download flashcards --json
+
+Options:
+  -n, --notebook TEXT            Notebook ID (uses current if not set).
+                                 Supports partial IDs.  [env var:
+                                 NOTEBOOKLM_NOTEBOOK]
+  --latest                       Download latest (default behavior)
+  --earliest                     Download earliest
+  --all                          Download all artifacts
+  --name TEXT                    Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT            Select by artifact ID
+  --json                         Output as JSON
+  --dry-run                      Preview without downloading
+  --force                        Overwrite existing files
+  --no-clobber                   Don't overwrite existing files (single
+                                 download fails; --all skips them)
+  --format [json|markdown|html]  Output format: json (default), markdown, or
+                                 html
+  --help                         Show this message and exit.

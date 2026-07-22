@@ -1,0 +1,27 @@
+Usage: notebooklm generate revise-slide [OPTIONS] [DESCRIPTION]
+
+  Revise an individual slide in an existing slide deck.
+
+  DESCRIPTION is the natural language prompt for the revision. The slide deck
+  must already be generated before using this command.
+
+  Example:
+    notebooklm generate revise-slide "Move the title up" --artifact <id> --slide 0
+    notebooklm generate revise-slide "Remove taxonomy" --artifact <id> --slide 3 --wait
+
+Options:
+  --prompt-file PROMPT_FILE  Read prompt/query text from a file (or '-' for
+                             stdin) instead of the positional argument
+  -n, --notebook TEXT        Notebook ID (uses current if not set). Supports
+                             partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  -a, --artifact TEXT        Slide deck artifact ID to revise  [required]
+  --slide INTEGER            Zero-based index of the slide to revise (0 =
+                             first slide)  [required]
+  --wait / --no-wait         Wait for completion (default: no-wait)
+  --timeout INTEGER          Maximum seconds to wait (default: 300)
+  --interval INTEGER RANGE   Seconds between status checks (default: 2)
+                             [x>=1]
+  --retry INTEGER RANGE      Retry N times with exponential backoff on rate
+                             limit  [x>=0]
+  --json                     Output as JSON
+  --help                     Show this message and exit.

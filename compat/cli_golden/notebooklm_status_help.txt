@@ -1,0 +1,11 @@
+Usage: notebooklm status [OPTIONS]
+
+  Show current context (active notebook and conversation).
+
+  Use --paths to see where configuration files are located (useful for
+  debugging NOTEBOOKLM_HOME).
+
+Options:
+  --json   Output as JSON
+  --paths  Show resolved file paths
+  --help   Show this message and exit.

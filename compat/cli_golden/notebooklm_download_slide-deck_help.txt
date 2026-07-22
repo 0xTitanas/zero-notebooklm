@@ -1,0 +1,37 @@
+Usage: notebooklm download slide-deck [OPTIONS] [OUTPUT_PATH]
+
+  Download slide deck(s) as PDF or PPTX.
+
+  Examples:
+      # Download latest slide-deck to default filename
+      notebooklm download slide-deck
+
+      # Download to specific path     notebooklm download slide-deck my-slide-
+      deck.pdf
+
+      # Download all slide-deck files to directory     notebooklm download
+      slide-deck --all ./slide-decks/
+
+      # Download specific artifact by name     notebooklm download slide-deck
+      --name "chapter 3"
+
+      # Preview without downloading     notebooklm download slide-deck --all
+      --dry-run
+
+      # Download as PPTX     notebooklm download slide-deck --format pptx
+
+Options:
+  -n, --notebook TEXT  Notebook ID (uses current if not set). Supports partial
+                       IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --latest             Download latest (default behavior)
+  --earliest           Download earliest
+  --all                Download all artifacts
+  --name TEXT          Filter by artifact title (fuzzy match)
+  -a, --artifact TEXT  Select by artifact ID
+  --json               Output as JSON
+  --dry-run            Preview without downloading
+  --force              Overwrite existing files
+  --no-clobber         Don't overwrite existing files (single download fails;
+                       --all skips them)
+  --format [pdf|pptx]  Download format: pdf (default) or pptx
+  --help               Show this message and exit.

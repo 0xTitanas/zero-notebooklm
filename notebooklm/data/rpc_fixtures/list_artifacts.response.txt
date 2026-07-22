@@ -1,0 +1,3 @@
+)]}'
+
+[["wrb.fr","gArtLc","[[\"fake-artifact-audio-0001\",\"Synthetic Audio Overview\",1,3,1750000500,\"https://example.test/notebooklm-bare/audio.mp3\",null],[\"fake-artifact-report-0001\",\"Synthetic Briefing Doc\",2,3,1750000600,null,null],[\"fake-artifact-quiz-0001\",\"Synthetic Quiz\",4,2,null,null,2]]",null,null,null,"generic"]]

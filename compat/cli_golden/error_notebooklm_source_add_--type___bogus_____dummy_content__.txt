@@ -1,0 +1,4 @@
+Usage: notebooklm source add [OPTIONS] CONTENT
+Try 'notebooklm source add --help' for help.
+
+Error: Invalid value for '--type': '__bogus__' is not one of 'url', 'text', 'file', 'youtube'.

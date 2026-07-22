@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic sanitized offline read-only status fixture for Batch 3B1. No real NotebookLM account, notebook, source, artifact, sharing, or research data is present.",
+  "settings": {
+    "output_language": "ja",
+    "account_limits": {
+      "notebook_limit": 100,
+      "source_limit": 50,
+      "raw_limits": [null, 100, 50]
+    },
+    "account_tier": {
+      "tier": "NOTEBOOKLM_TIER_STANDARD",
+      "plan_name": "Standard"
+    }
+  },
+  "artifact_statuses": {
+    "fake-notebook-0001": {
+      "fake-artifact-audio-0001": {
+        "task_id": "fake-artifact-audio-0001",
+        "status": "completed",
+        "url": "https://example.test/notebooklm-bare/audio.mp3",
+        "error": null,
+        "error_code": null,
+        "metadata": {
+          "artifact_type": "audio",
+          "title": "Synthetic Audio Overview"
+        }
+      },
+      "fake-artifact-quiz-0001": {
+        "task_id": "fake-artifact-quiz-0001",
+        "status": "pending",
+        "url": null,
+        "error": null,
+        "error_code": null,
+        "metadata": {
+          "artifact_type": "quiz",
+          "title": "Synthetic Quiz"
+        }
+      },
+      "fake-artifact-failed-0001": {
+        "task_id": "fake-artifact-failed-0001",
+        "status": "failed",
+        "url": null,
+        "error": "Synthetic generation failed",
+        "error_code": "SYNTHETIC_FAILURE",
+        "metadata": {
+          "artifact_type": "report",
+          "title": "Synthetic Failed Report"
+        }
+      }
+    }
+  },
+  "report_suggestions": {
+    "fake-notebook-0001": [
+      [
+        "Synthetic Briefing",
+        "A concise briefing generated from synthetic fixture sources.",
+        null,
+        null,
+        "Write a concise briefing about the synthetic fixture notebook.",
+        2
+      ],
+      [
+        "Synthetic Study Guide",
+        "A study guide prompt over fixture-only sources.",
+        null,
+        null,
+        "Create a study guide from the synthetic fixture notebook.",
+        1
+      ]
+    ]
+  },
+  "research_tasks": {
+    "fake-notebook-0001": [
+      {
+        "task_id": "fake-research-complete-0001",
+        "status": "completed",
+        "query": "Synthetic NotebookLM parity research",
+        "sources": [
+          {
+            "url": "https://example.test/notebooklm-bare/research/source-one",
+            "title": "Synthetic research source one",
+            "result_type": 1,
+            "research_task_id": "fake-research-complete-0001",
+            "report_markdown": ""
+          }
+        ],
+        "summary": "Synthetic research completed over fixture-only data.",
+        "report": "# Synthetic Research Report\n\nFixture-only report body."
+      },
+      {
+        "task_id": "fake-research-running-0001",
+        "status": "in_progress",
+        "query": "Synthetic running research",
+        "sources": [],
+        "summary": "",
+        "report": ""
+      }
+    ]
+  },
+  "share_statuses": {
+    "fake-notebook-0001": {
+      "notebook_id": "fake-notebook-0001",
+      "is_public": false,
+      "access": "RESTRICTED",
+      "view_level": "FULL_NOTEBOOK",
+      "share_url": null,
+      "shared_users": [
+        {
+          "email": "fixture.viewer@example.test",
+          "permission": "VIEWER",
+          "display_name": "Fixture Viewer",
+          "avatar_url": null
+        },
+        {
+          "email": "fixture.editor@example.test",
+          "permission": "EDITOR",
+          "display_name": "Fixture Editor",
+          "avatar_url": null
+        }
+      ]
+    }
+  }
+}

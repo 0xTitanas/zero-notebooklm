@@ -1,0 +1,18 @@
+Usage: notebooklm source list [OPTIONS]
+
+  List all sources in a notebook.
+
+  Pagination & display:
+    --limit N         Show at most N sources (default: unlimited).
+    --no-truncate     Do not truncate the Title column in the table view.
+
+Options:
+  -n, --notebook TEXT    Notebook ID (uses current if not set). Supports
+                         partial IDs.  [env var: NOTEBOOKLM_NOTEBOOK]
+  --json                 Output as JSON
+  --limit INTEGER RANGE  Show at most N rows. 0 = show no rows. Omit for
+                         unlimited. Applies to both text and --json output.
+                         [x>=0]
+  --no-truncate          Disable column truncation in the rendered table
+                         (default: truncate).
+  --help                 Show this message and exit.

@@ -1,0 +1,10 @@
+Usage: notebooklm skill status [OPTIONS]
+
+  Check installed skill targets and version info.
+
+Options:
+  --scope [user|project]        Inspect user-level or project-level skill
+                                installs.  [default: user]
+  --target [all|claude|agents]  Inspect Claude Code, universal agent skill
+                                directories, or both.  [default: all]
+  --help                        Show this message and exit.
